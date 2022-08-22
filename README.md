@@ -1,46 +1,35 @@
-# Vuetify Landing Page Template
+# Vue.js
 
-#### This is an example of a landing page built with vue and vuetify.
+This directory is a brief example of a [Vue.js](https://vuejs.org/) app that can be deployed to Vercel with zero configuration.
 
+## Deploy Your Own
 
-## 🚀 Project setup
+Deploy your own Vue.js project with Vercel.
 
-Use [git](https://git-scm.com/) to clone the project.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vue&template=vue)
 
-```bash
-git clone https://github.com/Joabsonlg/vuetify-landing-page.git
+_Live Example: https://vue-template.vercel.app_
+
+## Running Locally
+
 ```
-Enter the project.
-```bash
-cd vuetify-landing-page
-```
-Use [npm](https://www.npmjs.com/) to install dependencies.
-```bash
-npm i
+yarn install
 ```
 
+#### Compile and hot-reload for development
 
-## ☄️ Usage
-
-Compiles and hot-reloads for development
-```bash
-npm run serve
+```
+yarn serve
 ```
 
-Compiles and minifies for production
-```bash
-npm run build
+#### Compile and minify for production
+
+```
+yarn build
 ```
 
-### 🛠️ Technologies
+#### Lint and fix files
 
-The following tools were used in the construction of the project:
-
-- [Vue.js](https://vuejs.org/)
-- [Vuetify.js](https://vuetifyjs.com/)
-- [Firebase](https://firebase.google.com/)
-
-## ⚖️ Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+```
+yarn lint
+```
