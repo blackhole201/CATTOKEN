@@ -25,8 +25,7 @@
                             data-aos-duration="500"
                             data-aos-delay="200"
                         >
-                            <h1 class="font-weight-medium text-sm-h4">
-                                In a land of bears, freezing cold tone, a world seemingly on fire, we all need a little love. 
+                            <h1 class="font-weight-medium text-sm-h4"> 
                                 KittyCake has been one of the most joy filled community crypto has ever seen. 
                             </h1>
                             <h1 class="font-weight-light text-sm-h5">
