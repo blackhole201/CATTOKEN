@@ -23,7 +23,7 @@
                     :z-index="99"
                     :align-self="start"
                 >
-                    <h3
+                    <h1
                         class="
                             text-xl-h1
                             text-lg-h1
@@ -33,11 +33,11 @@
                             font-weight-bold
                             mb-4
                         "
-                    >
+                    > <class="font-weight-medium text-sm-h4">
                           In a land of bears, freezing cold tone, a world seemingly on fire, we all need a little love. 
                                 KittyCake has been one of the most joy filled community crypto has ever seen.  <br />
                         Earn passive income paid in Cake.
-                    </h3>
+                    </h1>
                     <v-btn
                         color="primary"
                         rounded
@@ -45,7 +45,7 @@
                         @click="$vuetify.goTo('#features')"
                         class="mt-5"
                     >
-                        Connect Wallet
+                        Dashboard
                         <v-icon color="white">mdi-plus</v-icon>
                     </v-btn>
                     <v-btn
@@ -56,7 +56,7 @@
                         @click="$vuetify.goTo('#features')"
                         class="mt-5"
                     >
-                        Buy KittyCake
+                        Buy KittyCake 
                     </v-btn>
                 </v-col>
                 <v-col cols="12" md="6" xl="4"> </v-col>
