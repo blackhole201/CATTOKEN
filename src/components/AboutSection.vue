@@ -28,7 +28,7 @@
                             <h1 class="font-weight-medium text-sm-h4"> 
                                 KittyCake has been one of the most joy filled community crypto has ever seen. 
                             </h1>
-                            <h1 class="font-weight-light text-sm-h5">
+                            <h1 class="font-weight-light text-sm-h5"> <br />
 KittyCake was taken over voluntarily by some die hards who just wanted to see what could be done of all of us "nobodies" put our minds to it.
 Well, here we are, a full bull cycle and well into a bear cycle and we are still here! 
 Still building, still dreaming and still working to sustain our beloved KittyCake into its second set of 9 lives. 

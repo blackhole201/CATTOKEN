@@ -86,7 +86,7 @@
                             Click here to go to our Swap. Select KittyCake or
                             use our contract address:
                             <span ref="tokenAddress"
-                                >to be confimerd when presale has started</span
+                                >to be confirmed when presale has started</span
                             >
                             <v-btn icon @click="copyToken" color="primary"
                                 ><v-icon>mdi-content-copy</v-icon></v-btn
@@ -124,7 +124,7 @@
                         <p class="text-h6">
                             Pancake Swap Token Address:
                             <span ref="tokenAddress"
-                                >to be announced when prewale starts</span
+                                >to be announced when presale starts</span
                             >.
                             <v-btn icon @click="copyToken" color="primary"
                                 ><v-icon>mdi-content-copy</v-icon></v-btn
