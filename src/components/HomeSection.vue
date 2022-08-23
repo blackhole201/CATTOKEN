@@ -33,11 +33,10 @@
                             font-weight-bold
                             mb-4
                         "
-                    > <h1 class="font-weight-medium text-sm-h4">
+                    > <h1 class="font-weight-medium text-sm-h3">
                           In a land of bears, freezing cold tone, a world seemingly on fire, we all need a little love. 
-                                KittyCake has been one of the most joy filled community crypto has ever seen.  <br />
-                        Earn passive income paid in Cake.
-                         </h1>
+                                 <br />
+                        Hold KittyCake Token and earn passive income paid in Cake.
                     </h1>
                     <v-btn
                         color="primary"
