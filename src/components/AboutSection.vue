@@ -25,21 +25,17 @@
                             data-aos-duration="500"
                             data-aos-delay="200"
                         >
-                            <h1 class="font-weight-medium text-sm-h3">
-                                In a land of bears, freezing cold tone, a world seemingly on fire, we all need a little love. KittyCake has been one of the most joy filled community crypto has ever seen. 
-
-We've seen many tokens rise to glory with the idea of being "community owned" but always felt like there as more behind the scenes as far as whale control, deep pockets and potential sketchiness, all profiteering on the backs of the loyal HODLers.
-
-KittyCake was taken over voluntarily by some die hards who just wanted to see what could be done of all of us "nobodies" put our minds to it.
-
-Well, here we are, a full bull cycle and well into a bear cycle and we are still here! Still building, still dreaming and still working to sustain our beloved KittyCake into its second set of 9 lives. We aren't ever leaving and we aren't ever going anywhere.
-
-This new realm of KittyCake will TRULY let the cat out of the bag with huge
+                            <h1 class="font-weight-medium text-sm-h4">
+                                In a land of bears, freezing cold tone, a world seemingly on fire, we all need a little love. 
+                                KittyCake has been one of the most joy filled community crypto has ever seen. 
                             </h1>
-                            <h1 class="font-weight-light text-sm-h4">
-                                KittyCake rewards holders with his favorite
-                                food, $CAKE, every hour! We also have a
-                                dashboard to track your $CAKE rewards
+                            <h1 class="font-weight-light text-sm-h5">
+KittyCake was taken over voluntarily by some die hards who just wanted to see what could be done of all of us "nobodies" put our minds to it.
+Well, here we are, a full bull cycle and well into a bear cycle and we are still here! 
+Still building, still dreaming and still working to sustain our beloved KittyCake into its second set of 9 lives. 
+We aren't ever leaving and we aren't ever going anywhere.
+
+This new realm of KittyCake will TRULY let the cat out of the bag.
                             </h1>
                             <v-btn
                                 color="primary"

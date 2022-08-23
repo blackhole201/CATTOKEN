@@ -34,7 +34,8 @@
                             mb-4
                         "
                     >
-                        Hold KittyCake. <br />
+                          In a land of bears, freezing cold tone, a world seemingly on fire, we all need a little love. 
+                                KittyCake has been one of the most joy filled community crypto has ever seen.  <br />
                         Earn passive income paid in Cake.
                     </h1>
                     <v-btn
