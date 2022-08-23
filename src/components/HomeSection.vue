@@ -23,21 +23,21 @@
                     :z-index="99"
                     :align-self="start"
                 >
-                    <h1
+                    <h3
                         class="
                             text-xl-h1
                             text-lg-h1
                             text-md-h2
                             text-sm-h3
-                            text-h3
-                            font-weight-medium
+                            text-h2
+                            font-weight-bold
                             mb-4
                         "
                     >
                           In a land of bears, freezing cold tone, a world seemingly on fire, we all need a little love. 
                                 KittyCake has been one of the most joy filled community crypto has ever seen.  <br />
                         Earn passive income paid in Cake.
-                    </h1>
+                    </h3>
                     <v-btn
                         color="primary"
                         rounded
