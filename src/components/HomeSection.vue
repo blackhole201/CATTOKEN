@@ -29,8 +29,8 @@
                             text-lg-h1
                             text-md-h2
                             text-sm-h3
-                            text-h2
-                            font-weight-bold
+                            text-h3
+                            font-weight-medium
                             mb-4
                         "
                     >
