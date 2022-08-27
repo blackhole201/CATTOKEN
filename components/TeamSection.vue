@@ -35,9 +35,9 @@
                                         class="d-block mr-auto"
                                         :class="{ 'zoom-efect': hover }"
                                     ></v-img>
-                                    <h1 class="font-weight-bold">Blackhole</h1>
+                                    <h1 class="font-weight-bold">Name</h1>
                                     <p class="font-weight-regular subtitle-1">
-                                        Main Dev
+                                        Title
                                     </p>
                                 </v-card>
                             </v-hover>

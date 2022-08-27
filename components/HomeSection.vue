@@ -33,10 +33,9 @@
                             font-weight-bold
                             mb-4
                         "
-                    > <h1 class="font-weight-medium text-sm-h3">
-                          In a land of bears, freezing cold tone, a world seemingly on fire, we all need a little love. 
-                                 <br />
-                        Hold KittyCake Token and earn passive income paid in Cake.
+                    >
+                        Hold KittyCake. <br />
+                        Earn passive income paid in Cake.
                     </h1>
                     <v-btn
                         color="primary"
@@ -45,7 +44,7 @@
                         @click="$vuetify.goTo('#features')"
                         class="mt-5"
                     >
-                        Dashboard
+                        Connect Wallet
                         <v-icon color="white">mdi-plus</v-icon>
                     </v-btn>
                     <v-btn
@@ -56,7 +55,7 @@
                         @click="$vuetify.goTo('#features')"
                         class="mt-5"
                     >
-                        Buy KittyCake 
+                        Buy KittyCake
                     </v-btn>
                 </v-col>
                 <v-col cols="12" md="6" xl="4"> </v-col>

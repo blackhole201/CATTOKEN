@@ -25,16 +25,14 @@
                             data-aos-duration="500"
                             data-aos-delay="200"
                         >
-                            <h1 class="font-weight-medium text-sm-h4"> 
-                                KittyCake has been one of the most joy filled community crypto has ever seen. 
+                            <h1 class="font-weight-medium text-sm-h2">
+                                KittyCake is an advanced hyper-deflationary
+                                auto-rewards token on the Binance Smart Chain.
                             </h1>
-                            <h1 class="font-weight-light text-sm-h5"> <br />
-KittyCake was taken over voluntarily by some die hards who just wanted to see what could be done of all of us "nobodies" put our minds to it.
-Well, here we are, a full bull cycle and well into a bear cycle and we are still here! 
-Still building, still dreaming and still working to sustain our beloved KittyCake into its second set of 9 lives. 
-We aren't ever leaving and we aren't ever going anywhere.
-
-This new realm of KittyCake will TRULY let the cat out of the bag.
+                            <h1 class="font-weight-light text-sm-h3">
+                                KittyCake rewards holders with his favorite
+                                food, $CAKE, every hour! We also have a
+                                dashboard to track your $CAKE rewards
                             </h1>
                             <v-btn
                                 color="primary"

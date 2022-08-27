@@ -8,7 +8,7 @@
                 data-aos-delay="200"
                 style="margin: 130px 0"
             >
-                What do we offer
+                Features We Provide You
             </h1>
             <v-row align="center" justify="center" class="my-8">
                 <v-col cols="10">
@@ -58,8 +58,8 @@ export default {
             features: [
                 {
                     img: require("@/assets/img/icon/icon1.webp"),
-                    title: "4% CAKE Redistribution",
-                    text: "4% of every buy/sell is taken and redistributed to all holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 200,000 tokens is required in order to qualify for rewards.",
+                    title: "7% CAKE Redistribution",
+                    text: "7% of every buy/sell is taken and redistributed to all holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 200,000 tokens is required in order to qualify for rewards.",
                 },
                 {
                     img: require("@/assets/img/icon/icon2.webp"),
@@ -69,7 +69,7 @@ export default {
                 {
                     img: require("@/assets/img/icon/icon3.webp"),
                     title: "Strategic Marketing",
-                    text: "2% of every transaction is allocated to Marketing in $CAKE (swapped to CAKE in real-time to avoid dumps). This allows us to invest and develop the project further to expand the rewards for our community.",
+                    text: "5% of every transaction is allocated to Marketing in $CAKE (swapped to CAKE in real-time to avoid dumps). This allows us to invest and develop the project further to expand the rewards for our community.",
                 },
                 {
                     img: require("@/assets/img/icon/icon4.webp"),
@@ -79,12 +79,12 @@ export default {
                 {
                     img: require("@/assets/img/icon/icon5.webp"),
                     title: "Locked Liquidity",
-                    text: "Initial Liquidity Provided is locked Contract will be audited prior to launch",
+                    text: "Initial Liquidity Provided is locked with DXLock until 2030. Contract is fully audited by Desert Finance",
                 },
                 {
                     img: require("@/assets/img/icon/icon6.webp"),
                     title: "Auto Liquidity",
-                    text: "1% of every transaction is converted into liquidity for Pancakeswap. It’s automatic and helps create a price floor (stability).",
+                    text: "2% of every transaction is converted into liquidity for Pancakeswap. It’s automatic and helps create a price floor (stability).",
                 },
             ],
         };

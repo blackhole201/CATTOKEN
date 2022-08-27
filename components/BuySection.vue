@@ -28,7 +28,7 @@
                 data-aos-delay="200"
                 style="margin-bottom: 130px"
             >
-                Get Ready to trade after Preslae is <span class="primary--text">finished.</span>
+                Are You Ready To <span class="primary--text">Buy?</span>
             </h1>
 
             <v-row>
@@ -86,7 +86,7 @@
                             Click here to go to our Swap. Select KittyCake or
                             use our contract address:
                             <span ref="tokenAddress"
-                                >to be confirmed when presale has started</span
+                                >0xc22e8114818a918260662375450e19ac73d32852</span
                             >
                             <v-btn icon @click="copyToken" color="primary"
                                 ><v-icon>mdi-content-copy</v-icon></v-btn
@@ -124,7 +124,7 @@
                         <p class="text-h6">
                             Pancake Swap Token Address:
                             <span ref="tokenAddress"
-                                >to be announced when presale starts</span
+                                >0xc22e8114818a918260662375450e19ac73d32852</span
                             >.
                             <v-btn icon @click="copyToken" color="primary"
                                 ><v-icon>mdi-content-copy</v-icon></v-btn

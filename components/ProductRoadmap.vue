@@ -6,7 +6,7 @@
             data-aos-duration="500"
             data-aos-delay="200"
         >
-            Roadmap
+            Product Roadmap
         </h1>
         <div class="row">
             <div
@@ -52,17 +52,19 @@ export default {
     data() {
         return {
             steps: [
-                { dateLabel: "September 2022", title: "V2 Presale launch" },
-                { dateLabel: "Septmeber 2022", title: "New reward Dashboard launch" },
-                { dateLabel: "Ocotber 2022", title: "Coinmarket cap and Coingeko listing" },
-                { dateLabel: "Ocotber 2022", title: "P2E Game launch" },
-                { dateLabel: "November 2022", title: "Setting up for sustainable passive income",},
-                { dateLabel: "Market Cap 1 million", title: "Watch to Earn development stage 1" },
-                { dateLabel: "January 2023", title: "First set of NFTs" },
-                { dateLabel: "Market Cap 5 million ", title: "Watch to Earn development stage 2 " },
-                { dateLabel: "Market Cap 2 million", title: "Charity of a choice giveaway" },
-                { dateLabel: "December 2022", title: "Merchendise shop" },
-                { dateLabel: "Market Cap 10 million", title: "big bonus to loyal holders" },
+                { dateLabel: "January 2022", title: "Gathering Information" },
+                { dateLabel: "February 2022", title: "Planning" },
+                { dateLabel: "March 2017", title: "Design" },
+                {
+                    dateLabel: "April 2017",
+                    title: "Content Writing",
+                },
+                { dateLabel: "May 2017", title: "Coding" },
+                { dateLabel: "June 2017", title: "Testing Review" },
+                { dateLabel: "July 2017", title: "Maintenance" },
+                { dateLabel: "July 2017", title: "Maintenance" },
+                { dateLabel: "July 2017", title: "Maintenance" },
+                { dateLabel: "July 2017", title: "Maintenance" },
             ],
         };
     },
