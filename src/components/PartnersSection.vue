@@ -2,7 +2,7 @@
     <section id="partners">
         <v-container fluid>
             <h1
-                class="display-3 text-center white--text font-weight-bold"
+                class="display-3 text-center black--text font-weight-bold"
                 data-aos="fade-up"
                 data-aos-duration="500"
                 data-aos-delay="200"
@@ -42,8 +42,8 @@
 
 <style scoped>
 #partners {
-    background: rgba(255, 255, 255, 0.13);
-    backdrop-filter: blur(100px);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
     border-radius: 40px 40px 0px 0px;
     padding: 80px 0;
 }

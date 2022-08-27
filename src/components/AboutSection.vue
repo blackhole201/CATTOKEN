@@ -3,7 +3,7 @@
         <v-container fluid>
             <v-row align="center" justify="center">
                 <v-col cols="10">
-                    <v-row align="center" justify="center" class="py-4">
+                    <v-row align="center" justify="center">
                         <v-col
                             cols="12"
                             md="3"
@@ -25,20 +25,42 @@
                             data-aos-duration="500"
                             data-aos-delay="200"
                         >
-                            <h1 class="font-weight-medium text-sm-h4"> 
-                                KittyCake has been one of the most joy filled community crypto has ever seen. 
+                            <h1
+                                class="
+                                    font-weight-medium
+                                    text-sm-h4 text-h4 text-xl-h3
+                                "
+                            >
+                                <span class="primary--text">KittyCake</span> has
+                                been one of the most joy filled community crypto
+                                has ever seen.
                             </h1>
-                            <h1 class="font-weight-light text-sm-h5"> <br />
-KittyCake was taken over voluntarily by some die hards who just wanted to see what could be done of all of us "nobodies" put our minds to it.
-Well, here we are, a full bull cycle and well into a bear cycle and we are still here! 
-Still building, still dreaming and still working to sustain our beloved KittyCake into its second set of 9 lives. 
-We aren't ever leaving and we aren't ever going anywhere.
+                            <h1
+                                class="
+                                    font-weight-light
+                                    text-sm-h4 text-h6 text-xl-h6
+                                    my-5
+                                "
+                            >
+                                KittyCake was taken over voluntarily by some die
+                                hards who just wanted to see what could be done
+                                of all of us "nobodies" put our minds to it.
 
-This new realm of KittyCake will TRULY let the cat out of the bag.
+                                <br />
+                                Well, here we are, a full bull cycle and well
+                                into a bear cycle and we are still here! Still
+                                building, still dreaming and still working to
+                                sustain our beloved KittyCake into its second
+                                set of 9 lives.
+
+                                <br />
+                                We aren't ever leaving and we aren't ever going
+                                anywhere. This new realm of KittyCake will TRULY
+                                let the cat out of the bag.
                             </h1>
                             <v-btn
                                 color="primary"
-                                large
+                                x-large
                                 outlined
                                 rounded
                                 style="background-color: white"
@@ -59,7 +81,6 @@ This new realm of KittyCake will TRULY let the cat out of the bag.
     z-index: 9999;
     display: flex;
     align-items: center;
-    height: 260px;
     color: white;
 }
 </style>

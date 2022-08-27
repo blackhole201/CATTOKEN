@@ -20,7 +20,7 @@
                         <!-- <v-btn text color="white" class="prev-slide"
                             >Prev</v-btn
                         > -->
-                        <v-btn text color="white" class="next-slide"
+                        <v-btn rounded color="primary" ref="nextslide" class="next-slide"
                             >Next</v-btn
                         >
                     </p>
@@ -52,13 +52,13 @@ export default {
     data() {
         return {
             steps: [
-                { dateLabel: "September 2022", title: "V2 Presale launch" },
-                { dateLabel: "Septmeber 2022", title: "New reward Dashboard launch" },
-                { dateLabel: "Ocotber 2022", title: "Coinmarket cap and Coingeko listing" },
-                { dateLabel: "Ocotber 2022", title: "P2E Game launch" },
-                { dateLabel: "November 2022", title: "Setting up for sustainable passive income",},
-                { dateLabel: "Market Cap 1 million", title: "Watch to Earn development stage 1" },
-                { dateLabel: "January 2023", title: "First set of NFTs" },
+                { dateLabel: "Sept 2022", title: "V2 Presale launch" },
+                { dateLabel: "Sept 2022", title: "New reward Dashboard launch" },
+                { dateLabel: "Oct 2022", title: "Coinmarket cap and Coingeko listing" },
+                { dateLabel: "Oct 2022", title: "P2E Game launch" },
+                { dateLabel: "Nov 2022", title: "Setting up for sustainable passive income",},
+                { dateLabel: "Market Cap 1 M", title: "Watch to Earn development stage 1" },
+                { dateLabel: "Jan 2023", title: "First set of NFTs" },
                 { dateLabel: "Market Cap 5 million ", title: "Watch to Earn development stage 2 " },
                 { dateLabel: "Market Cap 2 million", title: "Charity of a choice giveaway" },
                 { dateLabel: "December 2022", title: "Merchendise shop" },
@@ -68,10 +68,10 @@ export default {
     },
     mounted() {
         var swiper = new Swiper(".swiper-container", {
-            slidesPerView: 4,
+            slidesPerView: 1,
             grabCursor: true,
             navigation: {
-                nextEl: ".next-slide",
+                nextEl: this.$el.querySelector('.next-slide'),
                 prevEl: ".prev-slide",
             },
             pagination: {
@@ -85,9 +85,6 @@ export default {
         });
         swiper.on("slideChange", function (event) {
             event.allowSlideNext = true;
-            if (event.activeIndex == 1) {
-                event.allowSlideNext = false;
-            }
         });
     },
 };
@@ -111,7 +108,7 @@ body {
     transition: all 200ms ease-in;
 }
 .timestamp {
-    width: 200px;
+    width: 300px;
     margin-bottom: 50px;
     padding: 0px 40px;
     display: flex;
@@ -122,7 +119,7 @@ body {
     color: white;
 }
 .status {
-    padding: 0px 40px;
+    padding: 0px 10px;
     display: flex;
     color: #ffffff;
     justify-content: center;
@@ -150,7 +147,6 @@ body {
 .swiper-control {
     text-align: right;
 }
-
 .swiper-container {
     width: 100%;
     height: 250px;
@@ -162,11 +158,5 @@ body {
     width: 200px;
     text-align: center;
     font-size: 18px;
-}
-.swiper-slide:nth-child(2n) {
-    width: 40%;
-}
-.swiper-slide:nth-child(3n) {
-    width: 20%;
 }
 </style>

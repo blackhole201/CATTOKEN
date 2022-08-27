@@ -19,12 +19,13 @@
                             class="text-left"
                             data-aos="fade-up"
                             data-aos-duration="500"
-                            :data-aos-delay="200 + (i * 300)"
+                            :data-aos-delay="200 + i * 300"
                             v-for="(feature, i) in features"
                             :key="i"
                         >
                             <v-hover v-slot:default="{ hover }">
                                 <v-card
+                                    style="cursor: pointer"
                                     class="card-features"
                                     :elevation="hover ? 10 : 4"
                                     :class="{ up: hover }"
@@ -95,15 +96,18 @@ export default {
 <style scoped>
 .card-features {
     padding: 24px;
-    gap: 12px;
+    gap: 8px;
     height: 100%;
     transition: 0.5s ease-out;
-    background: rgba(255, 255, 255, 0.15);
+    background: linear-gradient(
+        0deg,
+        rgba(251, 92, 100, 0.9) 3.27%,
+        rgba(103, 14, 20, 0.9) 100%
+    );
     backdrop-filter: blur(15px);
     color: white !important;
-    border: 1px solid #afafaf;
-    box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.45);
-    border-radius: 20px !important;
+    box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.85);
+    border-radius: 16px !important;
 }
 
 .card-features .v-image {

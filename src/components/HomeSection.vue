@@ -17,27 +17,36 @@
                 <v-col
                     cols="12"
                     lg="6"
-                    md="6"
+                    md="12"
                     sm="6"
-                    xl="8"
+                    xl="6"
                     :z-index="99"
                     :align-self="start"
                 >
                     <h1
                         class="
-                            text-xl-h1
-                            text-lg-h1
-                            text-md-h2
-                            text-sm-h3
-                            text-h2
-                            font-weight-bold
+                            text-xl-h2 text-lg-h2 text-md-h3 text-sm-h4 text-h4
+                            font-weight-medium
                             mb-4
                         "
-                    > <h1 class="font-weight-medium text-sm-h3">
-                          In a land of bears, freezing cold tone, a world seemingly on fire, we all need a little love. 
-                                 <br />
-                        Hold KittyCake Token and earn passive income paid in Cake.
+                    >
+                        In a land of bears, freezing cold tone, a world
+                        seemingly on fire, we all need a little love.
                     </h1>
+                    <h2
+                        class="
+                            text-xl-h4
+                            text-lg-h3
+                            text-md-h4
+                            text-sm-h4
+                            text-h5
+                            font-weight-light
+                            mb-4
+                        "
+                    >
+                        Hold KittyCake Token and earn passive income paid in
+                        Cake.
+                    </h2>
                     <v-btn
                         color="primary"
                         rounded
@@ -56,7 +65,7 @@
                         @click="$vuetify.goTo('#features')"
                         class="mt-5"
                     >
-                        Buy KittyCake 
+                        Buy KittyCake
                     </v-btn>
                 </v-col>
                 <v-col cols="12" md="6" xl="4"> </v-col>
@@ -146,7 +155,7 @@ export default {
                 let distanceToTop = window.scrollY;
 
                 if (distanceToTop < 900) {
-                    imageStyle.top = -(window.scrollY * 3.3) + "px";
+                    imageStyle.top = -(window.scrollY * 3.5) + "px";
                     imageStyle.opacity = 1 - distanceToTop / 400;
                 }
             }
@@ -176,7 +185,7 @@ export default {
 
 <style lang="scss">
 #hero {
-    height: 996px;
+    height: 70rem;
     display: flex;
     color: white;
 }

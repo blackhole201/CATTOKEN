@@ -20,10 +20,10 @@
                     style="margin-top: 80px; width: 1080px; border-radius: 12px"
                 >
                     <v-expansion-panel v-for="(item, i) in faq" :key="i">
-                        <v-expansion-panel-header class="font-weight-bold">
+                        <v-expansion-panel-header class="font-weight-bold text-h5">
                             {{ item.question }}
                         </v-expansion-panel-header>
-                        <v-expansion-panel-content class="primary--text">
+                        <v-expansion-panel-content class="primary--text text-h6">
                             {{ item.answer }}
                         </v-expansion-panel-content>
                     </v-expansion-panel>

@@ -32,13 +32,17 @@
 
 <style>
 #app {
+    background: rgb(7, 6, 20);
     background: linear-gradient(
-        180deg,
-        rgba(68, 0, 155, 0.9) 1.27%,
-        rgba(22, 85, 131, 0.9) 100%
+        5deg,
+        rgb(28, 20, 132) 5%,
+        rgba(16, 25, 60, 1) 35%,
+        rgb(65, 7, 190) 50%,
+        rgba(16, 25, 60, 1) 65%,
+        rgb(25, 17, 130) 95%
     );
     background-blend-mode: multiply;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(55px);
     scroll-behavior: smooth;
 }
 .theme--light.v-expansion-panels
@@ -83,7 +87,8 @@ export default {
             { charset: "utf-8" },
             {
                 name: "description",
-                content: "KittyCake is an advanced hyper-deflationary auto-rewards token on the Binance Smart Chain.",
+                content:
+                    "KittyCake is an advanced hyper-deflationary auto-rewards token on the Binance Smart Chain.",
             },
             {
                 name: "viewport",
