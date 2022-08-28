@@ -1,51 +1,50 @@
 <template>
     <section id="features">
-        <v-container fluid id="features" style="margin: 120px 0">
+        <v-container id="features">
             <h1
                 class="display-3 text-center white--text font-weight-bold"
                 data-aos="fade-up"
                 data-aos-duration="500"
                 data-aos-delay="200"
-                style="margin: 130px 0"
+                style="margin: 150px 0"
             >
                 What do we offer
             </h1>
-            <v-row align="center" justify="center" class="my-8">
-                <v-col cols="10">
-                    <v-row align="stretch" justify="space-around">
-                        <v-col
-                            cols="12"
-                            sm="2"
-                            class="text-left"
-                            data-aos="fade-up"
-                            data-aos-duration="500"
-                            :data-aos-delay="200 + i * 300"
-                            v-for="(feature, i) in features"
-                            :key="i"
+            <v-row align="stretch" justify="center" class="my-8">
+                <v-col
+                    cols="12"
+                    xl="4"
+                    lg="4"
+                    md="4"
+                    sm="6"
+                    class="text-left"
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                    :data-aos-delay="200 + i * 300"
+                    v-for="(feature, i) in features"
+                    :key="i"
+                >
+                    <v-hover v-slot:default="{ hover }">
+                        <v-card
+                            style="cursor: pointer"
+                            class="card-features"
+                            :elevation="hover ? 10 : 4"
+                            :class="{ up: hover }"
                         >
-                            <v-hover v-slot:default="{ hover }">
-                                <v-card
-                                    style="cursor: pointer"
-                                    class="card-features"
-                                    :elevation="hover ? 10 : 4"
-                                    :class="{ up: hover }"
-                                >
-                                    <v-img
-                                        :src="feature.img"
-                                        max-width="70px"
-                                        class="d-block mr-auto"
-                                        :class="{ 'zoom-efect': hover }"
-                                    ></v-img>
-                                    <h1 class="font-weight-bold">
-                                        {{ feature.title }}
-                                    </h1>
-                                    <p class="font-weight-regular subtitle-2">
-                                        {{ feature.text }}
-                                    </p>
-                                </v-card>
-                            </v-hover>
-                        </v-col>
-                    </v-row>
+                            <v-img
+                                :src="feature.img"
+                                max-width="70px"
+                                class="d-block mr-auto"
+                                :class="{ 'zoom-efect': hover }"
+                            ></v-img>
+                            <h1 class="font-weight-bold">
+                                {{ feature.title }}
+                            </h1>
+                            <p class="font-weight-regular subtitle-2">
+                                {{ feature.text }}
+                            </p>
+                        </v-card>
+                    </v-hover>
                 </v-col>
             </v-row>
         </v-container>

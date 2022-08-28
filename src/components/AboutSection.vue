@@ -28,7 +28,7 @@
                             <h1
                                 class="
                                     font-weight-medium
-                                    text-sm-h4 text-h4 text-xl-h3
+                                    text-sm-h3 text-h3 text-xl-h2
                                 "
                             >
                                 <span class="primary--text">KittyCake</span> has
@@ -38,7 +38,7 @@
                             <h1
                                 class="
                                     font-weight-light
-                                    text-sm-h4 text-h6 text-xl-h6
+                                    text-sm-h4 text-h6 text-xl-h5
                                     my-5
                                 "
                             >
