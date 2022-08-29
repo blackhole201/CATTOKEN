@@ -98,11 +98,7 @@ export default {
     gap: 8px;
     height: 100%;
     transition: 0.5s ease-out;
-    background: linear-gradient(
-        0deg,
-        rgba(251, 92, 100, 0.9) 3.27%,
-        rgba(103, 14, 20, 0.9) 100%
-    );
+    background: linear-gradient(0deg, rgba(251, 92, 100, 0.9) 1.27%, rgba(148, 10, 17, 0.9) 100%);
     backdrop-filter: blur(15px);
     color: white !important;
     box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.85);

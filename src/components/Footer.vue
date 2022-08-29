@@ -8,6 +8,11 @@
         >
             <v-row justify="end" align="start">
                 <v-col sm="12" md="6">
+                    <twitter-button
+                        v-bind:isBlank="false"
+                        btnText="Follow us"
+                    />
+                    <telegram-button v-bind:isBlank="false" btnText="Join Us" />
                     <v-card
                         class="card-features"
                         :elevation="hover ? 10 : 4"
@@ -20,29 +25,6 @@
                         >
                             Stay up-to-date on Twitter!
                         </p>
-                        <twitter-button
-                            v-bind:isBlank="false"
-                            btnText="Follow us"
-                        />
-                    </v-card>
-                </v-col>
-                <v-col sm="12" md="6">
-                    <v-card
-                        class="card-features"
-                        :elevation="hover ? 10 : 4"
-                        :class="[{ up: hover }, rightCardAlign]"
-                        :width="`${width}%`"
-                    >
-                        <p
-                            class="font-weight-bold headline"
-                            style="color: #38a1f2"
-                        >
-                            Join our Telegram Community!
-                        </p>
-                        <telegram-button
-                            v-bind:isBlank="false"
-                            btnText="Join Us"
-                        />
                     </v-card>
                 </v-col>
             </v-row>

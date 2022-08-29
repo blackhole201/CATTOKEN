@@ -1,6 +1,6 @@
 <template>
     <section id="features">
-        <v-container fluid id="features" style="margin: 120px 0">
+        <v-container id="features">
             <h1
                 class="display-3 text-center white--text font-weight-bold"
                 data-aos="fade-up"
@@ -11,38 +11,37 @@
                 Teams
             </h1>
             <v-row align="center" justify="center" class="my-8">
-                <v-col cols="10">
-                    <v-row align="stretch" justify="space-around">
-                        <v-col
-                            cols="12"
-                            sm="2"
-                            class="text-left"
-                            data-aos="fade-up"
-                            data-aos-duration="500"
-                            :data-aos-delay="200 + (i * 300)"
-                            v-for="(feature, i) in 5"
-                            :key="i"
+                <v-col
+                    cols="12"
+                    xl="1"
+                    lg="2"
+                    md="2"
+                    sm="2"
+                    class="text-left"
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                    :data-aos-delay="200 + i * 300"
+                    v-for="(feature, i) in 5"
+                    :key="i"
+                >
+                    <v-hover v-slot:default="{ hover }">
+                        <v-card
+                            class="card-features"
+                            :elevation="hover ? 10 : 4"
+                            :class="{ up: hover }"
                         >
-                            <v-hover v-slot:default="{ hover }">
-                                <v-card
-                                    class="card-features"
-                                    :elevation="hover ? 10 : 4"
-                                    :class="{ up: hover }"
-                                >
-                                    <v-img
-                                        src="@/assets/img/icon/icon3.webp"
-                                        max-width="70px"
-                                        class="d-block mr-auto"
-                                        :class="{ 'zoom-efect': hover }"
-                                    ></v-img>
-                                    <h1 class="font-weight-bold">Blackhole</h1>
-                                    <p class="font-weight-regular subtitle-1">
-                                        Main Dev
-                                    </p>
-                                </v-card>
-                            </v-hover>
-                        </v-col>
-                    </v-row>
+                            <v-img
+                                src="@/assets/img/icon/icon3.webp"
+                                max-width="70px"
+                                class="d-block mr-auto"
+                                :class="{ 'zoom-efect': hover }"
+                            ></v-img>
+                            <h1 class="font-weight-bold">Blackhole</h1>
+                            <p class="font-weight-regular subtitle-1">
+                                Main Dev
+                            </p>
+                        </v-card>
+                    </v-hover>
                 </v-col>
             </v-row>
         </v-container>
@@ -93,15 +92,18 @@ export default {
 <style scoped>
 .card-features {
     padding: 24px;
-    gap: 12px;
+    gap: 8px;
     height: 100%;
     transition: 0.5s ease-out;
-    background: rgba(255, 255, 255, 0.15);
+    background: linear-gradient(
+        0deg,
+        rgba(251, 92, 100, 0.9) 1.27%,
+        rgba(148, 10, 17, 0.9) 100%
+    );
     backdrop-filter: blur(15px);
     color: white !important;
-    border: 1px solid #afafaf;
-    box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.45);
-    border-radius: 20px !important;
+    box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.85);
+    border-radius: 16px !important;
 }
 
 .card-features .v-image {

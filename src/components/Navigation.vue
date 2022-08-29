@@ -4,7 +4,7 @@
             <v-list>
                 <v-list-item>
                     <v-list-item-avatar>
-                        <img src="@/assets/img/cat-final-2.webp" alt="Logo" />
+                        <img src="@/assets/img/Logo-kitty.webp" alt="Logo" />
                     </v-list-item-avatar>
                     <v-list-item-content>
                         <v-list-item-title class="title"
@@ -41,11 +41,11 @@
             :flat="flat"
             dark
             absolute
-            class="px-12"
+            class="px-16 py-8"
             :class="{ expand: flat }"
         >
             <v-toolbar-title>
-                <v-img src="@/assets/img/cat-final-2.webp" max-width="50px" />
+                <v-img src="@/assets/img/Logo-kitty.webp" max-width="70px" />
             </v-toolbar-title>
             <v-spacer />
             <v-app-bar-nav-icon
@@ -66,7 +66,7 @@
                 <v-btn text @click="$vuetify.goTo('#buy')">
                     <span class="mr-2">How To Buy</span>
                 </v-btn>
-                <v-btn text @click="$vuetify.goTo('#faq')">
+                <v-btn ref="faq" text @click="goToSection('#faq')">
                     <span class="mr-2">FAQ</span>
                 </v-btn>
                 <v-btn
@@ -93,6 +93,9 @@
 </style>
 
 <script>
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 export default {
     data: () => ({
         drawer: null,

@@ -3,6 +3,7 @@
         <v-parallax
             src="@/assets/img/background/background-2.jpeg"
             height="870"
+            ref="parallax"
             style="width: 100%"
         >
             <!-- <v-row align="center" justify="center">

@@ -1,30 +1,23 @@
 <template>
-    <section id="about">
-        <v-container fluid>
+    <section>
+        <div class="scroll-downs">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+            <div class="text font-weight-thin">SCROLL DOWN</div>
+        </div>
+        <v-container fluid id="about" ref="about">
             <v-row align="center" justify="center">
                 <v-col cols="10">
                     <v-row align="center" justify="center">
-                        <v-col
-                            cols="12"
-                            md="3"
-                            class="d-none d-md-flex"
-                            data-aos="fade-right"
-                            data-aos-duration="500"
-                            data-aos-delay="200"
-                        >
+                        <v-col cols="12" md="3" class="d-none d-md-flex">
                             <v-img
                                 src="@/assets/img/cat-final-2.webp"
                                 class="d-block ml-auto mr-auto"
                                 max-width="400px"
                             />
                         </v-col>
-                        <v-col
-                            cols="12"
-                            md="9"
-                            data-aos="fade-left"
-                            data-aos-duration="500"
-                            data-aos-delay="200"
-                        >
+                        <v-col cols="12" md="9">
                             <h1
                                 class="
                                     font-weight-medium
@@ -76,11 +69,74 @@
     </section>
 </template>
 
+<script>
+export default {
+    mounted() {
+        // window.addEventListener("scroll", () => {
+        // this.$gsap.to(document.querySelector("#about"), {
+        //     duration: 1,
+        //     y: 100,
+        //     opacity: 1,
+        //     ease: "bounce.out",
+        // });
+        // });
+    },
+};
+</script>
+
 <style scoped>
 #about {
     z-index: 9999;
     display: flex;
     align-items: center;
     color: white;
+}
+.scroll-downs {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -300px;
+    margin: auto;
+    width: auto;
+    height: 55px;
+    text-align: center;
+    color: white;
+}
+.text {
+    font-size: 2rem;
+}
+.mousey {
+    margin: auto;
+    width: 3px;
+    margin-bottom: 1rem;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
 }
 </style>

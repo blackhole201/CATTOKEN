@@ -1,5 +1,5 @@
 <template>
-    <v-app id="app">
+    <v-app id="app" data-scrollbar>
         <navigation :color="color" :flat="flat" />
         <v-main class="pt-0">
             <home />
@@ -32,18 +32,20 @@
 
 <style>
 #app {
-    background: rgb(7, 6, 20);
-    background: linear-gradient(
+    background: rgb(44, 45, 48);
+    width: auto;
+    height: auto;
+    /* background: radial-gradient(50% 50% at 50% 50%, #590468 1.27%, rgba(0, 0, 0, 0.9) 100%); */
+    /*background: linear-gradient(
         5deg,
         rgb(28, 20, 132) 5%,
         rgba(16, 25, 60, 1) 35%,
         rgb(65, 7, 190) 50%,
         rgba(16, 25, 60, 1) 65%,
         rgb(25, 17, 130) 95%
-    );
+    );*/
     background-blend-mode: multiply;
     backdrop-filter: blur(55px);
-    scroll-behavior: smooth;
 }
 .theme--light.v-expansion-panels
     .v-expansion-panel-header
@@ -63,7 +65,9 @@ import partners from "./components/PartnersSection";
 import buy from "./components/BuySection";
 import team from "./components/TeamSection";
 import faq from "./components/FAQSection";
-import ProductRoadmap from "./components/ProductRoadmap.vue";
+import ProductRoadmap from "./components/Roadmap.vue";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default {
     name: "App",
@@ -132,6 +136,32 @@ export default {
         toTop() {
             this.$vuetify.goTo(0);
         },
+    },
+
+    mounted() {
+        let scrollbar = this.$scrollbar.initAll({
+            alwaysShowTracks: true,
+            damping: 0.08,
+        });
+
+        this.$gsap.utils.toArray("#partners").forEach((elem) => {
+            ScrollTrigger.create({
+                trigger: elem,
+                start: "top 30%",
+                end: "bottom 30%",
+                onLeave: (self) => {
+                    this.$gsap.to("#faq", {
+                        backgroundColor: "#000",
+                        duration: 1.4,
+                    });
+                },
+                onToggle: (self) =>
+                    this.$gsap.to("#partners", {
+                        backgroundColor: "#fff",
+                        duration: 1.4,
+                    }),
+            });
+        });
     },
 };
 </script>
