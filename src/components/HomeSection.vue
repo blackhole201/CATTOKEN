@@ -282,8 +282,19 @@ export default {
 }
 </style>
 
-<style>
+<style lang="scss">
 section {
     position: relative;
+}
+@media only screen and (max-width: 992px) {
+    .parallax img {
+        max-height: 130%; /* or a little bit higher */
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .parallax img {
+        max-height: 170%; /* or higher percentages. It's up to your taste */
+    }
 }
 </style>

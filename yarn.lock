@@ -8214,7 +8214,7 @@
   "resolved" "https://registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz"
   "version" "4.2.0"
 
-"smooth-scrollbar@^8.7.5":
+"smooth-scrollbar@^8.6.3", "smooth-scrollbar@^8.7.5":
   "integrity" "sha512-eH3SdXfZQLscgAl5dRZ+L24ALffXkPLuB9us03Kaf/kJO0JfYtsZ398WD36139Sv4GYIQQHgzYPCkQpeV0tJAQ=="
   "resolved" "https://registry.npmjs.org/smooth-scrollbar/-/smooth-scrollbar-8.7.5.tgz"
   "version" "8.7.5"
@@ -9263,6 +9263,13 @@
     "node-sass" "^6.0.1"
     "sass-loader" "^10.1.1"
     "vue" "^2.6.14"
+
+"vue-smooth-scrollbar@^1.0.3":
+  "integrity" "sha512-X+rZjyXM9RhfJszZSbz0amRUDVKVxs/u5KZCbakx/q22MW977J4pBvwy/12W6qVkvyL0c5c4uiV6i2yoX59ZQQ=="
+  "resolved" "https://registry.npmjs.org/vue-smooth-scrollbar/-/vue-smooth-scrollbar-1.0.3.tgz"
+  "version" "1.0.3"
+  dependencies:
+    "smooth-scrollbar" "^8.6.3"
 
 "vue-style-loader@^4.1.0", "vue-style-loader@^4.1.2":
   "integrity" "sha512-sFuh0xfbtpRlKfm39ss/ikqs9AbKCoXZBpHeVZ8Tx650o0k0q/YCM7FRvigtxpACezfq6af+a7JeqVTWvncqDg=="

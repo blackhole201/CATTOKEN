@@ -1,31 +1,16 @@
 <template>
-    <v-footer dark>
-        <v-container
-            class="my-8"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-delay="200"
-        >
-            <v-row justify="end" align="start">
-                <v-col sm="12" md="6">
+    <v-footer dark id="footer">
+        <v-container>
+            <v-row justify="center" align="center">
+                <v-col sm="12" md="12">
                     <twitter-button
                         v-bind:isBlank="false"
-                        btnText="Follow us"
+                        btnText="Follow us on Twitter"
                     />
-                    <telegram-button v-bind:isBlank="false" btnText="Join Us" />
-                    <v-card
-                        class="card-features"
-                        :elevation="hover ? 10 : 4"
-                        :class="[{ up: hover }, leftCardAlign]"
-                        :width="`${width}%`"
-                    >
-                        <p
-                            class="font-weight-bold headline"
-                            style="color: #39a9da"
-                        >
-                            Stay up-to-date on Twitter!
-                        </p>
-                    </v-card>
+                    <telegram-button
+                        v-bind:isBlank="false"
+                        btnText="Join Us on Telegram"
+                    />
                 </v-col>
             </v-row>
         </v-container>

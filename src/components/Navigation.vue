@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-navigation-drawer v-model="drawer" app temporary dark>
+        <v-navigation-drawer v-model="drawer" app temporary>
             <v-list>
                 <v-list-item>
                     <v-list-item-avatar>
@@ -41,7 +41,7 @@
             :flat="flat"
             dark
             absolute
-            class="px-16 py-8"
+            class="px-md-16 py-8"
             :class="{ expand: flat }"
         >
             <v-toolbar-title>

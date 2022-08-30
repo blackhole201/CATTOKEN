@@ -1,5 +1,5 @@
 <template>
-    <v-container id="roadmap" >
+    <v-container id="roadmap">
         <h1
             class="display-3 text-center white--text font-weight-bold"
             style="margin: 90px 0"
@@ -66,7 +66,7 @@ export default {
             {
                 title: "Market Cap 10M",
                 content: "big bonus to loyal holders",
-            }
+            },
         ];
 
         return { items };
@@ -79,5 +79,49 @@ export default {
     background: transparent !important;
     box-shadow: unset !important;
     padding: auto;
+
+    .timeline {
+        ol {
+            li {
+                &:nth-of-type(odd) {
+                    .time {
+                        color: white !important;
+                        border-top-left-radius: 16px;
+                        border-top-right-radius: 16px;
+                        background: linear-gradient(
+                            0deg,
+                            rgba(251, 92, 100, 0.9) 1.27%,
+                            rgba(148, 10, 17, 0.9) 100%
+                        ) !important;
+                        backdrop-filter: blur(15px) !important;
+
+                        &::before {
+                            border-color: rgba(251, 92, 100, 0.9) transparent
+                                transparent transparent !important;
+                        }
+                    }
+                }
+
+                &:nth-of-type(even) {
+                    .time {
+                        color: white !important;
+                        border-bottom-left-radius: 16px;
+                        border-top-right-radius: 16px;
+                        background: linear-gradient(
+                            0deg,
+                            rgba(251, 92, 100, 0.9) 1.27%,
+                            rgba(148, 10, 17, 0.9) 100%
+                        ) !important;
+                        backdrop-filter: blur(15px) !important;
+
+                        &::before {
+                            border-color: transparent transparent transparent
+                                rgba(148, 10, 17, 0.9) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 </style>

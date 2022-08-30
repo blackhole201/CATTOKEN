@@ -13,13 +13,14 @@
                         <v-col cols="12" md="3" class="d-none d-md-flex">
                             <v-img
                                 src="@/assets/img/cat-final-2.webp"
-                                class="d-block ml-auto mr-auto"
+                                class="d-block ml-auto mr-auto kitty"
                                 max-width="400px"
                             />
                         </v-col>
                         <v-col cols="12" md="9">
                             <h1
                                 class="
+                                    heading
                                     font-weight-medium
                                     text-sm-h3 text-h3 text-xl-h2
                                 "
@@ -30,6 +31,7 @@
                             </h1>
                             <h1
                                 class="
+                                    content
                                     font-weight-light
                                     text-sm-h4 text-h6 text-xl-h5
                                     my-5
@@ -72,14 +74,45 @@
 <script>
 export default {
     mounted() {
-        // window.addEventListener("scroll", () => {
-        // this.$gsap.to(document.querySelector("#about"), {
+        // this.$gsap.from(".content", {
         //     duration: 1,
-        //     y: 100,
-        //     opacity: 1,
-        //     ease: "bounce.out",
+        //     x: 200,
+        //     scrollTrigger: {
+        //         trigger: "#about",
+        //         start: "40% bottom",
+        //     },
         // });
-        // });
+        this.$gsap.fromTo(
+            ".heading",
+            { yPercent: -50, scale: 0.5 },
+            {
+                opacity: 1,
+                yPercent: 0,
+                scale: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: "#about",
+                    start: "10% center",
+                    end: "20% center",
+                    scrub: true,
+                },
+            }
+        );
+        this.$gsap.fromTo(
+            ".content",
+            { yPercent: -50, scale: 0.5 },
+            {
+                opacity: 1,
+                yPercent: 0,
+                scale: 1,
+                scrollTrigger: {
+                    trigger: "#about",
+                    start: "30% center",
+                    end: "40% center",
+                    scrub: true,
+                },
+            }
+        );
     },
 };
 </script>

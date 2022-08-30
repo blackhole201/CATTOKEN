@@ -1,7 +1,7 @@
 <template>
-    <v-app id="app" data-scrollbar>
+    <v-app id="app">
         <navigation :color="color" :flat="flat" />
-        <v-main class="pt-0">
+        <v-main id="scrollbar" class="pt-0">
             <home />
             <about />
             <features />
@@ -66,7 +66,7 @@ import buy from "./components/BuySection";
 import team from "./components/TeamSection";
 import faq from "./components/FAQSection";
 import ProductRoadmap from "./components/Roadmap.vue";
-
+import Scrollbar from "smooth-scrollbar";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default {
@@ -138,12 +138,14 @@ export default {
         },
     },
 
-    mounted() {
-        let scrollbar = this.$scrollbar.initAll({
-            alwaysShowTracks: true,
-            damping: 0.08,
+    created() {
+        let scrollbar = Scrollbar.init(document.querySelector("#app"), {
+            damping: 0.01,
+            alwaysShowTracks: false,
         });
+    },
 
+    mounted() {
         this.$gsap.utils.toArray("#partners").forEach((elem) => {
             ScrollTrigger.create({
                 trigger: elem,
