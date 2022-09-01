@@ -20,25 +20,18 @@
                 </v-btn>
             </template>
         </v-snackbar>
-        <v-container>
+        <v-container class="buy">
             <h1
-                class="display-3 text-left white--text font-weight-bold"
-                data-aos="fade-down"
-                data-aos-duration="500"
-                data-aos-delay="200"
+                class="display-3 text-left white--text font-weight-bold h1"
                 style="margin-bottom: 130px"
             >
-                Get Ready to trade after Preslae is <span class="primary--text">finished.</span>
+                Get Ready to trade after Preslae is
+                <span class="primary--text">finished.</span>
             </h1>
 
             <v-row>
                 <v-col class="white--text gap-8">
-                    <div
-                        class="step-1"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        data-aos-delay="200"
-                    >
+                    <div class="step-1">
                         <h1 class="text-h5">Step 1</h1>
                         <h2 class="primary--text text-h5">
                             Download and setup MetaMask or TrustWallet
@@ -151,6 +144,9 @@ export default {
             this.snackbar = true;
         },
     },
+    mounted() {
+
+    },
 };
 </script>
 
@@ -158,6 +154,10 @@ export default {
 #buy {
     padding: 120px 0;
     box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.05);
+}
+.buy {
+    height: 100vh;
+    width: 100%;
 }
 .step-1,
 .step-2,

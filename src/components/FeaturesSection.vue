@@ -1,12 +1,15 @@
 <template>
     <section id="features">
-        <v-container id="features">
+        <img
+            src="@/assets/img/sun.png"
+            alt="Sun Image"
+            height="200"
+            class="sun"
+        />
+        <v-container>
             <h1
                 class="display-3 text-center white--text font-weight-bold"
-                data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="200"
-                style="margin: 150px 0"
+                style="margin-top: 7rem"
             >
                 What do we offer
             </h1>
@@ -89,24 +92,39 @@ export default {
             ],
         };
     },
+    mounted() {
+        this.$gsap.to(".sun", {
+            x: -700,
+            y: 100,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#about",
+                start: "90% bottom",
+            },
+        });
+    },
 };
 </script>
 
 <style scoped>
+#features {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url("../assets/img/background/feature-background.png");
+    width: 100%;
+    z-index: 9999;
+}
 .card-features {
     padding: 24px;
     gap: 8px;
     height: 100%;
     transition: 0.5s ease-out;
-    background: linear-gradient(
-        0deg,
-        rgba(251, 92, 100, 0.9) 1.27%,
-        rgba(148, 10, 17, 0.9) 100%
-    );
-    backdrop-filter: blur(15px);
+    background: transparent;
+    backdrop-filter: blur(20px);
     color: white !important;
     box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.85);
-    border-radius: 16px !important;
+    border-radius: 12px !important;
+    border: 3px solid #92E7FF;
 }
 
 .card-features .v-image {
@@ -125,5 +143,11 @@ export default {
 .up {
     transform: translateY(-20px);
     transition: 0.5s ease-out;
+}
+.sun {
+    position: absolute;
+    right: -500px;
+    top: 0;
+    z-index: -1;
 }
 </style>

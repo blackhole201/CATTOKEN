@@ -86,6 +86,25 @@
 <script>
 export default {
     mounted() {
+        this.$gsap.to(".scroll-downs", {
+            duration: 0.5,
+            y: -100,
+            scrollTrigger: {
+                trigger: "#about",
+                start: "10% bottom",
+            },
+            onComplete: () => {
+                this.$gsap.to(".scroll-downs", {
+                    duration: 0.5,
+                    y: 1200,
+                    scrollTrigger: {
+                        trigger: "#about",
+                        start: "10% bottom",
+                    },
+                    opacity: 0,
+                });
+            },
+        });
         this.$gsap.to(".planet-1", {
             x: 700,
             y: 500,
@@ -107,16 +126,6 @@ export default {
                 trigger: "#about",
                 start: "10% bottom",
             },
-            onComplete: () => {
-                this.$gsap.fromTo(".planet-2", {
-                    scrollTrigger: {
-                        trigger: "#about",
-                        scrub: true,
-                    },
-                    y: 30,
-                    ease: "none",
-                });
-            },
         });
         this.$gsap.to(".planet-3", {
             x: -900,
@@ -125,17 +134,7 @@ export default {
             scale: 0.5,
             scrollTrigger: {
                 trigger: "#about",
-                start: "10% bottom",
-            },
-            onComplete: () => {
-                this.$gsap.fromTo(".planet-2", {
-                    scrollTrigger: {
-                        trigger: "#about",
-                        scrub: true,
-                    },
-                    y: 30,
-                    ease: "none",
-                });
+                start: "90% bottom",
             },
         });
         this.$gsap.to(".planet-4", {
@@ -145,36 +144,9 @@ export default {
             scale: 0.8,
             scrollTrigger: {
                 trigger: "#about",
-                start: "10% bottom",
-            },
-            onComplete: () => {
-                this.$gsap.fromTo(".planet-2", {
-                    scrollTrigger: {
-                        trigger: "#about",
-                        scrub: true,
-                    },
-                    y: 30,
-                    ease: "none",
-                });
-            },
+                start: "90% bottom",
+            }
         });
-
-        // let offsetHeightAbout = document.querySelector('#about').offsetHeight - document.querySelector('#about-content').offsetHeight
-
-        // console.log(offsetHeightAbout)
-
-        // this.$gsap.fromTo(".heading", {
-        //     // y: () =>
-        //  }, {
-        //     scrollTrigger: {
-        //         markers: true,
-        //         trigger: "#about",
-        //         start: "top top",
-        //         end: "+=500",
-        //     },
-        //     y: offsetHeightAbout,
-        //     opacity: 1,
-        // });
 
         this.$gsap.utils
             .toArray("#about #about-content")

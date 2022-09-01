@@ -4,6 +4,7 @@
             src="@/assets/img/background/background1.jpeg"
             height="870"
             ref="parallax"
+            id="parallax"
             style="width: 100%"
         >
             <img
@@ -157,13 +158,18 @@ export default {
         },
     },
     mounted() {
+        this.$gsap.to("#parallax", {
+            scrollTrigger: {
+                tigger: "#parallax",
+                start: "30% top",
+            },
+            backgroundColor: "red",
+        });
         window.addEventListener("scroll", this.positionScroll);
 
         this.$gsap.utils.toArray(".kitty-image").forEach((section, i) => {
             const heightDiff =
                 section.offsetHeight - section.parentElement.offsetHeight;
-
-                console.log(section.parentElement)
 
             this.$gsap.fromTo(
                 section,
@@ -176,8 +182,8 @@ export default {
                         scrub: true,
                     },
                     y:
-                        section.parentElement.offsetHeight -
-                        section.offsetHeight,
+                        (section.parentElement.offsetHeight -
+                        section.offsetHeight),
                     ease: "none",
                 }
             );
@@ -195,7 +201,6 @@ export default {
             if (!this.$vuetify.breakpoint.mdAndDown) {
                 // let imageStyle = this.$refs.bigCatImage.$el.style;
                 // let distanceToTop = window.scrollY;
-
                 // if (distanceToTop < 900) {
                 //     imageStyle.top = -(window.scrollY * 3.5) + "px";
                 //     imageStyle.opacity = 1 - distanceToTop / 400;
