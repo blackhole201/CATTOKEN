@@ -37,8 +37,8 @@
 
         <v-app-bar
             app
-            :color="color"
-            :flat="flat"
+            color="transparent"
+            :flat="true"
             dark
             absolute
             class="px-md-16 py-8"

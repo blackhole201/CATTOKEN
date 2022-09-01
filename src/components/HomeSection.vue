@@ -1,11 +1,18 @@
 <template>
     <section id="hero">
         <v-parallax
-            src="@/assets/img/background/background-2.jpeg"
+            src="@/assets/img/background/background1.jpeg"
             height="870"
             ref="parallax"
             style="width: 100%"
         >
+            <img
+                src="@/assets/img/Logo-kitty1122.webp"
+                width="600"
+                height="600"
+                class="kitty-image"
+                alt=""
+            />
             <!-- <v-row align="center" justify="center">
                 <v-col cols="10">
                     <v-img
@@ -151,6 +158,30 @@ export default {
     },
     mounted() {
         window.addEventListener("scroll", this.positionScroll);
+
+        this.$gsap.utils.toArray(".kitty-image").forEach((section, i) => {
+            const heightDiff =
+                section.offsetHeight - section.parentElement.offsetHeight;
+
+                console.log(section.parentElement)
+
+            this.$gsap.fromTo(
+                section,
+                {
+                    // y: () => -section.offsetHeight,
+                },
+                {
+                    scrollTrigger: {
+                        trigger: section.parentElement,
+                        scrub: true,
+                    },
+                    y:
+                        section.parentElement.offsetHeight -
+                        section.offsetHeight,
+                    ease: "none",
+                }
+            );
+        });
     },
     watch: {
         dialog(value) {
@@ -162,13 +193,13 @@ export default {
     methods: {
         positionScroll() {
             if (!this.$vuetify.breakpoint.mdAndDown) {
-                let imageStyle = this.$refs.bigCatImage.$el.style;
-                let distanceToTop = window.scrollY;
+                // let imageStyle = this.$refs.bigCatImage.$el.style;
+                // let distanceToTop = window.scrollY;
 
-                if (distanceToTop < 900) {
-                    imageStyle.top = -(window.scrollY * 3.5) + "px";
-                    imageStyle.opacity = 1 - distanceToTop / 400;
-                }
+                // if (distanceToTop < 900) {
+                //     imageStyle.top = -(window.scrollY * 3.5) + "px";
+                //     imageStyle.opacity = 1 - distanceToTop / 400;
+                // }
             }
         },
         ready(event) {
@@ -196,7 +227,7 @@ export default {
 
 <style lang="scss">
 #hero {
-    height: 70rem;
+    height: 54.375rem;
     display: flex;
     color: white;
 }
@@ -206,6 +237,10 @@ export default {
     stroke-dashoffset: 650;
     -webkit-transition: all 0.5s ease-in-out;
     opacity: 0.3;
+}
+.kitty-image {
+    position: absolute;
+    right: 0;
 }
 
 .playBut {

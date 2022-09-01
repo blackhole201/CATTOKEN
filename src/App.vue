@@ -1,6 +1,7 @@
 <template>
     <v-app id="app">
         <navigation :color="color" :flat="flat" />
+        <img src="@/assets/img/moon.png" alt="Moon" class="moon" />
         <v-main id="scrollbar" class="pt-0">
             <home />
             <about />
@@ -52,6 +53,13 @@
     .v-expansion-panel-header__icon
     .v-icon {
     color: white;
+}
+.moon {
+    position: absolute;
+    right: 5px;
+    width: 180px;
+    height: 180px;
+    z-index: 99;
 }
 </style>
 
@@ -146,24 +154,64 @@ export default {
     },
 
     mounted() {
-        this.$gsap.utils.toArray("#partners").forEach((elem) => {
-            ScrollTrigger.create({
-                trigger: elem,
-                start: "top 30%",
-                end: "bottom 30%",
-                onLeave: (self) => {
-                    this.$gsap.to("#faq", {
-                        backgroundColor: "#000",
-                        duration: 1.4,
-                    });
-                },
-                onToggle: (self) =>
-                    this.$gsap.to("#partners", {
-                        backgroundColor: "#fff",
-                        duration: 1.4,
-                    }),
-            });
+        this.$gsap.to(".moon", {
+            rotation: 360,
+            transformOrigin: "center",
+            ease: "none",
+            duration: 10,
+            repeat: -1,
         });
+
+        this.$gsap.utils.toArray(".moon").forEach((section, i) => {
+            const heightDiff =
+                section.offsetHeight - section.parentElement.offsetHeight;
+
+            this.$gsap.fromTo(
+                section,
+                {
+                    y: () => -section.offsetHeight,
+                },
+                {
+                    scrollTrigger: {
+                        trigger: section.parentElement,
+                        scrub: true,
+                    },
+                    y:
+                        section.parentElement.offsetHeight -
+                        section.offsetHeight,
+                    ease: "none",
+                }
+            );
+        });
+        // this.$gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: "#about",
+        //         endTrigger: "#features",
+        //         start: "top bottom",
+        //         end: "bottom bottom",
+        //         scrub: true,
+        //         pin: true,
+        //         markers: true,
+        //     },
+        // });
+        // this.$gsap.utils.toArray("#partners").forEach((elem) => {
+        //     ScrollTrigger.create({
+        //         trigger: elem,
+        //         start: "top 30%",
+        //         end: "bottom 30%",
+        //         onLeave: (self) => {
+        //             this.$gsap.to("#faq", {
+        //                 backgroundColor: "#000",
+        //                 duration: 1.4,
+        //             });
+        //         },
+        //         onToggle: (self) =>
+        //             this.$gsap.to("#partners", {
+        //                 backgroundColor: "#fff",
+        //                 duration: 1.4,
+        //             }),
+        //     });
+        // });
     },
 };
 </script>

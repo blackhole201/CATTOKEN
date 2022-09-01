@@ -1,70 +1,82 @@
 <template>
-    <section>
+    <section id="about">
         <div class="scroll-downs">
             <div class="mousey">
                 <div class="scroller"></div>
             </div>
             <div class="text font-weight-thin">SCROLL DOWN</div>
         </div>
-        <v-container fluid id="about" ref="about">
+        <img
+            src="@/assets/img/planet1.png"
+            alt="Planet-1"
+            height="300"
+            class="planet-1"
+        />
+        <img
+            src="@/assets/img/planet2.png"
+            alt="Planet-2"
+            height="300"
+            class="planet-2"
+        />
+        <img
+            src="@/assets/img/planet3.png"
+            alt="Planet-3"
+            height="300"
+            class="planet-3"
+        />
+        <img
+            src="@/assets/img/planet4.png"
+            alt="Planet-4"
+            height="300"
+            class="planet-4"
+        />
+        <v-container id="about-content">
             <v-row align="center" justify="center">
-                <v-col cols="10">
-                    <v-row align="center" justify="center">
-                        <v-col cols="12" md="3" class="d-none d-md-flex">
-                            <v-img
-                                src="@/assets/img/cat-final-2.webp"
-                                class="d-block ml-auto mr-auto kitty"
-                                max-width="400px"
-                            />
-                        </v-col>
-                        <v-col cols="12" md="9">
-                            <h1
-                                class="
-                                    heading
-                                    font-weight-medium
-                                    text-sm-h3 text-h3 text-xl-h2
-                                "
-                            >
-                                <span class="primary--text">KittyCake</span> has
-                                been one of the most joy filled community crypto
-                                has ever seen.
-                            </h1>
-                            <h1
-                                class="
-                                    content
-                                    font-weight-light
-                                    text-sm-h4 text-h6 text-xl-h5
-                                    my-5
-                                "
-                            >
-                                KittyCake was taken over voluntarily by some die
-                                hards who just wanted to see what could be done
-                                of all of us "nobodies" put our minds to it.
+                <v-col cols="12">
+                    <h1
+                        class="
+                            heading
+                            font-weight-medium
+                            text-sm-h3 text-h3 text-xl-h2
+                        "
+                    >
+                        <span class="primary--text">KittyCake</span> has been
+                        one of the most joy filled community crypto has ever
+                        seen.
+                    </h1>
+                    <h1
+                        class="
+                            content
+                            font-weight-light
+                            text-sm-h4 text-h6 text-xl-h5
+                            my-5
+                        "
+                    >
+                        KittyCake was taken over voluntarily by some die hards
+                        who just wanted to see what could be done of all of us
+                        "nobodies" put our minds to it.
 
-                                <br />
-                                Well, here we are, a full bull cycle and well
-                                into a bear cycle and we are still here! Still
-                                building, still dreaming and still working to
-                                sustain our beloved KittyCake into its second
-                                set of 9 lives.
+                        <br />
+                        Well, here we are, a full bull cycle and well into a
+                        bear cycle and we are still here! Still building, still
+                        dreaming and still working to sustain our beloved
+                        KittyCake into its second set of 9 lives.
 
-                                <br />
-                                We aren't ever leaving and we aren't ever going
-                                anywhere. This new realm of KittyCake will TRULY
-                                let the cat out of the bag.
-                            </h1>
-                            <v-btn
-                                color="primary"
-                                x-large
-                                outlined
-                                rounded
-                                style="background-color: white"
-                                class="mt-5"
-                                >Read Our Whitepaper
-                                <v-icon color="primary">mdi-arrow-right</v-icon>
-                            </v-btn>
-                        </v-col>
-                    </v-row>
+                        <br />
+                        We aren't ever leaving and we aren't ever going
+                        anywhere. This new realm of KittyCake will TRULY let the
+                        cat out of the bag.
+                    </h1>
+                    <v-btn
+                        color="primary"
+                        x-large
+                        outlined
+                        rounded
+                        style="background-color: white"
+                        class="mt-5"
+                        >Read Our Whitepaper
+                        <v-icon color="primary">mdi-arrow-right</v-icon>
+                    </v-btn>
                 </v-col>
             </v-row>
         </v-container>
@@ -74,45 +86,121 @@
 <script>
 export default {
     mounted() {
-        // this.$gsap.from(".content", {
-        //     duration: 1,
-        //     x: 200,
+        this.$gsap.to(".planet-1", {
+            x: 700,
+            y: 500,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#about",
+                start: "10% bottom",
+            },
+            onComplete: () => {
+                console.log("on complete");
+            },
+        });
+        this.$gsap.to(".planet-2", {
+            x: 1100,
+            y: 200,
+            duration: 2,
+            scale: 0.3,
+            scrollTrigger: {
+                trigger: "#about",
+                start: "10% bottom",
+            },
+            onComplete: () => {
+                this.$gsap.fromTo(".planet-2", {
+                    scrollTrigger: {
+                        trigger: "#about",
+                        scrub: true,
+                    },
+                    y: 30,
+                    ease: "none",
+                });
+            },
+        });
+        this.$gsap.to(".planet-3", {
+            x: -900,
+            y: 1000,
+            duration: 1.5,
+            scale: 0.5,
+            scrollTrigger: {
+                trigger: "#about",
+                start: "10% bottom",
+            },
+            onComplete: () => {
+                this.$gsap.fromTo(".planet-2", {
+                    scrollTrigger: {
+                        trigger: "#about",
+                        scrub: true,
+                    },
+                    y: 30,
+                    ease: "none",
+                });
+            },
+        });
+        this.$gsap.to(".planet-4", {
+            x: -1000,
+            y: 850,
+            duration: 1.5,
+            scale: 0.8,
+            scrollTrigger: {
+                trigger: "#about",
+                start: "10% bottom",
+            },
+            onComplete: () => {
+                this.$gsap.fromTo(".planet-2", {
+                    scrollTrigger: {
+                        trigger: "#about",
+                        scrub: true,
+                    },
+                    y: 30,
+                    ease: "none",
+                });
+            },
+        });
+
+        // let offsetHeightAbout = document.querySelector('#about').offsetHeight - document.querySelector('#about-content').offsetHeight
+
+        // console.log(offsetHeightAbout)
+
+        // this.$gsap.fromTo(".heading", {
+        //     // y: () =>
+        //  }, {
         //     scrollTrigger: {
+        //         markers: true,
         //         trigger: "#about",
-        //         start: "40% bottom",
+        //         start: "top top",
+        //         end: "+=500",
         //     },
+        //     y: offsetHeightAbout,
+        //     opacity: 1,
         // });
-        this.$gsap.fromTo(
-            ".heading",
-            { yPercent: -50, scale: 0.5 },
-            {
-                opacity: 1,
-                yPercent: 0,
-                scale: 1,
-                duration: 1,
-                scrollTrigger: {
-                    trigger: "#about",
-                    start: "10% center",
-                    end: "20% center",
-                    scrub: true,
-                },
-            }
-        );
-        this.$gsap.fromTo(
-            ".content",
-            { yPercent: -50, scale: 0.5 },
-            {
-                opacity: 1,
-                yPercent: 0,
-                scale: 1,
-                scrollTrigger: {
-                    trigger: "#about",
-                    start: "30% center",
-                    end: "40% center",
-                    scrub: true,
-                },
-            }
-        );
+
+        this.$gsap.utils
+            .toArray("#about #about-content")
+            .forEach((section, i) => {
+                const heightDiff =
+                    section.offsetHeight - section.parentElement.offsetHeight;
+
+                this.$gsap.fromTo(
+                    section,
+                    {
+                        y: section.offsetHeight,
+                    },
+                    {
+                        scrollTrigger: {
+                            trigger: section.parentElement,
+                            scrub: true,
+                            start: "top top",
+                            end: "bottom bottom",
+                        },
+                        y:
+                            section.parentElement.offsetHeight -
+                            section.offsetHeight,
+                        ease: "none",
+                    }
+                );
+            });
     },
 };
 </script>
@@ -123,12 +211,39 @@ export default {
     display: flex;
     align-items: center;
     color: white;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 80rem;
+    padding-top: 5rem;
+    background: url("../assets/img/background/about.png");
+}
+.planet-1 {
+    position: absolute;
+    left: -500px;
+    top: 0;
+}
+
+.planet-2 {
+    position: absolute;
+    left: -500px;
+    top: 0;
+}
+
+.planet-3 {
+    position: absolute;
+    right: -500px;
+    top: 0;
+}
+.planet-4 {
+    position: absolute;
+    right: -500px;
+    top: 0;
 }
 .scroll-downs {
     position: absolute;
     right: 0;
     left: 0;
-    top: -300px;
+    top: -50px;
     margin: auto;
     width: auto;
     height: 55px;
