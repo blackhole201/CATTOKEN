@@ -27,8 +27,6 @@
                     <v-hover v-slot:default="{ hover }">
                         <v-card
                             class="card-features"
-                            :elevation="hover ? 10 : 4"
-                            :class="{ up: hover }"
                         >
                             <v-img
                                 src="@/assets/img/icon/icon3.webp"
@@ -95,15 +93,11 @@ export default {
     gap: 8px;
     height: 100%;
     transition: 0.5s ease-out;
-    background: linear-gradient(
-        0deg,
-        rgba(251, 92, 100, 0.9) 1.27%,
-        rgba(148, 10, 17, 0.9) 100%
-    );
-    backdrop-filter: blur(15px);
+    background: transparent;
+    backdrop-filter: blur(20px);
     color: white !important;
     box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.85);
-    border-radius: 16px !important;
+    border: 3px solid #92e7ff;
 }
 
 .card-features .v-image {

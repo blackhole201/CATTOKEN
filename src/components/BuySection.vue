@@ -25,7 +25,7 @@
                 class="display-3 text-left white--text font-weight-bold h1"
                 style="margin-bottom: 130px"
             >
-                Get Ready to trade after Preslae is
+                Get Ready to trade after Presale is
                 <span class="primary--text">finished.</span>
             </h1>
 
@@ -144,9 +144,7 @@ export default {
             this.snackbar = true;
         },
     },
-    mounted() {
-
-    },
+    mounted() {},
 };
 </script>
 
@@ -154,6 +152,7 @@ export default {
 #buy {
     padding: 120px 0;
     box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.05);
+    background-blend-mode: darken;
 }
 .buy {
     height: 100vh;

@@ -6,9 +6,21 @@
             height="200"
             class="sun"
         />
-        <v-container>
+        <img
+            src="@/assets/img/background/feature-background.png"
+            alt="Sun Image"
+            height="200"
+            class="background"
+        />
+        <v-container class="features">
             <h1
-                class="display-3 text-center white--text font-weight-bold"
+                class="
+                    display-3
+                    text-center
+                    white--text
+                    font-weight-bold
+                    feature-title
+                "
                 style="margin-top: 7rem"
             >
                 What do we offer
@@ -20,20 +32,12 @@
                     lg="4"
                     md="4"
                     sm="6"
-                    class="text-left"
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    :data-aos-delay="200 + i * 300"
+                    class="text-left card"
                     v-for="(feature, i) in features"
                     :key="i"
                 >
                     <v-hover v-slot:default="{ hover }">
-                        <v-card
-                            style="cursor: pointer"
-                            class="card-features"
-                            :elevation="hover ? 10 : 4"
-                            :class="{ up: hover }"
-                        >
+                        <v-card style="cursor: pointer" class="card-features">
                             <v-img
                                 :src="feature.img"
                                 max-width="70px"
@@ -55,6 +59,7 @@
 </template>
 
 <script>
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
     data() {
         return {
@@ -93,26 +98,54 @@ export default {
         };
     },
     mounted() {
-        this.$gsap.to(".sun", {
-            x: -700,
-            y: 100,
-            duration: 1,
-            scrollTrigger: {
-                trigger: "#about",
-                start: "90% bottom",
-            },
-        });
+        // ScrollTrigger.create({
+        //     trigger: "#features",
+        //     start: "top top",
+        //     end: "bottom top",
+        //     pin: "#features .background",
+        //     scrub: true,
+        //     markers: false,
+        // });
+        // this.$gsap.fromTo(
+        //     ".card-features",
+        //     {
+        //         y: document.getElementsByClassName("card-features")
+        //             .offsetHeight,
+        //     },
+        //     {
+        //         scrollTrigger: {
+        //             trigger: ".features",
+        //             scrub: true,
+        //             start: "top top",
+        //             end: "bottom bottom",
+        //         },
+        //         y:
+        //             document.getElementsByClassName("features").offsetHeight -
+        //             document.getElementsByClassName("card-features")
+        //                 .offsetHeight,
+        //         ease: "none",
+        //     }
+        // );
+
+        // this.$gsap.to(".sun", {
+        //     x: -700,
+        //     y: 100,
+        //     duration: 1,
+        //     scrollTrigger: {
+        //         trigger: "#about",
+        //         start: "90% bottom",
+        //     },
+        // });
     },
 };
 </script>
 
 <style scoped>
-#features {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: url("../assets/img/background/feature-background.png");
+.background {
+    position: absolute;
     width: 100%;
-    z-index: 9999;
+    height: 100%;
+    object-fit: cover;
 }
 .card-features {
     padding: 24px;
@@ -123,8 +156,7 @@ export default {
     backdrop-filter: blur(20px);
     color: white !important;
     box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.85);
-    border-radius: 12px !important;
-    border: 3px solid #92E7FF;
+    border: 3px solid #92e7ff;
 }
 
 .card-features .v-image {

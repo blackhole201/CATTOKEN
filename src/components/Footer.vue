@@ -2,7 +2,7 @@
     <v-footer dark id="footer">
         <v-container>
             <v-row justify="center" align="center">
-                <v-col sm="12" md="12">
+                <v-col sm="12" md="12" class="text-center">
                     <twitter-button
                         v-bind:isBlank="false"
                         btnText="Follow us on Twitter"
@@ -25,6 +25,14 @@
 </template>
 
 <style scoped>
+#footer {
+    background: linear-gradient(
+        179.75deg,
+        #366ead 0.25%,
+        rgba(39, 39, 39, 0.939039) 78.11%
+    );
+    background-blend-mode: darken;
+}
 .card-features {
     padding: 24px;
     gap: 12px;

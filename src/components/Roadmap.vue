@@ -1,25 +1,25 @@
 <template>
-    <v-container id="roadmap">
-        <h1
-            class="display-3 text-center white--text font-weight-bold"
-            style="margin: 90px 0"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-delay="200"
-        >
-            Roadmap
-        </h1>
-        <div class="row">
-            <div
-                class="col-md-12"
-                data-aos="flip-down"
-                data-aos-duration="500"
-                data-aos-delay="800"
+    <section id="roadmap">
+        <v-container id="roadmap-container" class="roadmap" fluid>
+            <h1
+                class="
+                    display-3
+                    text-center
+                    white--text
+                    font-weight-bold
+                    roadmap-title
+                "
+                style="margin: 90px 0"
             >
-                <vue-horizontal-timeline :items="items" />
-            </div>
-        </div>
-    </v-container>
+                Roadmap
+            </h1>
+            <v-row>
+                <v-col>
+                    <vue-horizontal-timeline :items="items" class="timeline" />
+                </v-col>
+            </v-row>
+        </v-container>
+    </section>
 </template>
 
 <script>
@@ -71,10 +71,19 @@ export default {
 
         return { items };
     },
+    mounted() {},
 };
 </script>
 
 <style lang="scss">
+#roadmap {
+    background-repeat: no-repeat;
+    background: url("../assets/img/background/roadmap-background.png");
+    width: 100%;
+    padding-bottom: 80rem;
+    z-index: 9999;
+}
+
 .vue-horizontal-timeline {
     background: transparent !important;
     box-shadow: unset !important;
@@ -85,38 +94,40 @@ export default {
             li {
                 &:nth-of-type(odd) {
                     .time {
+                        min-height: 200px;
                         color: white !important;
-                        border-top-left-radius: 16px;
+                        border-top-left-radius: 16px !important;
+                        border-top-right-radius: 16px !important;
+                        border-bottom-right-radius: 16px !important;
                         border-top-right-radius: 16px;
-                        background: linear-gradient(
-                            0deg,
-                            rgba(251, 92, 100, 0.9) 1.27%,
-                            rgba(148, 10, 17, 0.9) 100%
-                        ) !important;
-                        backdrop-filter: blur(15px) !important;
+                        padding: 2rem 1rem !important;
+                        background: transparent !important;
+                        box-shadow: 12px 4px 44px rgba(249, 117, 34, 1);
+                        border: 3px solid rgba(249, 117, 34, 1);
+                        transition: 0.5s ease-out;
+                        backdrop-filter: blur(30px) !important;
 
                         &::before {
-                            border-color: rgba(251, 92, 100, 0.9) transparent
-                                transparent transparent !important;
+                            border-color: transparent !important;
                         }
                     }
                 }
 
                 &:nth-of-type(even) {
                     .time {
+                        min-height: 200px;
                         color: white !important;
-                        border-bottom-left-radius: 16px;
-                        border-top-right-radius: 16px;
-                        background: linear-gradient(
-                            0deg,
-                            rgba(251, 92, 100, 0.9) 1.27%,
-                            rgba(148, 10, 17, 0.9) 100%
-                        ) !important;
-                        backdrop-filter: blur(15px) !important;
+                        border-bottom-left-radius: 16px !important;
+                        border-top-right-radius: 16px !important;
+                        border-bottom-right-radius: 16px !important;
+                        padding: 2rem 1rem !important;
+                        background: transparent !important;
+                        box-shadow: 12px 4px 44px rgba(249, 117, 34, 1);
+                        border: 3px solid rgba(249, 117, 34, 1);
+                        backdrop-filter: blur(30px) !important;
 
                         &::before {
-                            border-color: transparent transparent transparent
-                                rgba(148, 10, 17, 0.9) !important;
+                            border-color: transparent !important;
                         }
                     }
                 }

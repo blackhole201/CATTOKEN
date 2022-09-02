@@ -2,7 +2,7 @@
     <v-app id="app">
         <navigation :color="color" :flat="flat" />
         <!-- <img src="@/assets/img/moon.png" alt="Moon" class="moon" /> -->
-        <v-main id="scrollbar" class="pt-0">
+        <v-main class="pt-0">
             <home />
             <about />
             <features />
@@ -12,6 +12,7 @@
             <faq />
             <partners />
         </v-main>
+
         <v-scale-transition>
             <v-btn
                 fab
@@ -27,24 +28,19 @@
                 <v-icon>mdi-arrow-up</v-icon>
             </v-btn>
         </v-scale-transition>
-        <foote />
+        <!-- <foot /> -->
     </v-app>
 </template>
 
 <style>
 #app {
-    background: rgb(44, 45, 48);
+    background: linear-gradient(
+        0deg,
+        #590468 1.97%,
+        rgba(56, 100, 173, 0.939039) 66.31%
+    );
     width: auto;
     height: auto;
-    /* background: radial-gradient(50% 50% at 50% 50%, #590468 1.27%, rgba(0, 0, 0, 0.9) 100%); */
-    /*background: linear-gradient(
-        5deg,
-        rgb(28, 20, 132) 5%,
-        rgba(16, 25, 60, 1) 35%,
-        rgb(65, 7, 190) 50%,
-        rgba(16, 25, 60, 1) 65%,
-        rgb(25, 17, 130) 95%
-    );*/
     background-blend-mode: multiply;
     backdrop-filter: blur(55px);
 }
@@ -65,7 +61,7 @@
 
 <script>
 import navigation from "./components/Navigation";
-import foote from "./components/Footer";
+import foot from "./components/Footer";
 import home from "./components/HomeSection";
 import about from "./components/AboutSection";
 import features from "./components/FeaturesSection";
@@ -74,15 +70,13 @@ import buy from "./components/BuySection";
 import team from "./components/TeamSection";
 import faq from "./components/FAQSection";
 import ProductRoadmap from "./components/Roadmap.vue";
-import Scrollbar from "smooth-scrollbar";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default {
     name: "App",
 
     components: {
         navigation,
-        foote,
+        foot,
         home,
         features,
         about,
@@ -146,15 +140,25 @@ export default {
         },
     },
 
-    created() {
-        let scrollbar = Scrollbar.init(document.querySelector("#app"), {
-            damping: 0.01,
-            alwaysShowTracks: false,
-        });
-    },
-
     mounted() {
-
+        // this.$gsap.utils.toArray("section").forEach((section, i) => {
+        //     if (i != 0) {
+        //         this.$gsap.from(section, {
+        //             scrollTrigger: {``
+        //                 trigger: section,
+        //                 start: "top top",
+        //             },
+        //             opacity: 0,
+        //         });
+        //         this.$gsap.to(section, {
+        //             scrollTrigger: {
+        //                 trigger: section,
+        //                 start: "top top",
+        //             },
+        //             opacity: 1,
+        //         });
+        //     }
+        // });
     },
 };
 </script>

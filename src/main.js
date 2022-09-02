@@ -7,14 +7,14 @@ import VueHorizontalTimeline from "vue-horizontal-timeline";
 import 'aos/dist/aos.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import Scrollbar from 'smooth-scrollbar'
+import SmoothScrollbar from 'vue-smooth-scrollbar'
 
 Vue.use(VueMeta)
 Vue.use(VueHorizontalTimeline)
 gsap.registerPlugin(ScrollTrigger)
 
+Vue.use(SmoothScrollbar)
 Vue.config.productionTip = false
-Vue.prototype.$scrollbar = Scrollbar
 Vue.prototype.$gsap = gsap
 
 new Vue({

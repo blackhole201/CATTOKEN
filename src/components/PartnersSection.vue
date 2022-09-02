@@ -1,22 +1,10 @@
 <template>
     <section id="partners">
         <v-container fluid>
-            <h1
-                class="display-3 text-center black--text font-weight-bold"
-                data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="200"
-            >
+            <h1 class="display-3 text-center white--text font-weight-bold">
                 Our Partners
             </h1>
-            <v-row
-                align="center"
-                justify="center"
-                style="padding-top: 40px"
-                data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="200"
-            >
+            <v-row align="center" justify="center" style="padding-top: 40px">
                 <v-col>
                     <v-sheet class="mx-auto" max-width="1200">
                         <v-slide-group light multiple show-arrows>
@@ -37,15 +25,37 @@
                 </v-col>
             </v-row>
         </v-container>
+        <v-container class="pt-16">
+            <v-row justify="center" align="center">
+                <v-col sm="12" md="12" class="text-center">
+                    <twitter-button
+                        v-bind:isBlank="false"
+                        btnText="Follow us on Twitter"
+                    />
+                    <telegram-button
+                        v-bind:isBlank="false"
+                        btnText="Join Us on Telegram"
+                    />
+                </v-col>
+            </v-row>
+        </v-container>
+        <v-container>
+            <v-row>
+                <v-col class="text-center">
+                    <p>Copyright @ Kittycaketoken 2022.</p>
+                </v-col>
+            </v-row>
+        </v-container>
     </section>
 </template>
 
 <style scoped>
 #partners {
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
+    background: url("../assets/img/background/feature-background.png");
+    backdrop-filter: blur(20px) !important;
     border-radius: 40px 40px 0px 0px;
-    padding: 80px 0;
+    padding-top: 80px;
+    color: white !important;
 }
 .theme--light.v-sheet {
     background-color: transparent;
@@ -56,6 +66,8 @@
 </style>
 
 <script>
+import TwitterButton from "vue-share-buttons/src/components/TwitterButton";
+import TelegramButton from "vue-share-buttons/src/components/TelegramButton";
 export default {
     data: () => ({
         partners: [
@@ -77,6 +89,10 @@ export default {
             },
         ],
     }),
+    components: {
+        TwitterButton,
+        TelegramButton,
+    },
     computed: {
         size() {
             const size = { md: "large", xl: "x-large" }[
