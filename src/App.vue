@@ -34,11 +34,7 @@
 
 <style>
 #app {
-    background: linear-gradient(
-        0deg,
-        #590468 1.97%,
-        rgba(56, 100, 173, 0.939039) 66.31%
-    );
+    background: linear-gradient(181.28deg, #380C6F 1.97%, rgba(29, 90, 191, 0.939039) 47.11%, rgba(17, 11, 51, 0.965232) 98.91%);
     width: auto;
     height: auto;
     background-blend-mode: multiply;
