@@ -80,7 +80,7 @@ export default {
     background-repeat: no-repeat;
     background: url("../assets/img/background/roadmap-background.png");
     width: 100%;
-    padding-bottom: 80rem;
+    padding-bottom: 8rem;
     z-index: 9999;
 }
 

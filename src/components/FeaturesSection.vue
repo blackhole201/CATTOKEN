@@ -6,12 +6,6 @@
             height="200"
             class="sun"
         />
-        <img
-            src="@/assets/img/background/feature-background.png"
-            alt="Sun Image"
-            height="200"
-            class="background"
-        />
         <v-container class="features">
             <h1
                 class="
@@ -59,7 +53,6 @@
 </template>
 
 <script>
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
     data() {
         return {
@@ -98,54 +91,33 @@ export default {
         };
     },
     mounted() {
-        // ScrollTrigger.create({
-        //     trigger: "#features",
-        //     start: "top top",
-        //     end: "bottom top",
-        //     pin: "#features .background",
-        //     scrub: true,
-        //     markers: false,
-        // });
-        // this.$gsap.fromTo(
-        //     ".card-features",
-        //     {
-        //         y: document.getElementsByClassName("card-features")
-        //             .offsetHeight,
-        //     },
-        //     {
-        //         scrollTrigger: {
-        //             trigger: ".features",
-        //             scrub: true,
-        //             start: "top top",
-        //             end: "bottom bottom",
-        //         },
-        //         y:
-        //             document.getElementsByClassName("features").offsetHeight -
-        //             document.getElementsByClassName("card-features")
-        //                 .offsetHeight,
-        //         ease: "none",
-        //     }
-        // );
+        this.$gsap.utils.toArray("section#features").forEach((section, i) => {
+            section.style.backgroundPosition = "0% 0px";
 
-        // this.$gsap.to(".sun", {
-        //     x: -700,
-        //     y: 100,
-        //     duration: 1,
-        //     scrollTrigger: {
-        //         trigger: "#about",
-        //         start: "90% bottom",
-        //     },
-        // });
+            this.$gsap.to(section, {
+                backgroundPosition: `0% ${-window.innerHeight / 1}px`,
+                scrollTrigger: {
+                    trigger: '#features',
+                    start: "top bottom",
+                    scrub: true,
+                },
+                ease: "none",
+            });
+        });
     },
 };
 </script>
 
 <style scoped>
-.background {
-    position: absolute;
+#features {
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    color: white;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 100vh;
+    padding-top: 5rem;
+    background: url("../assets/img/background/feature-background.png");
 }
 .card-features {
     padding: 24px;

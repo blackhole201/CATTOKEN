@@ -145,15 +145,12 @@ export default {
             scrollTrigger: {
                 trigger: "#about",
                 start: "90% bottom",
-            }
+            },
         });
 
         this.$gsap.utils
             .toArray("#about #about-content")
             .forEach((section, i) => {
-                const heightDiff =
-                    section.offsetHeight - section.parentElement.offsetHeight;
-
                 this.$gsap.fromTo(
                     section,
                     {

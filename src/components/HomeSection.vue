@@ -14,20 +14,8 @@
                 class="kitty-image"
                 alt=""
             />
-            <!-- <v-row align="center" justify="center">
+            <v-row align="center" justify="center">
                 <v-col cols="10">
-                    <v-img
-                    ref="bigCatImage"
-                    class="bigcat hidden-md-and-down"
-                    src="@/assets/img/cat-final.webp"
-                    :style="{
-                        top: topPosition,
-                        left: leftPosition,
-                        right: rightPosition,
-                        height: imageHeight,
-                    }"
-                    style="position: absolute; z-index: -999"
-                ></v-img>
                     <v-col
                         cols="12"
                         lg="6"
@@ -88,7 +76,7 @@
                     </v-col>
                     <v-col cols="12" md="6" xl="4"> </v-col>
                 </v-col>
-            </v-row> -->
+            </v-row>
         </v-parallax>
     </section>
 </template>
@@ -168,9 +156,6 @@ export default {
         window.addEventListener("scroll", this.positionScroll);
 
         this.$gsap.utils.toArray(".kitty-image").forEach((section, i) => {
-            const heightDiff =
-                section.offsetHeight - section.parentElement.offsetHeight;
-
             this.$gsap.fromTo(
                 section,
                 {
@@ -182,8 +167,8 @@ export default {
                         scrub: true,
                     },
                     y:
-                        (section.parentElement.offsetHeight -
-                        section.offsetHeight),
+                        section.parentElement.offsetHeight -
+                        section.offsetHeight,
                     ease: "none",
                 }
             );

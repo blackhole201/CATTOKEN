@@ -51,7 +51,7 @@
 
 <style scoped>
 #partners {
-    background: url("../assets/img/background/feature-background.png");
+    background-image: url("../assets/img/background/feature-background.png");
     backdrop-filter: blur(20px) !important;
     border-radius: 40px 40px 0px 0px;
     padding-top: 80px;
@@ -100,6 +100,21 @@ export default {
             ];
             return size ? { [size]: true } : {};
         },
+    },
+    mounted() {
+        // this.$gsap.utils.toArray("section#partners").forEach((section, i) => {
+        //     section.style.backgroundPosition = "0% 0px";
+        //     this.$gsap.to('section', {
+        //         backgroundPosition: `50% ${-window.innerHeight / 4}px`,
+        //         scrollTrigger: {
+        //             trigger: section,
+        //             start: "20% bottom",
+        //             scrub: true,
+        //             markers: true
+        //         },
+        //         ease: "none",
+        //     });
+        // });
     },
 };
 </script>

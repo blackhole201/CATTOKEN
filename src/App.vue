@@ -28,13 +28,18 @@
                 <v-icon>mdi-arrow-up</v-icon>
             </v-btn>
         </v-scale-transition>
-        <!-- <foot /> -->
     </v-app>
 </template>
 
 <style>
 #app {
-    background: linear-gradient(181.28deg, #380C6F 1.97%, rgba(29, 90, 191, 0.939039) 47.11%, rgba(17, 11, 51, 0.965232) 98.91%);
+    /* background: linear-gradient(
+        181.28deg,
+        #380c6f 1.97%,
+        rgba(29, 90, 191, 0.939039) 47.11%,
+        rgba(17, 11, 51, 0.965232) 98.91%
+    ); */
+    background: url('./assets/img/background/galaxy.png');
     width: auto;
     height: auto;
     background-blend-mode: multiply;
@@ -57,7 +62,6 @@
 
 <script>
 import navigation from "./components/Navigation";
-import foot from "./components/Footer";
 import home from "./components/HomeSection";
 import about from "./components/AboutSection";
 import features from "./components/FeaturesSection";
@@ -72,7 +76,6 @@ export default {
 
     components: {
         navigation,
-        foot,
         home,
         features,
         about,
@@ -137,6 +140,19 @@ export default {
     },
 
     mounted() {
+                this.$gsap.utils.toArray("#app").forEach((section, i) => {
+            section.style.backgroundPosition = "0% 0px";
+
+            this.$gsap.to(section, {
+                backgroundPosition: `0% ${-window.innerHeight / 1}px`,
+                scrollTrigger: {
+                    trigger: '#features',
+                    start: "top bottom",
+                    scrub: true,
+                },
+                ease: "none",
+            });
+        });
         // this.$gsap.utils.toArray("section").forEach((section, i) => {
         //     if (i != 0) {
         //         this.$gsap.from(section, {
