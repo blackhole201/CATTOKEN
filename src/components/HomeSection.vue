@@ -25,7 +25,7 @@
                         :z-index="99"
                         :align-self="'start'"
                     >
-                        <h0
+                        <h1
                             class="
                                 text-xl-h2
                                 text-lg-h2
@@ -36,8 +36,9 @@
                                 mb-4
                             "
                         >
-                            Kitty Cake Token 
-                        </h0>
+                            KittyCake
+                            
+                        </h1>
                         <h2
                             class="
                                 text-xl-h4
@@ -49,9 +50,10 @@
                                 mb-4
                             "
                         >
+                        Not just another meme coin
+
                             KittyCake is an advanced hyper-deflationary auto-rewards token on the Binance Smart Chain. 
                            rewarding holders every hour with $CAKE. 
-                           
                         </h2>
                         <v-btn
                             color="primary"
@@ -60,7 +62,7 @@
                             @click="$vuetify.goTo('#features')"
                             class="mt-5"
                         >
-                            Dashboard
+                            Preslae link
                             <v-icon color="white">mdi-plus</v-icon>
                         </v-btn>
                         <v-btn
