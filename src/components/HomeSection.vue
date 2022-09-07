@@ -36,8 +36,8 @@
                                 mb-4
                             "
                         >
-                            KittyCake
-                            
+                            In a land of bears, freezing cold tone, a world
+                            seemingly on fire, we all need a little love.
                         </h1>
                         <h2
                             class="
@@ -50,10 +50,8 @@
                                 mb-4
                             "
                         >
-                        Not just another meme coin
-
-                            KittyCake is an advanced hyper-deflationary auto-rewards token on the Binance Smart Chain. 
-                           rewarding holders every hour with $CAKE. 
+                            Hold KittyCake Token and earn passive income paid in
+                            Cake.
                         </h2>
                         <v-btn
                             color="primary"
@@ -62,7 +60,7 @@
                             @click="$vuetify.goTo('#features')"
                             class="mt-5"
                         >
-                            Preslae link
+                            Dashboard
                             <v-icon color="white">mdi-plus</v-icon>
                         </v-btn>
                         <v-btn
