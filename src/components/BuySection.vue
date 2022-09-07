@@ -155,7 +155,6 @@ export default {
     background-blend-mode: darken;
 }
 .buy {
-    height: 100vh;
     width: 100%;
 }
 .step-1,

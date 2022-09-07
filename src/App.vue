@@ -39,11 +39,12 @@
         rgba(29, 90, 191, 0.939039) 47.11%,
         rgba(17, 11, 51, 0.965232) 98.91%
     ); */
-    background: url('./assets/img/background/galaxy.png');
-    width: auto;
+    background: url("./assets/img/background/galaxy.png");
+    background-size: cover;
     height: auto;
     background-blend-mode: multiply;
     backdrop-filter: blur(55px);
+    background-position: 10% 130px;
 }
 .theme--light.v-expansion-panels
     .v-expansion-panel-header
@@ -140,13 +141,11 @@ export default {
     },
 
     mounted() {
-                this.$gsap.utils.toArray("#app").forEach((section, i) => {
-            section.style.backgroundPosition = "0% 0px";
-
+        this.$gsap.utils.toArray("#app").forEach((section, i) => {
             this.$gsap.to(section, {
-                backgroundPosition: `0% ${-window.innerHeight / 1}px`,
+                backgroundPosition: `10% ${-window.innerHeight / 0.2}px`,
                 scrollTrigger: {
-                    trigger: '#features',
+                    trigger: section,
                     start: "top bottom",
                     scrub: true,
                 },

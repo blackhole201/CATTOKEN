@@ -181,7 +181,6 @@ export default {
     align-items: center;
     color: white;
     width: 100%;
-    height: 100vh;
     padding-bottom: 80rem;
     padding-top: 5rem;
     background: url("../assets/img/background/about.png");

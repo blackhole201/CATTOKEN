@@ -28,14 +28,9 @@
         <v-container class="pt-16">
             <v-row justify="center" align="center">
                 <v-col sm="12" md="12" class="text-center">
-                    <twitter-button
-                        v-bind:isBlank="false"
-                        btnText="Follow us on Twitter"
-                    />
-                    <telegram-button
-                        v-bind:isBlank="false"
-                        btnText="Join Us on Telegram"
-                    />
+                    <img src="@/assets/img/social-media/Instagram.png" height="50" width="50" class="mx-3" alt="social-media">
+                    <img src="@/assets/img/social-media/Telegram.png" height="50" width="50" class="mx-3" alt="social-media">
+                    <img src="@/assets/img/social-media/Twitter.png" height="50" width="50" class="mx-3" alt="social-media">
                 </v-col>
             </v-row>
         </v-container>
@@ -52,7 +47,7 @@
 <style scoped>
 #partners {
     background-image: url("../assets/img/background/feature-background.png");
-    backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(30px) !important;
     border-radius: 40px 40px 0px 0px;
     padding-top: 80px;
     color: white !important;

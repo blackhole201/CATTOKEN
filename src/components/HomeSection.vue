@@ -8,8 +8,8 @@
             style="width: 100%"
         >
             <img
-                src="@/assets/img/Logo-kitty1122.webp"
-                width="600"
+                src="@/assets/img/cat-final.webp"
+                width="auto"
                 height="600"
                 class="kitty-image"
                 alt=""
@@ -23,7 +23,7 @@
                         sm="6"
                         xl="6"
                         :z-index="99"
-                        :align-self="start"
+                        :align-self="'start'"
                     >
                         <h1
                             class="
@@ -230,7 +230,8 @@ export default {
 }
 .kitty-image {
     position: absolute;
-    right: 0;
+    right: -20px;
+    z-index: -1;
 }
 
 .playBut {

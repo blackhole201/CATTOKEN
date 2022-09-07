@@ -34,7 +34,7 @@
                         <v-card style="cursor: pointer" class="card-features">
                             <v-img
                                 :src="feature.img"
-                                max-width="70px"
+                                max-width="100px"
                                 class="d-block mr-auto"
                                 :class="{ 'zoom-efect': hover }"
                             ></v-img>
@@ -58,32 +58,32 @@ export default {
         return {
             features: [
                 {
-                    img: require("@/assets/img/icon/icon1.webp"),
+                    img: require("@/assets/img/planet1.png"),
                     title: "4% CAKE Redistribution",
                     text: "4% of every buy/sell is taken and redistributed to all holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 200,000 tokens is required in order to qualify for rewards.",
                 },
                 {
-                    img: require("@/assets/img/icon/icon2.webp"),
+                    img: require("@/assets/img/planet2.png"),
                     title: "Automatic Reward Payment",
                     text: "No need to claim your earned $CAKE, it’s automatically sent to your wallet. Just add the PancakeSwap token ($CAKE) address to your wallet and you're set.",
                 },
                 {
-                    img: require("@/assets/img/icon/icon3.webp"),
+                    img: require("@/assets/img/planet3.png"),
                     title: "Strategic Marketing",
                     text: "2% of every transaction is allocated to Marketing in $CAKE (swapped to CAKE in real-time to avoid dumps). This allows us to invest and develop the project further to expand the rewards for our community.",
                 },
                 {
-                    img: require("@/assets/img/icon/icon4.webp"),
+                    img: require("@/assets/img/planet4.png"),
                     title: "Small Selling Fee",
                     text: "An extra 1% fee is applied to all sells. This will allow us to reduce swing-trading and break whales’ control.",
                 },
                 {
-                    img: require("@/assets/img/icon/icon5.webp"),
+                    img: require("@/assets/img/planet5.png"),
                     title: "Locked Liquidity",
                     text: "Initial Liquidity Provided is locked Contract will be audited prior to launch",
                 },
                 {
-                    img: require("@/assets/img/icon/icon6.webp"),
+                    img: require("@/assets/img/planet6.png"),
                     title: "Auto Liquidity",
                     text: "1% of every transaction is converted into liquidity for Pancakeswap. It’s automatic and helps create a price floor (stability).",
                 },
@@ -115,7 +115,6 @@ export default {
     align-items: center;
     color: white;
     width: 100%;
-    height: 100vh;
     padding-top: 5rem;
     background: url("../assets/img/background/feature-background.png");
 }

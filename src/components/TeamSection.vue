@@ -1,6 +1,6 @@
 <template>
-    <section id="features">
-        <v-container id="features">
+    <section id="teams">
+        <v-container id="teams">
             <h1
                 class="display-3 text-center white--text font-weight-bold"
                 data-aos="fade-up"
