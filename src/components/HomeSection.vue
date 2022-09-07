@@ -25,7 +25,7 @@
                         :z-index="99"
                         :align-self="'start'"
                     >
-                        <h1
+                        <h2
                             class="
                                 text-xl-h2
                                 text-lg-h2
@@ -36,9 +36,9 @@
                                 mb-4
                             "
                         >
-                            In a land of bears, freezing cold tone, a world
-                            seemingly on fire, we all need a little love.
-                        </h1>
+                             <font size="+2">Kitty Cake Token</font>
+                            Not just another meme coin
+                        </h2>
                         <h2
                             class="
                                 text-xl-h4
@@ -50,8 +50,9 @@
                                 mb-4
                             "
                         >
-                            Hold KittyCake Token and earn passive income paid in
-                            Cake.
+                            KittyCake is an advanced hyper-deflationary auto-rewards token on the Binance Smart Chain. 
+                           rewarding holders every hour with $CAKE. 
+                           
                         </h2>
                         <v-btn
                             color="primary"
