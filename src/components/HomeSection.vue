@@ -25,7 +25,7 @@
                         :z-index="99"
                         :align-self="'start'"
                     >
-                        <h2
+                        <h0
                             class="
                                 text-xl-h2
                                 text-lg-h2
@@ -36,9 +36,8 @@
                                 mb-4
                             "
                         >
-                             <font size="+2">Kitty Cake Token</font>
-                            Not just another meme coin
-                        </h2>
+                            Kitty Cake Token 
+                        </h0>
                         <h2
                             class="
                                 text-xl-h4
