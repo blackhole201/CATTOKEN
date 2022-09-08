@@ -29,6 +29,8 @@ export default {
             {
                 title: "September 2022",
                 content: "V2 Presale launch",
+                stepCssClass: 'is-active',
+                boxCssClass: 'is-box-active',
             },
             {
                 title: "September 2022",
@@ -82,6 +84,14 @@ export default {
     width: 100%;
     padding-bottom: 8rem;
     z-index: 9999;
+}
+
+.is-active::after {
+    background: green !important;
+}
+
+.is-box-active {
+    color: red !important;
 }
 
 .vue-horizontal-timeline {

@@ -11,7 +11,7 @@
                 src="@/assets/img/cat-final.webp"
                 width="auto"
                 height="600"
-                class="kitty-image"
+                class="kitty-image d-none d-md-block"
                 alt=""
             />
             <v-row align="center" justify="center">
@@ -27,11 +27,7 @@
                     >
                         <h1
                             class="
-                                text-xl-h2
-                                text-lg-h2
-                                text-md-h3
-                                text-sm-h4
-                                text-h4
+                                text-sm-h3 text-h3 text-xl-h2
                                 font-weight-medium
                                 mb-4
                             "
@@ -41,11 +37,7 @@
                         </h1>
                         <h2
                             class="
-                                text-xl-h4
-                                text-lg-h3
-                                text-md-h4
-                                text-sm-h4
-                                text-h5
+                                text-sm-h4 text-h6 text-xl-h5
                                 font-weight-light
                                 mb-4
                             "
@@ -60,18 +52,8 @@
                             @click="$vuetify.goTo('#features')"
                             class="mt-5"
                         >
-                            Dashboard
+                            Buy Presale
                             <v-icon color="white">mdi-plus</v-icon>
-                        </v-btn>
-                        <v-btn
-                            color="white"
-                            rounded
-                            x-large
-                            text
-                            @click="$vuetify.goTo('#features')"
-                            class="mt-5"
-                        >
-                            Buy KittyCake
                         </v-btn>
                     </v-col>
                     <v-col cols="12" md="6" xl="4"> </v-col>
@@ -233,7 +215,6 @@ export default {
     right: -20px;
     z-index: -1;
 }
-
 .playBut {
     /*  border: 1px solid red;*/
     display: inline-block;

@@ -1,11 +1,11 @@
 <template>
     <section id="features">
-        <img
+        <!-- <img
             src="@/assets/img/sun.png"
             alt="Sun Image"
             height="200"
             class="sun"
-        />
+        /> -->
         <v-container class="features">
             <h1
                 class="
@@ -97,7 +97,7 @@ export default {
             this.$gsap.to(section, {
                 backgroundPosition: `0% ${-window.innerHeight / 1}px`,
                 scrollTrigger: {
-                    trigger: '#features',
+                    trigger: "#features",
                     start: "top bottom",
                     scrub: true,
                 },
@@ -147,10 +147,10 @@ export default {
     transform: translateY(-20px);
     transition: 0.5s ease-out;
 }
-.sun {
+/* .sun {
     position: absolute;
     right: -500px;
     top: 0;
     z-index: -1;
-}
+} */
 </style>

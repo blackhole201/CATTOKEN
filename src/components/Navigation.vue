@@ -64,17 +64,10 @@
                     <span class="mr-2">Roadmap</span>
                 </v-btn>
                 <v-btn text @click="$vuetify.goTo('#buy')">
-                    <span class="mr-2">How To Buy</span>
+                    <span class="mr-2">Buy Presale</span>
                 </v-btn>
-                <v-btn ref="faq" text @click="goToSection('#faq')">
-                    <span class="mr-2">FAQ</span>
-                </v-btn>
-                <v-btn
-                    color="primary"
-                    rounded
-                    @click="$vuetify.goTo('#footer')"
-                >
-                    <span class="mr-2">Connect Wallet</span>
+                <v-btn ref="faq" text @click="goToSection('#partners')">
+                    <span class="mr-2">Connect With Us</span>
                 </v-btn>
             </div>
         </v-app-bar>

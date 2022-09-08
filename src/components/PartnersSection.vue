@@ -25,12 +25,40 @@
                 </v-col>
             </v-row>
         </v-container>
-        <v-container class="pt-16">
-            <v-row justify="center" align="center">
+        <v-container class="pt-16" fluid>
+                <h1 class="display-3 text-center white--text font-weight-bold">
+                    Connect With Us
+                </h1>
+            <v-row justify="center" align="center" style="padding-top: 40px">
                 <v-col sm="12" md="12" class="text-center">
-                    <img src="@/assets/img/social-media/Instagram.png" height="50" width="50" class="mx-3" alt="social-media">
-                    <img src="@/assets/img/social-media/Telegram.png" height="50" width="50" class="mx-3" alt="social-media">
-                    <img src="@/assets/img/social-media/Twitter.png" height="50" width="50" class="mx-3" alt="social-media">
+                    <img
+                        src="@/assets/img/social-media/Instagram.png"
+                        height="50"
+                        width="50"
+                        class="mx-3"
+                        alt="social-media"
+                    />
+                    <img
+                        src="@/assets/img/social-media/Telegram.png"
+                        height="50"
+                        width="50"
+                        class="mx-3"
+                        alt="social-media"
+                    />
+                    <img
+                        src="@/assets/img/social-media/Twitter.png"
+                        height="50"
+                        width="50"
+                        class="mx-3"
+                        alt="social-media"
+                    />
+                    <img
+                        src="@/assets/img/social-media/Facebook.png"
+                        height="50"
+                        width="50"
+                        class="mx-3"
+                        alt="social-media"
+                    />
                 </v-col>
             </v-row>
         </v-container>

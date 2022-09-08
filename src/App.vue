@@ -32,6 +32,11 @@
 </template>
 
 <style>
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+}
 #app {
     /* background: linear-gradient(
         181.28deg,
@@ -41,7 +46,6 @@
     ); */
     background: url("./assets/img/background/galaxy.png");
     background-size: cover;
-    height: auto;
     background-blend-mode: multiply;
     backdrop-filter: blur(55px);
     background-position: 10% 130px;

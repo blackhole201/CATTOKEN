@@ -10,7 +10,7 @@
             >
                 Teams
             </h1>
-            <v-row align="center" justify="center" class="my-8">
+            <v-row align="strecth" justify="center" class="my-8">
                 <v-col
                     cols="12"
                     xl="2"
@@ -21,22 +21,20 @@
                     data-aos="fade-up"
                     data-aos-duration="500"
                     :data-aos-delay="200 + i * 300"
-                    v-for="(feature, i) in 5"
+                    v-for="(feature, i) in features"
                     :key="i"
                 >
                     <v-hover v-slot:default="{ hover }">
-                        <v-card
-                            class="card-features"
-                        >
+                        <v-card class="card-features">
                             <v-img
                                 src="@/assets/img/icon/icon3.webp"
                                 max-width="70px"
                                 class="d-block mr-auto"
                                 :class="{ 'zoom-efect': hover }"
                             ></v-img>
-                            <h1 class="font-weight-bold">Blackhole</h1>
+                            <h1 class="font-weight-bold">{{ feature.title }}</h1>
                             <p class="font-weight-regular subtitle-1">
-                                Main Dev
+                                {{ feature.text }}
                             </p>
                         </v-card>
                     </v-hover>

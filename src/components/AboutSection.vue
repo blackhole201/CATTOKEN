@@ -148,28 +148,28 @@ export default {
             },
         });
 
-        this.$gsap.utils
-            .toArray("#about #about-content")
-            .forEach((section, i) => {
-                this.$gsap.fromTo(
-                    section,
-                    {
-                        y: section.offsetHeight,
-                    },
-                    {
-                        scrollTrigger: {
-                            trigger: section.parentElement,
-                            scrub: true,
-                            start: "top top",
-                            end: "bottom bottom",
-                        },
-                        y:
-                            section.parentElement.offsetHeight -
-                            section.offsetHeight,
-                        ease: "none",
-                    }
-                );
-            });
+        // this.$gsap.utils
+        //     .toArray("#about #about-content")
+        //     .forEach((section, i) => {
+        //         this.$gsap.fromTo(
+        //             section,
+        //             {
+        //                 y: section.offsetHeight,
+        //             },
+        //             {
+        //                 scrollTrigger: {
+        //                     trigger: section.parentElement,
+        //                     scrub: true,
+        //                     start: "top top",
+        //                     end: "bottom bottom",
+        //                 },
+        //                 y:
+        //                     section.parentElement.offsetHeight -
+        //                     section.offsetHeight,
+        //                 ease: "none",
+        //             }
+        //         );
+        //     });
     },
 };
 </script>
@@ -181,31 +181,34 @@ export default {
     align-items: center;
     color: white;
     width: 100%;
-    padding-bottom: 80rem;
-    padding-top: 5rem;
+    padding: 5rem 0;
     background: url("../assets/img/background/about.png");
 }
 .planet-1 {
     position: absolute;
     left: -500px;
     top: 0;
+    z-index: -99;
 }
 
 .planet-2 {
     position: absolute;
     left: -500px;
     top: 0;
+    z-index: -99;
 }
 
 .planet-3 {
     position: absolute;
     right: -500px;
     top: 0;
+    z-index: -99;
 }
 .planet-4 {
     position: absolute;
     right: -500px;
     top: 0;
+    z-index: -99;
 }
 .scroll-downs {
     position: absolute;
