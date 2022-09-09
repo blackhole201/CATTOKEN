@@ -8,7 +8,7 @@
                 data-aos-delay="200"
                 style="margin: 130px 0"
             >
-                Teams
+                CORE TEAM
             </h1>
             <v-row align="strecth" justify="center" class="my-8">
                 <v-col
@@ -52,22 +52,22 @@ export default {
                 {
                     img: require("@/assets/img/icon/icon1.webp"),
                     title: "Blackohole",
-                    text: "Main DEV",
+                    text: "Main Dev",
                 },
                 {
                     img: require("@/assets/img/icon/icon2.webp"),
                     title: "Salman",
-                    text: "Investmern Advisor",
+                    text: "Investment Advisor",
                 },
                 {
                     img: require("@/assets/img/icon/icon3.webp"),
                     title: "Sharry",
-                    text: "Lead social media advisor",
+                    text: "Lead Social Media Advisor",
                 },
                 {
                     img: require("@/assets/img/icon/icon4.webp"),
                     title: "Trin",
-                    text: "Utiltiy expert",
+                    text: "Utiltiy Expert",
                 },
                 {
                     img: require("@/assets/img/icon/icon5.webp"),
