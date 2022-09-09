@@ -32,8 +32,8 @@
                                 mb-4
                             "
                         >
-                            In a land of bears, freezing cold tone, a world
-                            seemingly on fire, we all need a little love.
+                            KITTY CAKE TOKEN not just a meme token
+                        
                         </h1>
                         <h2
                             class="
