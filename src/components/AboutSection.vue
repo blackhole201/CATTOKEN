@@ -51,21 +51,28 @@
                             text-sm-h4 text-h6 text-xl-h5
                             my-5
                         "
-                    >
-                        KittyCake was taken over voluntarily by some die hards
-                        who just wanted to see what could be done of all of us
-                        "nobodies" put our minds to it.
+                    >   
+                        Kittycake. Not just a meme coin.
+                        <br />
+                        KittyCake garners the attention of both crypto enthusiasts and investors with its unique tokenomics and ecosystem. 
+                        It has positioned itself in a unique way by bringing the best of gaming, NFTs and reward system in one place.
 
                         <br />
-                        Well, here we are, a full bull cycle and well into a
-                        bear cycle and we are still here! Still building, still
-                        dreaming and still working to sustain our beloved
-                        KittyCake into its second set of 9 lives.
+                        An anonymous developer launched a token named KittyCake inspired from the Waving Lucky Cat of the Chinese/Japanese community.  
+                        It was believed that the figurine will bring good fortune and luck to the owners. 
 
                         <br />
-                        We aren't ever leaving and we aren't ever going
-                        anywhere. This new realm of KittyCake will TRULY let the
-                        cat out of the bag.
+                        A strong community quickly formed around it; the token did really well initially & provided investors with a passive income of over 100,000 $CAKE Tokens i.e. over $2 M in dividend payments.
+                         However like many other projects the project was abandoned by the developers but the vibrant community did not give up on it. 
+                         The current team, a group of very initial investors took the initiative and proposed a community takeover, which was welcomed by the community. 
+                        Now we are re launching the project. We aim to bring the destined glory to the investors and community. 
+
+                        <br />
+                        The team has put in place a solid long-term roadmap and is consistently working 
+                        to build an ecosystem with a goal of making sustainability and longevity as the central focus.
+
+                        <br /> 
+                        Now, it is KittyCake’s turn to bring you tons of fortune through its CAKE token.
                     </h1>
                     <v-btn
                         color="primary"
