@@ -51,33 +51,33 @@ export default {
             features: [
                 {
                     img: require("@/assets/img/icon/icon1.webp"),
-                    title: "7% CAKE Redistribution",
-                    text: "7% of every buy/sell is taken and redistributed to all holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 200,000 tokens is required in order to qualify for rewards.",
+                    title: "Blackohole",
+                    text: "Main DEV",
                 },
                 {
                     img: require("@/assets/img/icon/icon2.webp"),
-                    title: "Automatic Reward Payment",
-                    text: "No need to claim your earned $CAKE, it’s automatically sent to your wallet. Just add the PancakeSwap token ($CAKE) address to your wallet and you're set.",
+                    title: "Salman",
+                    text: "Investmern Advisor",
                 },
                 {
                     img: require("@/assets/img/icon/icon3.webp"),
-                    title: "Strategic Marketing",
-                    text: "5% of every transaction is allocated to Marketing in $CAKE (swapped to CAKE in real-time to avoid dumps). This allows us to invest and develop the project further to expand the rewards for our community.",
+                    title: "Sharry",
+                    text: "Lead social media advisor",
                 },
                 {
                     img: require("@/assets/img/icon/icon4.webp"),
-                    title: "Small Selling Fee",
-                    text: "An extra 1% fee is applied to all sells. This will allow us to reduce swing-trading and break whales’ control.",
+                    title: "Trin",
+                    text: "Utiltiy expert",
                 },
                 {
                     img: require("@/assets/img/icon/icon5.webp"),
-                    title: "Locked Liquidity",
-                    text: "Initial Liquidity Provided is locked with DXLock until 2030. Contract is fully audited by Desert Finance",
+                    title: "Asphyx",
+                    text: "Main Dev",
                 },
                 {
                     img: require("@/assets/img/icon/icon6.webp"),
-                    title: "Auto Liquidity",
-                    text: "2% of every transaction is converted into liquidity for Pancakeswap. It’s automatic and helps create a price floor (stability).",
+                    title: "Shiva",
+                    text: "Crypto Market analyst",
                 },
             ],
         };
