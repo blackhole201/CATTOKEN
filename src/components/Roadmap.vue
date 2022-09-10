@@ -8,6 +8,7 @@
                     white--text
                     font-weight-bold
                     roadmap-title
+                    text-h3
                 "
                 style="margin: 90px 0"
             >

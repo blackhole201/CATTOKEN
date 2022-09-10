@@ -20,30 +20,29 @@
                         cols="12"
                         lg="6"
                         md="12"
-                        sm="6"
+                        sm="2"
                         xl="6"
                         :z-index="99"
                         :align-self="'start'"
                     >
                         <h1
                             class="
-                                text-sm-h3 text-h3 text-xl-h2
+                                text-h2 text-xl-h1 text-lg-h2 text-md-h2 text-sm-h3 text-xs-h5
+                                font-weight-black
+                                mb-4 text-break
+                            "
+                        >
+                            KittyCake Token <br>
+
+                        </h1>
+                        <h2
+                            class="
+                                text-h4 text-xl-h3 text-lg-h4 text-md-h4 text-sm-h4
                                 font-weight-medium
                                 mb-4
                             "
                         >
-                            KITTY CAKE TOKEN not just a meme token
-                        
-                        </h1>
-                        <h2
-                            class="
-                                text-sm-h4 text-h6 text-xl-h5
-                                font-weight-light
-                                mb-4
-                            "
-                        >
-                            Hold KittyCake Token and earn passive income paid in
-                            Cake.
+                        Not Just A Meme Coin
                         </h2>
                         <v-btn
                             color="primary"

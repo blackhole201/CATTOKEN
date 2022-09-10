@@ -32,6 +32,10 @@
 </template>
 
 <style>
+@font-face {
+    font-family: "Saira";
+    src: local("Saira") url('./assets/fonts/Saira/Saira-Regular.ttf') format('truetype');
+}
 html,
 body {
     position: relative;
@@ -44,7 +48,10 @@ body {
         rgba(29, 90, 191, 0.939039) 47.11%,
         rgba(17, 11, 51, 0.965232) 98.91%
     ); */
+    font-family: "Saira", Helvetica, Arial;
     background: url("./assets/img/background/galaxy.png");
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-blend-mode: multiply;
     backdrop-filter: blur(55px);

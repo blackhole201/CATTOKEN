@@ -3,14 +3,6 @@
         <v-container>
             <v-row justify="center" align="center">
                 <v-col sm="12" md="12" class="text-center">
-                    <twitter-button
-                        v-bind:isBlank="false"
-                        btnText="Follow us on Twitter"
-                    />
-                    <telegram-button
-                        v-bind:isBlank="false"
-                        btnText="Join Us on Telegram"
-                    />
                 </v-col>
             </v-row>
         </v-container>
@@ -64,15 +56,9 @@
 </style>
 
 <script>
-import TwitterButton from "vue-share-buttons/src/components/TwitterButton";
-import TelegramButton from "vue-share-buttons/src/components/TelegramButton";
 
 export default {
     data: () => ({}),
-    components: {
-        TwitterButton,
-        TelegramButton,
-    },
     computed: {
         width() {
             switch (this.$vuetify.breakpoint.name) {

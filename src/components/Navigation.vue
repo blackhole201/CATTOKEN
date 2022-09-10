@@ -21,11 +21,8 @@
                     v-for="([icon, text, link], i) in items"
                     :key="i"
                     link
-                    @click="$vuetify.goTo(link)"
+                    @click="goToSection(link)"
                 >
-                    <v-list-item-icon class="justify-center">
-                        <v-icon>{{ icon }}</v-icon>
-                    </v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title class="subtitile-1">{{
                             text
@@ -40,6 +37,7 @@
             color="transparent"
             :flat="true"
             dark
+            fixed
             absolute
             class="px-md-16 py-8"
             :class="{ expand: flat }"
@@ -66,7 +64,7 @@
                 <v-btn text @click="$vuetify.goTo('#buy')">
                     <span class="mr-2">Buy Presale</span>
                 </v-btn>
-                <v-btn ref="faq" text @click="goToSection('#partners')">
+                <v-btn ref="faq" text @click="goToSection('#connect')">
                     <span class="mr-2">Connect With Us</span>
                 </v-btn>
             </div>
@@ -94,10 +92,11 @@ export default {
         drawer: null,
         isXs: false,
         items: [
-            ["mdi-home-outline", "Home", "#hero"],
-            ["mdi-information-outline", "About Us", "#about"],
-            ["mdi-download-box-outline", "Our Features", "#features"],
-            ["mdi-email-outline", "See Products", "#contact"],
+            ["mdi-home-outline", "About us", "#about"],
+            ["mdi-information-outline", "Our Features", "#features"],
+            ["mdi-download-box-outline", "Roadmap", "#roadmap"],
+            ["mdi-email-outline", "Buy Presale", "#buy"],
+            ["mdi-email-outline", "Connect With Us", "#connect"],
         ],
     }),
     props: {
@@ -108,6 +107,10 @@ export default {
         onResize() {
             this.isXs = window.innerWidth < 850;
         },
+        goToSection(args) {
+            this.drawer = !this.drawer
+            this.$vuetify.goTo(link)
+        }
     },
 
     watch: {

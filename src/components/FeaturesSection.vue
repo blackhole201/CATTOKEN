@@ -14,6 +14,7 @@
                     white--text
                     font-weight-bold
                     feature-title
+                    text-h3
                 "
                 style="margin-top: 7rem"
             >

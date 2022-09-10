@@ -22,7 +22,7 @@
         </v-snackbar>
         <v-container class="buy">
             <h1
-                class="display-3 text-left white--text font-weight-bold h1"
+                class="display-3 text-left white--text font-weight-bold text-h3"
                 style="margin-bottom: 130px"
             >
                 Get Ready to trade after Presale is
@@ -80,9 +80,6 @@
                             use our contract address:
                             <span ref="tokenAddress"
                                 >to be confirmed when presale has started</span
-                            >
-                            <v-btn icon @click="copyToken" color="primary"
-                                ><v-icon>mdi-content-copy</v-icon></v-btn
                             >. Set the slippage tolerance to 15% (sometimes it
                             may be 18%, depending on how much demand there is).
                         </p>
@@ -119,9 +116,7 @@
                             <span ref="tokenAddress"
                                 >to be announced when presale starts</span
                             >.
-                            <v-btn icon @click="copyToken" color="primary"
-                                ><v-icon>mdi-content-copy</v-icon></v-btn
-                            >
+
                         </p>
                     </div>
                 </v-col>

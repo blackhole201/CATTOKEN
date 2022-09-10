@@ -2,7 +2,7 @@
     <section id="teams">
         <v-container id="teams">
             <h1
-                class="display-3 text-center white--text font-weight-bold"
+                class="display-3 text-center white--text font-weight-bold text-h3 text-h3"
                 data-aos="fade-up"
                 data-aos-duration="500"
                 data-aos-delay="200"
@@ -14,8 +14,8 @@
                 <v-col
                     cols="12"
                     xl="2"
-                    lg="2"
-                    md="2"
+                    lg="4"
+                    md="4"
                     sm="2"
                     class="text-left"
                     data-aos="fade-up"
@@ -27,12 +27,12 @@
                     <v-hover v-slot:default="{ hover }">
                         <v-card class="card-features">
                             <v-img
-                                src="@/assets/img/icon/icon3.webp"
+                                :src="feature.img"
                                 max-width="70px"
                                 class="d-block mr-auto"
                                 :class="{ 'zoom-efect': hover }"
                             ></v-img>
-                            <h1 class="font-weight-bold">{{ feature.title }}</h1>
+                            <h1 class="font-weight-black primary--text">{{ feature.title }}</h1>
                             <p class="font-weight-regular subtitle-1">
                                 {{ feature.text }}
                             </p>
@@ -51,7 +51,7 @@ export default {
             features: [
                 {
                     img: require("@/assets/img/icon/icon1.webp"),
-                    title: "Blackohole",
+                    title: "Blackhole",
                     text: "Main Dev",
                 },
                 {

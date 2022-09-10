@@ -2,7 +2,7 @@
     <section id="faq">
         <v-container>
             <h1
-                class="display-3 text-center white--text font-weight-bold"
+                class="display-3 text-center white--text font-weight-bold text-h3"
                 data-aos="fade-up"
                 data-aos-duration="500"
                 data-aos-delay="200"

@@ -1,7 +1,15 @@
 <template>
     <section id="partners">
         <v-container fluid>
-            <h1 class="display-3 text-center white--text font-weight-bold">
+            <h1
+                class="
+                    display-3
+                    text-center
+                    white--text
+                    font-weight-bold
+                    text-h3
+                "
+            >
                 Our Partners
             </h1>
             <v-row align="center" justify="center" style="padding-top: 40px">
@@ -25,10 +33,18 @@
                 </v-col>
             </v-row>
         </v-container>
-        <v-container class="pt-16" fluid>
-                <h1 class="display-3 text-center white--text font-weight-bold">
-                    Connect With Us
-                </h1>
+        <v-container class="pt-16" fluid id="connect">
+            <h1
+                class="
+                    display-3
+                    text-center
+                    white--text
+                    font-weight-bold
+                    text-h3
+                "
+            >
+                Connect With Us
+            </h1>
             <v-row justify="center" align="center" style="padding-top: 40px">
                 <v-col sm="12" md="12" class="text-center">
                     <img
@@ -37,6 +53,7 @@
                         width="50"
                         class="mx-3"
                         alt="social-media"
+                        @click="clickedImage('https://www.instagram.com/kittycake2022/?igshid=YmMyMTA2M2Y%3D')"
                     />
                     <img
                         src="@/assets/img/social-media/Telegram.png"
@@ -44,6 +61,7 @@
                         width="50"
                         class="mx-3"
                         alt="social-media"
+                        @click="clickedImage('https://telegram.me/share/url?url=https%3A%2F%2Fcattoken.vercel.app%2F&text=KittyCakeToken')"
                     />
                     <img
                         src="@/assets/img/social-media/Twitter.png"
@@ -51,6 +69,7 @@
                         width="50"
                         class="mx-3"
                         alt="social-media"
+                        @click="clickedImage('https://twitter.com/intent/tweet?url=https%3A%2F%2Fcattoken.vercel.app%2F&text=KittyCakeToken')"
                     />
                     <img
                         src="@/assets/img/social-media/Facebook.png"
@@ -89,8 +108,6 @@
 </style>
 
 <script>
-import TwitterButton from "vue-share-buttons/src/components/TwitterButton";
-import TelegramButton from "vue-share-buttons/src/components/TelegramButton";
 export default {
     data: () => ({
         partners: [
@@ -112,10 +129,6 @@ export default {
             },
         ],
     }),
-    components: {
-        TwitterButton,
-        TelegramButton,
-    },
     computed: {
         size() {
             const size = { md: "large", xl: "x-large" }[
@@ -123,6 +136,11 @@ export default {
             ];
             return size ? { [size]: true } : {};
         },
+    },
+    methods: {
+        clickedImage(url) {
+            window.open(url)
+        }
     },
     mounted() {
         // this.$gsap.utils.toArray("section#partners").forEach((section, i) => {
