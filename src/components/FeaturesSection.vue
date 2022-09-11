@@ -99,7 +99,7 @@ export default {
                 backgroundPosition: `0% ${-window.innerHeight / 1}px`,
                 scrollTrigger: {
                     trigger: "#features",
-                    start: "top bottom",
+                    start: "top top",
                     scrub: true,
                 },
                 ease: "none",

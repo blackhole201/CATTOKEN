@@ -10,7 +10,7 @@
             <img
                 src="@/assets/img/cat-final.webp"
                 width="auto"
-                height="600"
+                height="700"
                 class="kitty-image d-none d-md-block"
                 alt=""
             />
@@ -20,30 +20,32 @@
                         cols="12"
                         lg="6"
                         md="12"
-                        sm="2"
+                        sm="12"
                         xl="6"
                         :z-index="99"
                         :align-self="'start'"
                     >
-                        <h1
-                            class="
-                                text-h2 text-xl-h1 text-lg-h2 text-md-h2 text-sm-h3 text-xs-h5
-                                font-weight-black
-                                mb-4 text-break
-                            "
-                        >
-                            KittyCake Token <br>
-
-                        </h1>
+                        <img
+                            src="@/assets/img/text-logo.png"
+                            alt="Text Logo"
+                            :style="{ width: imageWidth }"
+                        />
                         <h2
                             class="
-                                text-h4 text-xl-h3 text-lg-h4 text-md-h4 text-sm-h4
+                                text-h3
+                                text-xl-h2
+                                text-lg-h3
+                                text-md-h3
+                                text-sm-h3
                                 font-weight-medium
                                 mb-4
                             "
                         >
-                        Not Just A Meme Coin
+                            Not Just A Meme Coin
                         </h2>
+                        <p>
+                            Description text Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab facilis corrupti quis natus eos temporibus quos? Beatae, mollitia. Harum dicta accusantium nihil neque est ab similique non sit reprehenderit?
+                        </p>
                         <v-btn
                             color="primary"
                             rounded
@@ -119,6 +121,18 @@ export default {
                     return 1680 + "px";
             }
         },
+        imageWidth() {
+            switch (this.$vuetify.breakpoint.name) {
+                case "xs":
+                    return 100 + "%";
+                case "sm":
+                    return 100 + "%";
+                case "md":
+                    return 40 + "rem";
+                default:
+                    return 60 + "rem";
+            }
+        },
         isMobile() {
             return this.$vuetify.breakpoint.smAndDown;
         },
@@ -127,12 +141,18 @@ export default {
         },
     },
     mounted() {
-        this.$gsap.to("#parallax", {
-            scrollTrigger: {
-                tigger: "#parallax",
-                start: "30% top",
-            },
-            backgroundColor: "red",
+                this.$gsap.utils.toArray(".v-parallax__image-container").forEach((section, i) => {
+            section.style.backgroundPosition = "0% 0px";
+
+            this.$gsap.to(section, {
+                backgroundPosition: `80% ${-window.innerHeight / 1}px`,
+                scrollTrigger: {
+                    trigger: "#hero",
+                    start: "top bottom",
+                    scrub: true,
+                },
+                ease: "none",
+            });
         });
         window.addEventListener("scroll", this.positionScroll);
 

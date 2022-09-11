@@ -51,7 +51,7 @@
                         src="@/assets/img/social-media/Instagram.png"
                         height="50"
                         width="50"
-                        class="mx-3"
+                        class="mx-3 social-media"
                         alt="social-media"
                         @click="clickedImage('https://www.instagram.com/kittycake2022/?igshid=YmMyMTA2M2Y%3D')"
                     />
@@ -59,7 +59,7 @@
                         src="@/assets/img/social-media/Telegram.png"
                         height="50"
                         width="50"
-                        class="mx-3"
+                        class="mx-3 social-media"
                         alt="social-media"
                         @click="clickedImage('https://telegram.me/share/url?url=https%3A%2F%2Fcattoken.vercel.app%2F&text=KittyCakeToken')"
                     />
@@ -67,7 +67,7 @@
                         src="@/assets/img/social-media/Twitter.png"
                         height="50"
                         width="50"
-                        class="mx-3"
+                        class="mx-3 social-media"
                         alt="social-media"
                         @click="clickedImage('https://twitter.com/intent/tweet?url=https%3A%2F%2Fcattoken.vercel.app%2F&text=KittyCakeToken')"
                     />
@@ -75,7 +75,7 @@
                         src="@/assets/img/social-media/Facebook.png"
                         height="50"
                         width="50"
-                        class="mx-3"
+                        class="mx-3 social-media"
                         alt="social-media"
                     />
                 </v-col>
@@ -91,7 +91,7 @@
     </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 #partners {
     background-image: url("../assets/img/background/feature-background.png");
     backdrop-filter: blur(30px) !important;
@@ -104,6 +104,13 @@
 }
 .v-icon.notranslate.mdi.mdi-chevron-right.theme--light {
     color: white !important;
+}
+.social-media {
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    &:hover {
+        transform: scale(1.5);
+    }
 }
 </style>
 

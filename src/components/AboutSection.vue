@@ -49,30 +49,30 @@
                             text-sm-h4 text-h6 text-xl-h5
                             my-5
                         "
-                    >   
-                        
+                    >
+
                         <br />
-                        KittyCake garners the attention of both crypto enthusiasts and investors with its unique tokenomics and ecosystem. 
+                        KittyCake garners the attention of both crypto enthusiasts and investors with its unique tokenomics and ecosystem.
                         It has positioned itself in a unique way by bringing the best of gaming, NFTs and reward system in one place.
                         <br />
                         <br />
-                        An anonymous developer launched a token named KittyCake inspired from the Waving Lucky Cat of the Chinese/Japanese community.  
-                        It was believed that the figurine will bring good fortune and luck to the owners. 
+                        An anonymous developer launched a token named KittyCake inspired from the Waving Lucky Cat of the Chinese/Japanese community.
+                        It was believed that the figurine will bring good fortune and luck to the owners.
 
                         <br />
                         <br />
                         A strong community quickly formed around it; the token did really well initially & provided investors with a passive income of over 100,000 $CAKE Tokens i.e. over $2 M in dividend payments.
-                         However like many other projects the project was abandoned by the developers but the vibrant community did not give up on it. 
-                         The current team, a group of very initial investors took the initiative and proposed a community takeover, which was welcomed by the community. 
-                        Now we are re launching the project. We aim to bring the destined glory to the investors and community. 
+                         However like many other projects the project was abandoned by the developers but the vibrant community did not give up on it.
+                         The current team, a group of very initial investors took the initiative and proposed a community takeover, which was welcomed by the community.
+                        Now we are re launching the project. We aim to bring the destined glory to the investors and community.
 
                         <br />
                         <br />
-                        The team has put in place a solid long-term roadmap and is consistently working 
+                        The team has put in place a solid long-term roadmap and is consistently working
                         to build an ecosystem with a goal of making sustainability and longevity as the central focus.
 
                         <br />
-                        <br /> 
+                        <br />
                         Now, it is KittyCake’s turn to bring you tons of fortune through its CAKE token.
                         <br /><br />
                     </h1>
@@ -95,6 +95,20 @@
 <script>
 export default {
     mounted() {
+                this.$gsap.utils.toArray("section#about").forEach((section, i) => {
+            section.style.backgroundPosition = "0% 0px";
+
+            this.$gsap.to(section, {
+                backgroundPosition: `0% ${-window.innerHeight / 3}px`,
+                scrollTrigger: {
+                    trigger: "#about",
+                    start: "top bottom",
+                    scrub: true,
+                },
+                ease: "none",
+            });
+        });
+
         this.$gsap.to(".scroll-downs", {
             duration: 0.5,
             y: -100,
@@ -156,29 +170,6 @@ export default {
                 start: "90% bottom",
             },
         });
-
-        // this.$gsap.utils
-        //     .toArray("#about #about-content")
-        //     .forEach((section, i) => {
-        //         this.$gsap.fromTo(
-        //             section,
-        //             {
-        //                 y: section.offsetHeight,
-        //             },
-        //             {
-        //                 scrollTrigger: {
-        //                     trigger: section.parentElement,
-        //                     scrub: true,
-        //                     start: "top top",
-        //                     end: "bottom bottom",
-        //                 },
-        //                 y:
-        //                     section.parentElement.offsetHeight -
-        //                     section.offsetHeight,
-        //                 ease: "none",
-        //             }
-        //         );
-        //     });
     },
 };
 </script>
