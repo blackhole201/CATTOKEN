@@ -16,7 +16,7 @@
                     xl="2"
                     lg="4"
                     md="4"
-                    sm="2"
+                    sm="4"
                     class="text-left"
                     data-aos="fade-up"
                     data-aos-duration="500"

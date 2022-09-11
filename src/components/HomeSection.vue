@@ -11,7 +11,7 @@
                 src="@/assets/img/cat-final.webp"
                 width="auto"
                 height="700"
-                class="kitty-image d-none d-md-block"
+                class="kitty-image d-none d-lg-block"
                 alt=""
             />
             <v-row align="center" justify="center">
@@ -32,26 +32,35 @@
                         />
                         <h2
                             class="
-                                text-h3
-                                text-xl-h2
-                                text-lg-h3
+                                text-h4
+                                text-xl-h3
+                                text-lg-h4
                                 text-md-h3
                                 text-sm-h3
                                 font-weight-medium
-                                mb-4
                             "
                         >
                             Not Just A Meme Coin
                         </h2>
-                        <p>
-                            Description text Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab facilis corrupti quis natus eos temporibus quos? Beatae, mollitia. Harum dicta accusantium nihil neque est ab similique non sit reprehenderit?
+                        <p class="
+                                text-subtitle-1
+                                text-xl-h6
+                                text-lg-h6
+                                text-md-h6
+                                text-sm-subtitle-1
+                                font-weight-light
+                            ">
+                            Description text Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Velit ab facilis
+                            corrupti quis natus eos temporibus quos? Beatae,
+                            mollitia. Harum dicta accusantium nihil neque est ab
+                            similique non sit reprehenderit?
                         </p>
                         <v-btn
                             color="primary"
                             rounded
                             x-large
                             @click="$vuetify.goTo('#features')"
-                            class="mt-5"
                         >
                             Buy Presale
                             <v-icon color="white">mdi-plus</v-icon>
@@ -124,11 +133,13 @@ export default {
         imageWidth() {
             switch (this.$vuetify.breakpoint.name) {
                 case "xs":
-                    return 100 + "%";
+                    return 110 + "%";
                 case "sm":
                     return 100 + "%";
                 case "md":
-                    return 40 + "rem";
+                    return 100 + "%";
+                case "lg":
+                    return 45 + "rem";
                 default:
                     return 60 + "rem";
             }
@@ -141,19 +152,21 @@ export default {
         },
     },
     mounted() {
-                this.$gsap.utils.toArray(".v-parallax__image-container").forEach((section, i) => {
-            section.style.backgroundPosition = "0% 0px";
+        this.$gsap.utils
+            .toArray(".v-parallax__image-container")
+            .forEach((section, i) => {
+                section.style.backgroundPosition = "0% 0px";
 
-            this.$gsap.to(section, {
-                backgroundPosition: `80% ${-window.innerHeight / 1}px`,
-                scrollTrigger: {
-                    trigger: "#hero",
-                    start: "top bottom",
-                    scrub: true,
-                },
-                ease: "none",
+                this.$gsap.to(section, {
+                    backgroundPosition: `80% ${-window.innerHeight / 1}px`,
+                    scrollTrigger: {
+                        trigger: "#hero",
+                        start: "top bottom",
+                        scrub: true,
+                    },
+                    ease: "none",
+                });
             });
-        });
         window.addEventListener("scroll", this.positionScroll);
 
         this.$gsap.utils.toArray(".kitty-image").forEach((section, i) => {

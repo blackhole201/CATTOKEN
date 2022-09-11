@@ -40,7 +40,8 @@
                             text-sm-h3 text-h3 text-xl-h2
                         "
                     >
-                        <span class="primary--text">KittyCake</span> not just a meme coin.
+                        <span class="primary--text">KittyCake</span> not just a
+                        meme coin.
                     </h1>
                     <h1
                         class="
@@ -50,30 +51,44 @@
                             my-5
                         "
                     >
-
                         <br />
-                        KittyCake garners the attention of both crypto enthusiasts and investors with its unique tokenomics and ecosystem.
-                        It has positioned itself in a unique way by bringing the best of gaming, NFTs and reward system in one place.
-                        <br />
-                        <br />
-                        An anonymous developer launched a token named KittyCake inspired from the Waving Lucky Cat of the Chinese/Japanese community.
-                        It was believed that the figurine will bring good fortune and luck to the owners.
-
+                        KittyCake garners the attention of both crypto
+                        enthusiasts and investors with its unique tokenomics and
+                        ecosystem. It has positioned itself in a unique way by
+                        bringing the best of gaming, NFTs and reward system in
+                        one place.
                         <br />
                         <br />
-                        A strong community quickly formed around it; the token did really well initially & provided investors with a passive income of over 100,000 $CAKE Tokens i.e. over $2 M in dividend payments.
-                         However like many other projects the project was abandoned by the developers but the vibrant community did not give up on it.
-                         The current team, a group of very initial investors took the initiative and proposed a community takeover, which was welcomed by the community.
-                        Now we are re launching the project. We aim to bring the destined glory to the investors and community.
+                        An anonymous developer launched a token named KittyCake
+                        inspired from the Waving Lucky Cat of the
+                        Chinese/Japanese community. It was believed that the
+                        figurine will bring good fortune and luck to the owners.
 
                         <br />
                         <br />
-                        The team has put in place a solid long-term roadmap and is consistently working
-                        to build an ecosystem with a goal of making sustainability and longevity as the central focus.
+                        A strong community quickly formed around it; the token
+                        did really well initially & provided investors with a
+                        passive income of over 100,000 $CAKE Tokens i.e. over $2
+                        M in dividend payments. However like many other projects
+                        the project was abandoned by the developers but the
+                        vibrant community did not give up on it. The current
+                        team, a group of very initial investors took the
+                        initiative and proposed a community takeover, which was
+                        welcomed by the community. Now we are re launching the
+                        project. We aim to bring the destined glory to the
+                        investors and community.
 
                         <br />
                         <br />
-                        Now, it is KittyCake’s turn to bring you tons of fortune through its CAKE token.
+                        The team has put in place a solid long-term roadmap and
+                        is consistently working to build an ecosystem with a
+                        goal of making sustainability and longevity as the
+                        central focus.
+
+                        <br />
+                        <br />
+                        Now, it is KittyCake’s turn to bring you tons of fortune
+                        through its CAKE token.
                         <br /><br />
                     </h1>
                     <v-btn
@@ -95,7 +110,7 @@
 <script>
 export default {
     mounted() {
-                this.$gsap.utils.toArray("section#about").forEach((section, i) => {
+        this.$gsap.utils.toArray("section#about").forEach((section, i) => {
             section.style.backgroundPosition = "0% 0px";
 
             this.$gsap.to(section, {
@@ -107,6 +122,16 @@ export default {
                 },
                 ease: "none",
             });
+        });
+
+        this.$gsap.to(".planet-1", {
+            top: "20%",
+            scrollTrigger: {
+                trigger: "#about",
+                start: "top bottom",
+                scrub: true,
+            },
+            ease: "none",
         });
 
         this.$gsap.to(".scroll-downs", {
@@ -214,12 +239,51 @@ export default {
     position: absolute;
     right: 0;
     left: 0;
-    top: -50px;
+    top: -13rem;
     margin: auto;
     width: auto;
     height: 55px;
     text-align: center;
     color: white;
+}
+@media only screen and (min-width: 1680px) {
+    .scroll-downs {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -5rem;
+        margin: auto;
+        width: auto;
+        height: 55px;
+        text-align: center;
+        color: white;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .scroll-downs {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -14rem;
+        margin: auto;
+        width: auto;
+        height: 55px;
+        text-align: center;
+        color: white;
+    }
+}
+@media only screen and (min-height: 667px) {
+    .scroll-downs {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -16rem;
+        margin: auto;
+        width: auto;
+        height: 55px;
+        text-align: center;
+        color: white;
+    }
 }
 .text {
     font-size: 2rem;

@@ -53,7 +53,7 @@
                         width="50"
                         class="mx-3 social-media"
                         alt="social-media"
-                        @click="clickedImage('https://www.instagram.com/kittycake2022/?igshid=YmMyMTA2M2Y%3D')"
+                        @click="clickedImage('https://www.instagram.com/kittycake2022')"
                     />
                     <img
                         src="@/assets/img/social-media/Telegram.png"
@@ -61,7 +61,7 @@
                         width="50"
                         class="mx-3 social-media"
                         alt="social-media"
-                        @click="clickedImage('https://telegram.me/share/url?url=https%3A%2F%2Fcattoken.vercel.app%2F&text=KittyCakeToken')"
+                        @click="clickedImage('https://t.me/kittycaketoken')"
                     />
                     <img
                         src="@/assets/img/social-media/Twitter.png"
@@ -69,7 +69,7 @@
                         width="50"
                         class="mx-3 social-media"
                         alt="social-media"
-                        @click="clickedImage('https://twitter.com/intent/tweet?url=https%3A%2F%2Fcattoken.vercel.app%2F&text=KittyCakeToken')"
+                        @click="clickedImage('https://twitter.com/kittycaketoken')"
                     />
                     <img
                         src="@/assets/img/social-media/Facebook.png"
