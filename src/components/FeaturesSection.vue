@@ -1,75 +1,76 @@
 <template>
-    <section id="features">
-        <!-- <img
-            src="@/assets/img/sun.png"
-            alt="Sun Image"
-            height="200"
-            class="sun"
-        /> -->
-        <v-container class="features">
-            <h1
-                class="
-                    display-3
-                    text-center
-                    white--text
-                    font-weight-bold
-                    feature-title
-                    text-h3
-                "
-                style="margin-top: 7rem"
-            >
-                What do we offer
-            </h1>
-            <v-row align="stretch" justify="center" class="my-8">
-                <v-col
-                    cols="12"
-                    xl="4"
-                    lg="4"
-                    md="4"
-                    sm="6"
-                    class="text-left card"
-                    v-for="(feature, i) in features"
-                    :key="i"
+    <v-lazy         v-model="isActive"
+        :options="{
+            threshold: 0.5,
+        }"
+        transition="fade-transition">
+        <section id="features">
+            <v-container class="features">
+                <h1
+                    class="
+                        display-3
+                        text-center
+                        white--text
+                        font-weight-bold
+                        feature-title
+                        text-h3
+                    "
+                    style="margin-top: 7rem"
                 >
-                    <v-hover v-slot:default="{ hover }">
-                        <v-card style="cursor: pointer" class="card-features">
-                            <v-img
-                                :src="feature.img"
-                                max-width="100px"
-                                class="d-block mr-auto"
-                                :class="{ 'zoom-efect': hover }"
-                            ></v-img>
-                            <h1 class="font-weight-bold">
-                                {{ feature.title }}
-                            </h1>
-                            <p class="font-weight-regular subtitle-2">
-                                {{ feature.text }}
-                            </p>
-                        </v-card>
-                    </v-hover>
-                </v-col>
-            </v-row>
-        </v-container>
-    </section>
+                    What do we offer
+                </h1>
+                <v-row align="stretch" justify="center" class="my-8">
+                    <v-col
+                        cols="12"
+                        xl="4"
+                        lg="4"
+                        md="4"
+                        sm="6"
+                        class="text-left card"
+                        v-for="(feature, i) in features"
+                        :key="i"
+                    >
+                        <v-hover v-slot:default="{ hover }">
+                            <v-card style="cursor: pointer" class="card-features">
+                                <v-img
+                                    :src="feature.img"
+                                    max-width="100px"
+                                    class="d-block mr-auto"
+                                    :class="{ 'zoom-efect': hover }"
+                                ></v-img>
+                                <h1 class="font-weight-bold">
+                                    {{ feature.title }}
+                                </h1>
+                                <p class="font-weight-regular subtitle-2">
+                                    {{ feature.text }}
+                                </p>
+                            </v-card>
+                        </v-hover>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </section>
+    </v-lazy>
 </template>
 
 <script>
 export default {
     data() {
         return {
+            isActive: true,
             features: [
                 {
-                    img: require("@/assets/img/planet1.png"),
+                    img: require("@/assets/img/planet1.webp"),
                     title: "4% CAKE Redistribution",
                     text: "4% of every buy/sell is taken and redistributed to all holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 200,000 tokens is required in order to qualify for rewards.",
                 },
                 {
-                    img: require("@/assets/img/planet2.png"),
+                    img: require("@/assets/img/planet2.webp"),
                     title: "Automatic Reward Payment",
                     text: "No need to claim your earned $CAKE, it’s automatically sent to your wallet. Just add the PancakeSwap token ($CAKE) address to your wallet and you're set.",
                 },
                 {
-                    img: require("@/assets/img/planet3.png"),
+                    img: require("@/assets/img/planet3.webp"),
                     title: "Strategic Marketing",
                     text: "2% of every transaction is allocated to Marketing in $CAKE (swapped to CAKE in real-time to avoid dumps). This allows us to invest and develop the project further to expand the rewards for our community.",
                 },
@@ -117,7 +118,7 @@ export default {
     color: white;
     width: 100%;
     padding-top: 5rem;
-    background: url("../assets/img/background/feature-background.png");
+    background: url("../assets/img/background/feature-background.webp");
 }
 .card-features {
     padding: 24px;

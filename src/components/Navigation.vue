@@ -4,7 +4,7 @@
             <v-list>
                 <v-list-item>
                     <v-list-item-avatar>
-                        <img src="@/assets/img/Logo-kitty.webp" alt="Logo" />
+                        <img src="@/assets/img/Logo-kitty.webp" alt="Logo" width="100%" height="100%" style="object-fit: cover" />
                     </v-list-item-avatar>
                     <v-list-item-content>
                         <v-list-item-title class="title"
@@ -43,7 +43,7 @@
             :class="{ expand: flat }"
         >
             <v-toolbar-title>
-                <v-img src="@/assets/img/Logo-kitty.webp" max-width="70px" />
+                <v-img src="@/assets/img/Logo-kitty.webp" max-width="70px" width="70" />
             </v-toolbar-title>
             <v-spacer />
             <v-app-bar-nav-icon

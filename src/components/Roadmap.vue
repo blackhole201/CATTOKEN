@@ -81,7 +81,7 @@ export default {
 <style lang="scss">
 #roadmap {
     background-repeat: no-repeat;
-    background: url("../assets/img/background/roadmap-background.png");
+    background: url("../assets/img/background/roadmap-background.webp");
     width: 100%;
     padding-bottom: 8rem;
     z-index: 9999;

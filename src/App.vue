@@ -1,7 +1,6 @@
 <template>
     <v-app id="app">
         <navigation :color="color" :flat="flat" />
-        <!-- <img src="@/assets/img/moon.png" alt="Moon" class="moon" /> -->
         <v-main class="pt-0">
             <home />
             <about />
@@ -49,7 +48,7 @@ body {
         rgba(17, 11, 51, 0.965232) 98.91%
     ); */
     font-family: "Saira", Helvetica, Arial;
-    background: url("./assets/img/background/galaxy.png");
+    background: url("./assets/img/background/galaxy.webp");
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -73,29 +72,19 @@ body {
 </style>
 
 <script>
-import navigation from "./components/Navigation";
-import home from "./components/HomeSection";
-import about from "./components/AboutSection";
-import features from "./components/FeaturesSection";
-import partners from "./components/PartnersSection";
-import buy from "./components/BuySection";
-import team from "./components/TeamSection";
-import faq from "./components/FAQSection";
-import ProductRoadmap from "./components/Roadmap.vue";
-
 export default {
     name: "App",
 
     components: {
-        navigation,
-        home,
-        features,
-        about,
-        partners,
-        buy,
-        team,
-        faq,
-        ProductRoadmap,
+        navigation: () => import("@/components/Navigation"),
+        home: () => import('@/components/HomeSection'),
+        about: () => import('@/components/AboutSection'),
+        features: () => import('@/components/FeaturesSection'),
+        partners: () => import('@/components/PartnersSection'),
+        buy: () => import('@/components/BuySection'),
+        team: () => import('@/components/TeamSection'),
+        faq: () => import('@/components/FAQSection'),
+        roadmap: () => import('@/components/Roadmap'),
     },
 
     metaInfo: {

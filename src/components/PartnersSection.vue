@@ -93,7 +93,7 @@
 
 <style scoped lang="scss">
 #partners {
-    background-image: url("../assets/img/background/feature-background.png");
+    background-image: url("../assets/img/background/feature-background.webp");
     backdrop-filter: blur(30px) !important;
     border-radius: 40px 40px 0px 0px;
     padding-top: 80px;
@@ -150,19 +150,6 @@ export default {
         }
     },
     mounted() {
-        // this.$gsap.utils.toArray("section#partners").forEach((section, i) => {
-        //     section.style.backgroundPosition = "0% 0px";
-        //     this.$gsap.to('section', {
-        //         backgroundPosition: `50% ${-window.innerHeight / 4}px`,
-        //         scrollTrigger: {
-        //             trigger: section,
-        //             start: "20% bottom",
-        //             scrub: true,
-        //             markers: true
-        //         },
-        //         ease: "none",
-        //     });
-        // });
     },
 };
 </script>

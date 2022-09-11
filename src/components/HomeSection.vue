@@ -26,8 +26,9 @@
                         :align-self="'start'"
                     >
                         <img
-                            src="@/assets/img/text-logo.png"
+                            src="@/assets/img/text-logo.webp"
                             alt="Text Logo"
+                            height="100%"
                             :style="{ width: imageWidth }"
                         />
                         <h2
