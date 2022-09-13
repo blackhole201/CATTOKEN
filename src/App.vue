@@ -5,7 +5,7 @@
             <home />
             <about />
             <features />
-            <product-roadmap />
+            <roadmap />
             <buy />
             <team />
             <faq />

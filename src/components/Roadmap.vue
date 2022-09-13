@@ -30,8 +30,8 @@ export default {
             {
                 title: "September 2022",
                 content: "V2 Presale launch",
-                stepCssClass: 'is-active',
-                boxCssClass: 'is-box-active',
+                stepCssClass: "is-active",
+                boxCssClass: "is-box-active",
             },
             {
                 title: "September 2022",
@@ -88,7 +88,7 @@ export default {
 }
 
 .is-active::after {
-    background: green !important;
+    background: rgb(0, 255, 0) !important;
 }
 
 .is-box-active {
@@ -113,13 +113,15 @@ export default {
                         border-top-right-radius: 16px;
                         padding: 2rem 1rem !important;
                         background: transparent !important;
-                        box-shadow: 12px 4px 44px rgba(249, 117, 34, 1);
                         border: 3px solid rgba(249, 117, 34, 1);
                         transition: 0.5s ease-out;
                         backdrop-filter: blur(30px) !important;
 
                         &::before {
                             border-color: transparent !important;
+                        }
+                        &:hover {
+                            box-shadow: 12px 4px 44px rgba(249, 117, 34, 1);
                         }
                     }
                 }
@@ -133,12 +135,15 @@ export default {
                         border-bottom-right-radius: 16px !important;
                         padding: 2rem 1rem !important;
                         background: transparent !important;
-                        box-shadow: 12px 4px 44px rgba(249, 117, 34, 1);
                         border: 3px solid rgba(249, 117, 34, 1);
                         backdrop-filter: blur(30px) !important;
 
                         &::before {
                             border-color: transparent !important;
+                        }
+
+                        &:hover {
+                            box-shadow: 12px 4px 44px rgba(249, 117, 34, 1);
                         }
                     }
                 }

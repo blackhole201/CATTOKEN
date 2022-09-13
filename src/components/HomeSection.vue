@@ -13,6 +13,7 @@
                 height="700"
                 class="kitty-image d-none d-lg-block"
                 alt=""
+                :style="{ right: rightPosition }"
             />
             <v-row align="center" justify="center">
                 <v-col cols="10">
@@ -43,14 +44,16 @@
                         >
                             Not Just A Meme Coin
                         </h2>
-                        <p class="
+                        <p
+                            class="
                                 text-subtitle-1
                                 text-xl-h6
                                 text-lg-h6
                                 text-md-h6
                                 text-sm-subtitle-1
                                 font-weight-light
-                            ">
+                            "
+                        >
                             Description text Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Velit ab facilis
                             corrupti quis natus eos temporibus quos? Beatae,
@@ -115,6 +118,10 @@ export default {
                     return "auto";
                 case "md":
                     return "auto";
+                case "lg":
+                    return -200 + "px";
+                case "xl":
+                    return -20 + "px";
                 default:
                     return "unset";
             }
