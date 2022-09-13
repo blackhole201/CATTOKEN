@@ -51,21 +51,21 @@
                 class="mr-4"
                 v-if="isXs"
             />
-            <div v-else>
-                <v-btn text @click="$vuetify.goTo('#about')">
-                    <span class="mr-2">About Us</span>
+            <div class="font-weight-bold" v-else>
+                <v-btn text x-large @click="$vuetify.goTo('#about')">
+                    <span class="mr-2 font-weight-black">About Us</span>
                 </v-btn>
-                <v-btn text @click="$vuetify.goTo('#features')">
-                    <span class="mr-2">Our Features</span>
+                <v-btn text x-large @click="$vuetify.goTo('#features')">
+                    <span class="mr-2 font-weight-black">Our Features</span>
                 </v-btn>
-                <v-btn text @click="$vuetify.goTo('#roadmap')">
-                    <span class="mr-2">Roadmap</span>
+                <v-btn text x-large @click="$vuetify.goTo('#roadmap')">
+                    <span class="mr-2 font-weight-black">Roadmap</span>
                 </v-btn>
-                <v-btn text @click="$vuetify.goTo('#buy')">
-                    <span class="mr-2">Buy Presale</span>
+                <v-btn text x-large @click="$vuetify.goTo('#buy')">
+                    <span class="mr-2 font-weight-black">Buy Presale</span>
                 </v-btn>
-                <v-btn ref="faq" text @click="goToSection('#connect')">
-                    <span class="mr-2">Connect With Us</span>
+                <v-btn ref="faq" text x-large @click="$vuetify.goTo('#partners')">
+                    <span class="mr-2 font-weight-black">Connect With Us</span>
                 </v-btn>
             </div>
         </v-app-bar>
@@ -96,7 +96,7 @@ export default {
             ["mdi-information-outline", "Our Features", "#features"],
             ["mdi-download-box-outline", "Roadmap", "#roadmap"],
             ["mdi-email-outline", "Buy Presale", "#buy"],
-            ["mdi-email-outline", "Connect With Us", "#connect"],
+            ["mdi-email-outline", "Connect With Us", "#partners"],
         ],
     }),
     props: {

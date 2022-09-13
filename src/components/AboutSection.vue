@@ -125,7 +125,37 @@ export default {
         });
 
         this.$gsap.to(".planet-1", {
-            top: "20%",
+            top: "30%",
+            scrollTrigger: {
+                trigger: "#about",
+                start: "top bottom",
+                scrub: true,
+            },
+            ease: "none",
+        });
+
+        this.$gsap.to(".planet-2", {
+            top: "15%",
+            scrollTrigger: {
+                trigger: "#about",
+                start: "top bottom",
+                scrub: true,
+            },
+            ease: "none",
+        });
+
+        this.$gsap.to(".planet-3", {
+            top: "10%",
+            scrollTrigger: {
+                trigger: "#about",
+                start: "top bottom",
+                scrub: true,
+            },
+            ease: "none",
+        });
+
+        this.$gsap.to(".planet-4", {
+            top: "25%",
             scrollTrigger: {
                 trigger: "#about",
                 start: "top bottom",
