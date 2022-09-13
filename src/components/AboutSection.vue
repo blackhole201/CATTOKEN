@@ -40,8 +40,8 @@
                             text-sm-h3 text-h3 text-xl-h2
                         "
                     >
-                        <span class="primary--text">KittyCake</span> not just a
-                        meme coin.
+                        <span class="primary--text">Kitty</span> has been in this
+                        space for a while now.
                     </h1>
                     <h1
                         class="

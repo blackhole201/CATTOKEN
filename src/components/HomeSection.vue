@@ -52,13 +52,10 @@
                                 text-md-h6
                                 text-sm-subtitle-1
                                 font-weight-light
-                            "
-                        >
-                            Description text Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Velit ab facilis
-                            corrupti quis natus eos temporibus quos? Beatae,
-                            mollitia. Harum dicta accusantium nihil neque est ab
-                            similique non sit reprehenderit?
+                            ">
+                            KittyCake V2 the most sustainable passive income project ins BSC space.
+                            We are not only keeping the rewarded system which has so far paid holders over USD 2,000,000 we will also be adding few more utilities
+                            for sustainability.
                         </p>
                         <v-btn
                             color="primary"

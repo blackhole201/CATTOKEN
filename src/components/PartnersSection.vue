@@ -77,6 +77,7 @@
                         width="50"
                         class="mx-3 social-media"
                         alt="social-media"
+                        @click="clickedImage('https://www.facebook.com/KittycakeTokenOfficial')"
                     />
                 </v-col>
             </v-row>
