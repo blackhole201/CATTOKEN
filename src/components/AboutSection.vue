@@ -207,7 +207,7 @@ export default {
         });
         this.$gsap.to(".planet-3", {
             x: -900,
-            y: 1000,
+            y: 800,
             duration: 1.5,
             scale: 0.5,
             scrollTrigger: {
@@ -217,7 +217,7 @@ export default {
         });
         this.$gsap.to(".planet-4", {
             x: -1000,
-            y: 850,
+            y: 650,
             duration: 1.5,
             scale: 0.8,
             scrollTrigger: {
