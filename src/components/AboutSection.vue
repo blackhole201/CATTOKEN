@@ -1,21 +1,9 @@
 <template>
-    <v-lazy
-        v-model="isActive"
-        :options="{
-            threshold: 0.5,
-        }"
-        transition="fade-transition"
-    >
-        <section id="about">
-            <div class="scroll-downs">
-                <div class="mousey">
-                    <div class="scroller"></div>
-                </div>
-                <div class="text font-weight-thin">SCROLL DOWN</div>
+    <section id="about">
+        <div class="scroll-downs">
+            <div class="mousey">
+                <div class="scroller"></div>
             </div>
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
             <div class="text font-weight-thin">SCROLL DOWN</div>
         </div>
         <img
@@ -52,9 +40,8 @@
                             text-sm-h3 text-h3 text-xl-h2
                         "
                     >
-                        <span class="primary--text">KittyCake</span>
-                        <br />
-                         not just another meme coin.
+                        <span class="primary--text">KittyCake</span> not just a
+                        meme coin.
                     </h1>
                     <h1
                         class="
@@ -63,34 +50,46 @@
                             text-sm-h4 text-h6 text-xl-h5
                             my-5
                         "
-                    >   
-                        
+                    >
                         <br />
-                        KittyCake garners the attention of both crypto enthusiasts and investors with its unique tokenomics and ecosystem. 
-                        It has positioned itself in a unique way by bringing the best of gaming, NFTs and reward system in one place.
+                        KittyCake garners the attention of both crypto
+                        enthusiasts and investors with its unique tokenomics and
+                        ecosystem. It has positioned itself in a unique way by
+                        bringing the best of gaming, NFTs and reward system in
+                        one place.
                         <br />
                         <br />
-                        An anonymous developer launched a token named KittyCake inspired from the Waving Lucky Cat of the Chinese/Japanese community.  
-                        It was believed that the figurine will bring good fortune and luck to the owners. 
+                        An anonymous developer launched a token named KittyCake
+                        inspired from the Waving Lucky Cat of the
+                        Chinese/Japanese community. It was believed that the
+                        figurine will bring good fortune and luck to the owners.
 
                         <br />
                         <br />
-                        A strong community quickly formed around it; the token did really well initially & provided investors with a passive income of over 100,000 $CAKE Tokens i.e. over $2 M in dividend payments.
-                         However like many other projects the project was abandoned by the developers but the vibrant community did not give up on it. 
-                         The current team, a group of very initial investors took the initiative and proposed a community takeover, which was welcomed by the community. 
-                        Now we are re launching the project. We aim to bring the destined glory to the investors and community. 
+                        A strong community quickly formed around it; the token
+                        did really well initially & provided investors with a
+                        passive income of over 100,000 $CAKE Tokens i.e. over $2
+                        M in dividend payments. However like many other projects
+                        the project was abandoned by the developers but the
+                        vibrant community did not give up on it. The current
+                        team, a group of very initial investors took the
+                        initiative and proposed a community takeover, which was
+                        welcomed by the community. Now we are re launching the
+                        project. We aim to bring the destined glory to the
+                        investors and community.
 
                         <br />
                         <br />
-                        The team has put in place a solid long-term roadmap and is consistently working 
-                        to build an ecosystem with a goal of making sustainability and longevity as the central focus.
+                        The team has put in place a solid long-term roadmap and
+                        is consistently working to build an ecosystem with a
+                        goal of making sustainability and longevity as the
+                        central focus.
 
                         <br />
-                        <br /> 
-                        Now, it is KittyCake’s turn to bring you tons of fortune through its CAKE token.
                         <br />
-                        <br />
-                        
+                        Now, it is KittyCake’s turn to bring you tons of fortune
+                        through its CAKE token.
+                        <br /><br />
                     </h1>
                     <v-btn
                         color="primary"
@@ -106,118 +105,10 @@
             </v-row>
         </v-container>
     </section>
-=======
->>>>>>> Stashed changes
-            <v-container id="about-content">
-                <img
-                    src="@/assets/img/planet1.webp"
-                    alt="Planet-1"
-                    height="300"
-                    class="planet-1"
-                />
-                <img
-                    src="@/assets/img/planet2.webp"
-                    alt="Planet-2"
-                    height="300"
-                    class="planet-2"
-                />
-                <img
-                    src="@/assets/img/planet3.webp"
-                    alt="Planet-3"
-                    height="300"
-                    class="planet-3"
-                />
-                <img
-                    src="@/assets/img/planet4.png"
-                    alt="Planet-4"
-                    height="300"
-                    class="planet-4"
-                />
-                <v-row align="center" justify="center">
-                    <v-col cols="12">
-                        <h1
-                            class="
-                                heading
-                                font-weight-medium
-                                text-sm-h3 text-h3 text-xl-h2
-                            "
-                        >
-                            <span class="primary--text">KittyCake</span> not
-                            just a meme coin.
-                        </h1>
-                        <h1
-                            class="
-                                content
-                                font-weight-light
-                                text-sm-h4 text-h6 text-xl-h5
-                                my-5
-                            "
-                        >
-                            <br />
-                            KittyCake garners the attention of both crypto
-                            enthusiasts and investors with its unique tokenomics
-                            and ecosystem. It has positioned itself in a unique
-                            way by bringing the best of gaming, NFTs and reward
-                            system in one place.
-                            <br />
-                            <br />
-                            An anonymous developer launched a token named
-                            KittyCake inspired from the Waving Lucky Cat of the
-                            Chinese/Japanese community. It was believed that the
-                            figurine will bring good fortune and luck to the
-                            owners.
-                            <br />
-                            <br />
-                            A strong community quickly formed around it; the
-                            token did really well initially & provided investors
-                            with a passive income of over 100,000 $CAKE Tokens
-                            i.e. over $2 M in dividend payments. However like
-                            many other projects the project was abandoned by the
-                            developers but the vibrant community did not give up
-                            on it. The current team, a group of very initial
-                            investors took the initiative and proposed a
-                            community takeover, which was welcomed by the
-                            community. Now we are re launching the project. We
-                            aim to bring the destined glory to the investors and
-                            community.
-                            <br />
-                            <br />
-                            The team has put in place a solid long-term roadmap
-                            and is consistently working to build an ecosystem
-                            with a goal of making sustainability and longevity
-                            as the central focus.
-                            <br />
-                            <br />
-                            Now, it is KittyCake’s turn to bring you tons of
-                            fortune through its CAKE token.
-                            <br /><br />
-                        </h1>
-                        <v-btn
-                            color="primary"
-                            x-large
-                            outlined
-                            rounded
-                            style="background-color: white"
-                            class="mt-5"
-                            >Read Our Whitepaper
-                            <v-icon color="primary">mdi-arrow-right</v-icon>
-                        </v-btn>
-                    </v-col>
-                </v-row>
-            </v-container>
-        </section>
-    </v-lazy>
-<<<<<<< Updated upstream
-=======
->>>>>>> 7e008489b6145f8871b41bc37fc6205064df1ad7
->>>>>>> Stashed changes
 </template>
 
 <script>
 export default {
-    data: () => ({
-        isActive: true
-    }),
     mounted() {
         this.$gsap.utils.toArray("section#about").forEach((section, i) => {
             section.style.backgroundPosition = "0% 0px";
@@ -316,7 +207,7 @@ export default {
     color: white;
     width: 100%;
     padding: 5rem 0;
-    background: url("../assets/img/background/about.webp");
+    background: url("../assets/img/background/about.png");
 }
 .planet-1 {
     position: absolute;
