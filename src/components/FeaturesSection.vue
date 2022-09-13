@@ -17,7 +17,7 @@
                     "
                     style="margin-top: 7rem"
                 >
-                    What do we offer
+                    Tokenomics
                 </h1>
                 <v-row align="stretch" justify="center" class="my-8">
                     <v-col
@@ -62,7 +62,7 @@ export default {
                 {
                     img: require("@/assets/img/planet1.webp"),
                     title: "4% CAKE Redistribution",
-                    text: "4% of every buy/sell is taken and redistributed to all holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 200,000 tokens is required in order to qualify for rewards.",
+                    text: "4% of every buy/sell is taken and redistributed to all holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 2.000,000 tokens is required in order to qualify for rewards.",
                 },
                 {
                     img: require("@/assets/img/planet2.webp"),
@@ -82,7 +82,7 @@ export default {
                 {
                     img: require("@/assets/img/planet5.png"),
                     title: "Locked Liquidity",
-                    text: "Initial Liquidity Provided is locked Contract will be audited prior to launch",
+                    text: "Initial Liquidity Provided is locked and Contract will be audited prior to launch",
                 },
                 {
                     img: require("@/assets/img/planet6.png"),
