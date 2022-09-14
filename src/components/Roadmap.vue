@@ -34,7 +34,7 @@ export default {
                 boxCssClass: "is-box-active",
             },
             {
-                title: "September 2022",
+                title: "Ocotber 2022",
                 content: "New reward Dashboard launch",
             },
             {
@@ -51,24 +51,24 @@ export default {
             },
             {
                 title: "Market Cap 1M",
-                content: "Watch to Earn development stage 1",
+                content: "Utility development stage 1",
             },
             {
                 title: "January 2023",
-                content: "First set of NFTs",
+                content: "First set of NFTs limited",
             },
             {
                 title: "Market Cap 5M ",
-                content: "Watch to Earn development stage 2 ",
+                content: "Utility development stage 2 ",
             },
             {
-                title: "Market Cap 2M",
-                content: "Charity of a choice giveaway",
+                title: "January 2023",
+                content: "Online Store",
             },
-            { title: "December 2022", content: "Merchendise shop" },
+            { title: "Marcet Cap 10M", content: "Big reward to all loyal holders" },
             {
-                title: "Market Cap 10M",
-                content: "big bonus to loyal holders",
+                title: "Marcet Cap 20M",
+                content: "Charity donation and all inclusive trip for 2 lucky holders",
             },
         ];
 

@@ -54,8 +54,9 @@
                                 font-weight-light
                             ">
                             KittyCake V2 the most sustainable passive income project ins BSC space.
-                            We are not only keeping the rewarded system which has so far paid holders over USD 2,000,000 we will also be adding few more utilities
-                            for sustainability.
+                            In addition to the existing reward system which has already paid over $2,000,000 
+                            to our loyal holders, we plan to add more utilities including 
+                            Play to Eern Games and NFTs.
                         </p>
                         <v-btn
                             color="primary"

@@ -52,7 +52,7 @@ export default {
                 {
                     img: require("@/assets/img/icon/icon1.webp"),
                     title: "Blackhole",
-                    text: "Main Dev",
+                    text: "Supreme Leader",
                 },
                 {
                     img: require("@/assets/img/icon/icon2.webp"),
@@ -71,8 +71,8 @@ export default {
                 },
                 {
                     img: require("@/assets/img/icon/icon5.webp"),
-                    title: "Asphyx",
-                    text: "Main Dev",
+                    title: "Lobster",
+                    text: "Contract Dev",
                 },
                 {
                     img: require("@/assets/img/icon/icon6.webp"),
