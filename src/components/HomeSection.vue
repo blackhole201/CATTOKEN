@@ -42,7 +42,7 @@
                                 font-weight-medium
                             "
                         >
-                            The only MEME coin powered by Mining
+                            The only MEME coin powered by Bitcoin
                         </h2>
                         <p
                             class="
