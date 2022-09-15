@@ -42,7 +42,7 @@
                                 font-weight-medium
                             "
                         >
-                            Not Just A Meme Coin
+                            The only MEME coin powered by Mining
                         </h2>
                         <p
                             class="
@@ -53,9 +53,9 @@
                                 text-sm-subtitle-1
                                 font-weight-light
                             ">
-                            KittyCake V2 the most sustainable passive income project ins BSC space.
-                            In addition to the existing reward system which has already paid over $2,000,000 
-                            to our loyal holders, we plan to add more utilities including 
+                            KittyCake V2 will become the most sustainable passive income project ins BSC space.
+                            In addition to the existing reward system which has already paid over $2,000,000
+                            to our loyal holders, we plan to add more utilities including
                             Play to Eern Games and NFTs.
                         </p>
                         <v-btn
