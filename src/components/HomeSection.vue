@@ -42,7 +42,7 @@
                                 font-weight-medium
                             "
                         >
-                            The only MEME coin powered by Bitcoin
+                            The only Bitcoin powered MEME token
                         </h2>
                         <p
                             class="
@@ -53,10 +53,10 @@
                                 text-sm-subtitle-1
                                 font-weight-light
                             ">
-                            KittyCake V2 will become the most sustainable passive income project ins BSC space.
+                            KittyCake V2 will become the most sustainable passive income project on the BSC chain.
                             In addition to the existing reward system which has already paid over $2,000,000
                             to our loyal holders, we plan to add more utilities including
-                            Play to Eern Games and NFTs.
+                            Play to Earn Games and NFTs.
                         </p>
                         <v-btn
                             color="primary"
