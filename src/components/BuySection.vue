@@ -25,8 +25,8 @@
                 class="display-3 text-left white--text font-weight-bold text-h3"
                 style="margin-bottom: 130px"
             >
-                Get Ready to trade after Presale is
-                <span class="primary--text">finished.</span>
+        
+                <span class="primary--text">Tokenomics</span>
             </h1>
 
             <v-row>

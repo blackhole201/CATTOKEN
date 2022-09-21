@@ -53,10 +53,10 @@
                                 text-sm-subtitle-1
                                 font-weight-light
                             ">
-                            KittyCake V2 will become the most sustainable passive income project on the BSC chain.
-                            In addition to the existing reward system which has already paid over $2,000,000
-                            to our loyal holders, we plan to add more utilities including
-                            Play to Earn Games and NFTs.
+                            KittyCake V2 aims to become one of the most sustainable passive income project to date, 
+                            generating continuous revenue through Bitcoin mining.
+                            In addition to the existing reward system which has already paid over $2,000,000 to our loyal holders, 
+                            we plan to add additional utilities through partnerships, conecting projects and investors on the BNB Smart Chain.
                         </p>
                         <v-btn
                             color="primary"
