@@ -1,118 +1,115 @@
 <template>
-    <section id="teams">
-        <v-container id="teams">
-            <h1
-                class="display-3 text-center white--text font-weight-bold text-h3 text-h3"
-                data-aos="fade-up"
-                data-aos-duration="500"
-                data-aos-delay="200"
-                style="margin: 130px 0"
-            >
-                CORE TEAM
-            </h1>
-            <v-row align="strecth" justify="center" class="my-8">
-                <v-col
-                    cols="12"
-                    xl="2"
-                    lg="4"
-                    md="4"
-                    sm="4"
-                    class="text-left"
-                    data-aos="fade-up"
-                    data-aos-duration="500"
-                    :data-aos-delay="200 + i * 300"
-                    v-for="(feature, i) in features"
-                    :key="i"
-                >
-                    <v-hover v-slot:default="{ hover }">
-                        <v-card class="card-features">
-                            <v-img
-                                :src="feature.img"
-                                max-width="70px"
-                                class="d-block mr-auto"
-                                :class="{ 'zoom-efect': hover }"
-                            ></v-img>
-                            <h1 class="font-weight-black primary--text">{{ feature.title }}</h1>
-                            <p class="font-weight-regular subtitle-1">
-                                {{ feature.text }}
-                            </p>
-                        </v-card>
-                    </v-hover>
-                </v-col>
-            </v-row>
-        </v-container>
-    </section>
+  <section id="teams">
+    <v-container id="teams">
+      <h1
+        class="display-3 text-center white--text font-weight-bold text-h3 text-h3"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="200"
+        style="margin: 130px 0"
+      >
+        CORE TEAM
+      </h1>
+      <v-row align="strecth" justify="center" class="my-8">
+        <v-col
+          cols="12"
+          xl="2"
+          lg="2"
+          md="2"
+          sm="4"
+          class="text-left team-wrapper"
+          v-for="(feature, i) in features"
+          :key="i"
+        >
+          <v-hover v-slot:default="{ hover }">
+            <v-card class="card-features">
+              <v-img
+                :src="feature.img"
+                contain
+                class="mx-auto my-auto"
+                max-height="75%"
+              ></v-img>
+            </v-card>
+          </v-hover>
+          <h1 class="font-weight-black white--text text-center mt-8">
+            {{ feature.title }}
+          </h1>
+        </v-col>
+      </v-row>
+    </v-container>
+  </section>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            features: [
-                {
-                    img: require("@/assets/img/icon/icon1.webp"),
-                    title: "Blackhole",
-                    text: "Supreme Leader",
-                },
-                {
-                    img: require("@/assets/img/icon/icon2.webp"),
-                    title: "Salman",
-                    text: "Investment Advisor",
-                },
-                {
-                    img: require("@/assets/img/icon/icon3.webp"),
-                    title: "Sharry",
-                    text: "Lead Social Media Advisor",
-                },
-                {
-                    img: require("@/assets/img/icon/icon4.webp"),
-                    title: "Trin",
-                    text: "Utiltiy Expert",
-                },
-                {
-                    img: require("@/assets/img/icon/icon5.webp"),
-                    title: "Lobster",
-                    text: "Contract Dev",
-                },
-                {
-                    img: require("@/assets/img/icon/icon6.webp"),
-                    title: "Shiva",
-                    text: "Crypto Market analyst",
-                },
-            ],
-        };
-    },
+  data() {
+    return {
+      features: [
+        {
+          img: require("@/assets/img/sticker/sticker-1.png"),
+          title: "Blackhole",
+          text: "Supreme Leader",
+        },
+        {
+          img: require("@/assets/img/sticker/sticker-2.png"),
+          title: "Salman",
+          text: "Investment Advisor",
+        },
+        {
+          img: require("@/assets/img/sticker/sticker-3.png"),
+          title: "Sharry",
+          text: "Lead Social Media Advisor",
+        },
+        {
+          img: require("@/assets/img/sticker/sticker-4.png"),
+          title: "Trin",
+          text: "Utiltiy Expert",
+        },
+        {
+          img: require("@/assets/img/sticker/sticker-5.png"),
+          title: "Lobster",
+          text: "Contract Dev",
+        },
+      ],
+    };
+  },
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.team-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .card-features {
-    padding: 24px;
-    gap: 8px;
-    height: 100%;
-    transition: 0.5s ease-out;
-    background: transparent;
-    backdrop-filter: blur(20px);
-    color: white !important;
-    box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.85);
-    border: 3px solid #92e7ff;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  transition: 0.5s ease-out;
+  background: #525b9b;
+  backdrop-filter: blur(20px);
+  color: white !important;
+  box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.85);
+  border: 1px solid #92e7ff;
+  border-radius: 50%;
 }
 
 .card-features .v-image {
-    margin-bottom: 15px;
-    transition: 0.75s;
+  transition: 0.75s;
 }
 
 .card-features h1 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .zoom-efect {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .up {
-    transform: translateY(-20px);
-    transition: 0.5s ease-out;
+  transform: translateY(-20px);
+  transition: 0.5s ease-out;
 }
 </style>

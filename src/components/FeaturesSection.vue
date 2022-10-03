@@ -1,9 +1,11 @@
 <template>
-    <v-lazy         v-model="isActive"
+    <v-lazy
+        v-model="isActive"
         :options="{
             threshold: 0.5,
         }"
-        transition="fade-transition">
+        transition="fade-transition"
+    >
         <section id="features">
             <v-container class="features">
                 <h1
@@ -31,7 +33,10 @@
                         :key="i"
                     >
                         <v-hover v-slot:default="{ hover }">
-                            <v-card style="cursor: pointer" class="card-features">
+                            <v-card
+                                style="cursor: pointer"
+                                class="card-features"
+                            >
                                 <v-img
                                     :src="feature.img"
                                     max-width="100px"
