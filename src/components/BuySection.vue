@@ -78,27 +78,6 @@ That way, holders can be able to achieve their financial goals more easily witho
 Unlocking the full revenue potential of the crypto ecosystem
 KittyCake is not just another crypto project reliant on traditional models to offer holders normal marginal benefits. We aim to completely turn around the Meme coin landscape by making sure passive income to our holders is lucrative and sustainable.
 That is why part of the revenue generated will be reinvested in more equipment to expand mining operations and consequently, increase revenues. That way, KittyCake will be the most holder-centric project in the world of crypto!
-
-                    
-                    </div>
-                    <div
-                        class="step-5"
-                        data-aos="fade-up"
-                        data-aos-duration="500"
-                        data-aos-delay="200"
-                    >
-                        <h1 class="text-h5">Last step,</h1>
-                        <h2 class="primary--text text-h5">
-                            Add the Pancake Swap Token address to see your
-                            rewards as they are
-                        </h2>
-                        <p class="text-h6">
-                            Pancake Swap Token Address:
-                            <span ref="tokenAddress"
-                                >to be announced when presale starts</span
-                            >.
-
-                        </p>
                     </div>
                 </v-col>
             </v-row>
