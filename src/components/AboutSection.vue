@@ -27,7 +27,7 @@
     <v-container id="about-content">
       <v-row align="center" justify="center">
         <h1 class="heading font-weight-medium text-sm-h3 text-h3 text-xl-h2">
-          <span class="primary--text">KittyCake</span> not just a meme coin.
+          <span class="primary--text">KittyCake</span> Revolutionizing passive income models
         </h1>
         <v-col cols="12" md="6" sm="12"> </v-col>
         <v-col cols="12" md="6" sm="12">
@@ -43,34 +43,18 @@
                 gaming, NFTs and reward system in one place.
                 <br />
                 <br />
-                An anonymous developer launched a token named KittyCake inspired
-                from the Waving Lucky Cat of the Chinese/Japanese community. It
-                was believed that the figurine will bring good fortune and luck
-                to the owners.
+               As the pioneer Bitcoin-powered meme coin, KittyCake doesn’t only aim to offer its 
+               holders more utility than other coins conventionally do. 
+               More importantly, KittyCake is going to transform how passive income is generated in the crypto ecosystem.
 
                 <br />
                 <br />
-                A strong community quickly formed around it; the token did
-                really well initially & provided investors with a passive income
-                of over 100,000 $CAKE Tokens i.e. over $2 M in dividend
-                payments. However like many other projects the project was
-                abandoned by the developers but the vibrant community did not
-                give up on it. The current team, a group of very initial
-                investors took the initiative and proposed a community takeover,
-                which was welcomed by the community. Now we are re launching the
-                project. We aim to bring the destined glory to the investors and
-                community.
-
+                Rather, KittyCake will invest in equipment for mining a variety of cryptocurencies ranging from Bitcoin to Helium and Polkaot. 
+                This will help expand the project’s income channels and consequently, 
+                holders will enjoy higher revenue benefits unlike any other crypto project.
                 <br />
                 <br />
-                The team has put in place a solid long-term roadmap and is
-                consistently working to build an ecosystem with a goal of making
-                sustainability and longevity as the central focus.
-
-                <br />
-                <br />
-                Now, it is KittyCake’s turn to bring you tons of fortune through
-                its CAKE token.
+              
               </p>
               <v-btn
                 color="primary"
@@ -79,7 +63,7 @@
                 rounded
                 style="background-color: white"
                 class="mt-5"
-                >Read Our Whitepaper
+                >Read more about Kitty story.
                 <v-icon color="primary">mdi-arrow-right</v-icon>
               </v-btn>
             </v-card>

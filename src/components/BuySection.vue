@@ -26,63 +26,42 @@
                 style="margin-bottom: 130px"
             >
         
-                <span class="primary--text">Tokenomics</span>
+                <span class="primary--text">How KittyCake Will be the Most Holder-centric Meme Coin
+</span>
             </h1>
 
             <v-row>
                 <v-col class="white--text gap-8">
                     <div class="step-1">
-                        <h1 class="text-h5">Step 1</h1>
+                        <h1 class="text-h5">a)	Higher revenue potential</h1>
                         <h2 class="primary--text text-h5">
-                            Download and setup MetaMask or TrustWallet
-                        </h2>
-                        <ol>
-                            <li class="text-h6">
-                                Download MetaMask (a crypto wallet in the form
-                                of a browser extension) or TrustWallet (an app
-                                for your phone).
-                            </li>
-                            <li class="text-h6">
-                                You will have to add the Binance Smart Chain to
-                                your network-list. (Click here for a
-                                step-by-step tutorial).
-                            </li>
-                        </ol>
-                    </div>
-                    <div
+                            KittyCake will expand the income-generation possibilities for its holders in two ways. It will eliminate overreliance on transaction fees and provide an alternative income source by investing in crypto mining hardware.
+Secondly, the KittyCake project’s mining activities will not be limited to one cryptocurrency. Rather, the equipment invested in will be for mining various coins including Bitcoin, Helium, and Ethereum Classic.
+This means that KittyCake will have multiple channels of generating the income to be paid to holders. That way, the revenue potential of the project will be sufficiently maximized for long-term gains.
+
                         class="step-2"
                         data-aos="fade-up"
                         data-aos-duration="500"
                         data-aos-delay="200"
                     >
-                        <h1 class="text-h5">Step 2</h1>
+                        <h1 class="text-h5">b)	Cushioning holders from market movements</h1>
                         <h2 class="primary--text text-h5">
-                            Buy and send BNB to Metamask or TrustWallet
-                        </h2>
-                        <p class="text-h6">
-                            Buy BNB on an exchange (i.e. Binance, Kraken,
-                            Coinbase etc.). Transfer the tokens to your MetaMask
-                            wallet address. BEP-20 addresses start with a "0x".
-                        </p>
-                    </div>
+                            While developments are being made to ensure more stability, crypto markets are still very speculative. As a result, they are prone to frequent fluctuations. On, one hand, these constant market movements provide prime opportunity for making profit.
+On the other hand, they are very inconvenient and increase the risk associated with investing in crypto. However, KittyCake’s revenue model provides a way of sheltering holders from the volatility that sometimes characterizes crypto markets.
+This is because crypto mining is not acutely responsive to market movements. Mining work goes on whether there is a rise or slump in the market. Hence, KittyCake holders can be assured of consistent passive income regardless of how the markets move.
+                </div>
                     <div
                         class="step-3"
                         data-aos="fade-up"
                         data-aos-duration="500"
                         data-aos-delay="200"
                     >
-                        <h1 class="text-h5">Step 3</h1>
+                        <h1 class="text-h5">c)	Higher profit margins</h1>
                         <h2 class="primary--text text-h5">
-                            Head over to our Swap to buy $CAKE
-                        </h2>
-                        <p class="text-h6">
-                            Click here to go to our Swap. Select KittyCake or
-                            use our contract address:
-                            <span ref="tokenAddress"
-                                >to be confirmed when presale has started</span
-                            >. Set the slippage tolerance to 15% (sometimes it
-                            may be 18%, depending on how much demand there is).
-                        </p>
+                            Besides exploring new revenue generation avenues, the KittyCake crypto project also aims to maximize returns and benefits to holders. This is by reducing the costs of mining crypto using the equipment we have invested in.
+For instance, KittyCake’s mining equipment will be installed in an area where electricity is cheap and affordable. That way, the cost of mining will be low and this will allow holders to enjoy higher profit margins.
+
+                        
                     </div>
                     <div
                         class="step-4"
@@ -90,15 +69,16 @@
                         data-aos-duration="500"
                         data-aos-delay="200"
                     >
-                        <h1 class="text-h5">Step 4</h1>
+                        <h1 class="text-h5">d)	Sustainable source of passive income;</h1>
                         <h2 class="primary--text text-h5">
-                            View $KCAKE and HODL
-                        </h2>
-                        <p class="text-h6">
-                            Swap BNB for KITTYCAKE. Now you need to add
-                            KITTYCAKE contract address to your MetaMask or Trust
-                            Wallet to view your $KCAKE. Lastly, HODL!
-                        </p>
+                            By investing in projects like KittyCake, most crypto enthusiasts hope to establish themselves a way of earning income passively. However, most crypto projects are unable to provide this consistently as their revenue models are over-reliant on transaction fees.
+However, KittyCake offers holders not just a lucrative and consistent but most importantly, a sustainable source of passive income. This is because of its investment in mining equipment spreading across multiple cryptocurrencies.
+That way, holders can be able to achieve their financial goals more easily without having to worry about how other factors like market movements may affect their income.
+Unlocking the full revenue potential of the crypto ecosystem
+KittyCake is not just another crypto project reliant on traditional models to offer holders normal marginal benefits. We aim to completely turn around the Meme coin landscape by making sure passive income to our holders is lucrative and sustainable.
+That is why part of the revenue generated will be reinvested in more equipment to expand mining operations and consequently, increase revenues. That way, KittyCake will be the most holder-centric project in the world of crypto!
+
+                    
                     </div>
                     <div
                         class="step-5"
