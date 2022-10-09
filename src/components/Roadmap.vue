@@ -28,7 +28,7 @@ export default {
     data() {
         const items = [
             {
-                title: "September 2022",
+                title: "Ocotber 2022",
                 content: "V2 Presale launch",
                 stepCssClass: "is-active",
                 boxCssClass: "is-box-active",
@@ -38,20 +38,16 @@ export default {
                 content: "New reward Dashboard launch",
             },
             {
-                title: "October 2022",
+                title: "November 2022",
                 content: "Coinmarket cap and Coingeko listing",
             },
             {
-                title: "October 2022",
+                title: "November 2022",
                 content: "P2E Game Launch",
             },
             {
-                title: "November 2022",
+                title: "December 2022",
                 content: "Setting up for sustainable passive income",
-            },
-            {
-                title: "Market Cap 1M",
-                content: "Utility development stage 1",
             },
             {
                 title: "January 2023",
