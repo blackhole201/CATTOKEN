@@ -38,7 +38,8 @@
                             KittyCake will expand the income-generation possibilities for its holders in two ways. It will eliminate overreliance on transaction fees and provide an alternative income source by investing in crypto mining hardware.
 Secondly, the KittyCake project’s mining activities will not be limited to one cryptocurrency. Rather, the equipment invested in will be for mining various coins including Bitcoin, Helium, and Ethereum Classic.
 This means that KittyCake will have multiple channels of generating the income to be paid to holders. That way, the revenue potential of the project will be sufficiently maximized for long-term gains.
-
+</div>
+                    <div
                         class="step-2"
                         data-aos="fade-up"
                         data-aos-duration="500"
