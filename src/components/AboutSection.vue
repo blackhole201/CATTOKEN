@@ -27,7 +27,7 @@
     <v-container id="about-content">
       <v-row align="center" justify="center">
         <h2 class="heading font-weight-medium text-sm-h3 text-h3 text-xl-h2">
-          <span class="primary--text">KittyCake</span> Revolutionizing passive income models
+          <span class="primary--text">KittyCake</span> Revolutionising passive income models
         </h2>
         <v-col cols="12" md="6" sm="12"> </v-col>
         <v-col cols="12" md="6" sm="12">
@@ -49,9 +49,9 @@
 
                 <br />
                 <br />
-                Rather, KittyCake will invest in equipment for mining a variety of cryptocurencies ranging from Bitcoin to Helium and Polkaot.
+                Rather, KittyCake will invest in equipment for mining a variety of cryptocurencies using ltest POWAN techology.
                 This will help expand the project’s income channels and consequently,
-                holders will enjoy higher revenue benefits unlike any other crypto project.
+                holders will enjoy higher revenue benefits with this eco-friendly, low-power and low-cost mining system.
                 <br />
                 <br />
 
@@ -63,7 +63,7 @@
                 rounded
                 style="background-color: white"
                 class="mt-5"
-                >Read more about Kitty story.
+                >You want to know more about old Kitty?.
                 <v-icon color="primary">mdi-arrow-right</v-icon>
               </v-btn>
             </v-card>
