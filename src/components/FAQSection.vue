@@ -30,26 +30,7 @@
                 </v-expansion-panels>
             </v-row>
         </v-container>
-        <v-container
-            class="mt-5"
-            data-aos="fade-up"
-            data-aos-duration="500"
-            data-aos-delay="200"
-        >
-            <v-row align="center" justify="center">
-                <v-col class="text-center">
-                    <v-btn
-                        color="primary"
-                        x-large
-                        outlined
-                        rounded
-                        style="background-color: white"
-                        >Read More FAQs
-                        <v-icon color="primary">mdi-arrow-right</v-icon>
-                    </v-btn>
-                </v-col>
-            </v-row>
-        </v-container>
+      
     </section>
 </template>
 
@@ -64,7 +45,7 @@ export default {
                 },
                 {
                     question: "So, KittyCake is a MEME rewards token?",
-                    answer: "We strive to bring it beyond the MEME token sphere and give it a solid utility. KittyCake will in time become a gaming utility token.",
+                    answer: "We strive to bring it beyond the MEME token sphere and give it a solid utility. KittyCake will in time become a Bitcoin mining utility token.",
                 },
                 {
                     question: "How does the dashboard works?",
@@ -73,12 +54,12 @@ export default {
                 {
                     question:
                         "How much $KCAKE must I hold to get $CAKE rewards?",
-                    answer: "You must hold at least 200 000 $KCAKE tokens to receive $CAKE.",
+                    answer: "You must hold at least 2 000 000 $KCAKE tokens to receive $CAKE.",
                 },
                 {
                     question:
                         "Do I just have to hold $KCAKE to get $CAKE rewards in my wallet?",
-                    answer: "Yes you just have to hold the minimum amount of $KCAKE (200 000 tokens) in your wallet. Also make sure you have $CAKE added to your wallet. The $CAKE token contract address is: 0xc22e8114818a918260662375450e19ac73d32852",
+                    answer: "Yes you just have to hold the minimum amount of $KCAKE (2 000 000 tokens) in your wallet. Also make sure you have $CAKE added to your wallet. The $CAKE token contract address is: TBC",
                 },
                 {
                     question: "Why am I not receiving rewards every hour?",

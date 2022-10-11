@@ -26,9 +26,9 @@
     />
     <v-container id="about-content">
       <v-row align="center" justify="center">
-        <h1 class="heading font-weight-medium text-sm-h3 text-h3 text-xl-h2">
+        <h2 class="heading font-weight-medium text-sm-h3 text-h3 text-xl-h2">
           <span class="primary--text">KittyCake</span> Revolutionizing passive income models
-        </h1>
+        </h2>
         <v-col cols="12" md="6" sm="12"> </v-col>
         <v-col cols="12" md="6" sm="12">
           <div class="box">
@@ -43,18 +43,18 @@
                 gaming, NFTs and reward system in one place.
                 <br />
                 <br />
-               As the pioneer Bitcoin-powered meme coin, KittyCake doesn’t only aim to offer its 
-               holders more utility than other coins conventionally do. 
+               As the pioneer Bitcoin-powered meme coin, KittyCake doesn’t only aim to offer its
+               holders more utility than other coins conventionally do.
                More importantly, KittyCake is going to transform how passive income is generated in the crypto ecosystem.
 
                 <br />
                 <br />
-                Rather, KittyCake will invest in equipment for mining a variety of cryptocurencies ranging from Bitcoin to Helium and Polkaot. 
-                This will help expand the project’s income channels and consequently, 
+                Rather, KittyCake will invest in equipment for mining a variety of cryptocurencies ranging from Bitcoin to Helium and Polkaot.
+                This will help expand the project’s income channels and consequently,
                 holders will enjoy higher revenue benefits unlike any other crypto project.
                 <br />
                 <br />
-              
+
               </p>
               <v-btn
                 color="primary"
