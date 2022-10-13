@@ -8,7 +8,10 @@ import 'aos/dist/aos.css'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SmoothScrollbar from 'vue-smooth-scrollbar'
+import Flicking from "@egjs/vue-flicking";
+import "@egjs/vue-flicking/dist/flicking.css";
 
+Vue.use(Flicking);
 Vue.use(VueMeta)
 Vue.use(VueHorizontalTimeline)
 gsap.registerPlugin(ScrollTrigger)
@@ -18,9 +21,9 @@ Vue.config.productionTip = false
 Vue.prototype.$gsap = gsap
 
 new Vue({
-  vuetify,
-  render: h => h(App),
-  mounted() {
-    AOS.init()
-  }
+    vuetify,
+    render: h => h(App),
+    mounted() {
+        AOS.init()
+    }
 }).$mount('#app')

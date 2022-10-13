@@ -9,15 +9,30 @@
       </h1>
       <v-row align="center" justify="center" style="padding-top: 40px">
         <v-col>
+          <!-- <Flicking :options="{ renderOnlyVisible: true }">
+            <div
+              v-for="(partner, index) in partners"
+              class="flicking-panel"
+              :key="index"
+            >
+              <img
+                :src="partner.image"
+                :alt="partner.name"
+                height="100"
+                width="100%"
+                style="margin: 0 16px; object-fit: cover"
+              />
+            </div>
+          </Flicking> -->
           <v-sheet class="mx-auto" max-width="1200">
             <v-slide-group light multiple show-arrows>
               <v-slide-item v-for="(partner, index) in partners" :key="index">
                 <img
                   :src="partner.image"
                   :alt="partner.name"
-                  height="64"
+                  height="100"
                   width="100%"
-                  style="margin: 0 16px"
+                  style="margin: 0 16px; object-fit: cover"
                 />
               </v-slide-item>
             </v-slide-group>
@@ -107,22 +122,15 @@
 <script>
 export default {
   data: () => ({
+    list: [0, 1, 2, 3, 4],
     partners: [
       {
-        name: "blockfolio",
-        image: require("@/assets/img/partners/blockfolio.png"),
+        name: "Gempad",
+        image: require("@/assets/img/partners/gempad.png"),
       },
       {
-        name: "coingecko",
-        image: require("@/assets/img/partners/coingecko.png"),
-      },
-      {
-        name: "indoe",
-        image: require("@/assets/img/partners/indoe.png"),
-      },
-      {
-        name: "coinmarket",
-        image: require("@/assets/img/partners/coinmarket.png"),
+        name: "Pancake Swap",
+        image: require("@/assets/img/partners/pancake-swap.png"),
       },
     ],
   }),

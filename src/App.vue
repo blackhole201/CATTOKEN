@@ -148,7 +148,7 @@ export default {
   mounted() {
     this.$gsap.utils.toArray("#app").forEach((section, i) => {
       this.$gsap.to(section, {
-        backgroundPosition: `5% ${-window.innerHeight / 8.8}px`,
+        backgroundPosition: `10% ${-window.innerHeight / 0.2}px`,
         scrollTrigger: {
           trigger: section,
           start: "top top",
