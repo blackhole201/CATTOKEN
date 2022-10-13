@@ -17,8 +17,8 @@
     </v-snackbar>
     <v-container class="buy">
       <h1
-        class="display-3 text-left white--text font-weight-bold text-h3"
-        style="margin-bottom: 130px"
+        class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h2 text-lg-h3 text-md-h3 text-sm-h3"
+        style="margin-bottom: 130px; word-wrap: break-word"
       >
         <span class="white--text"
           >How KittyCake Will be the Most Holder-centric Meme Coin
@@ -29,9 +29,9 @@
         <v-col
           cols="12"
           xl="12"
-          lg="4"
-          md="4"
-          sm="6"
+          lg="12"
+          md="12"
+          sm="12"
           class="text-left card"
           v-for="(feature, i) in buyStep"
           :key="i"

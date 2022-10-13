@@ -1,7 +1,10 @@
 <template>
   <section id="partners">
     <v-container fluid>
-      <h1 class="display-3 text-center white--text font-weight-bold text-h3">
+      <h1
+        class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h2 text-lg-h3 text-md-h3 text-sm-h3"
+        style="word-wrap: break-word"
+      >
         Our Partners
       </h1>
       <v-row align="center" justify="center" style="padding-top: 40px">
@@ -23,7 +26,10 @@
       </v-row>
     </v-container>
     <v-container class="pt-16" fluid id="connect">
-      <h1 class="display-3 text-center white--text font-weight-bold text-h3">
+      <h1
+        class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h2 text-lg-h3 text-md-h3 text-sm-h3"
+        style="word-wrap: break-word"
+      >
         Connect With Us
       </h1>
       <v-row justify="center" align="center" style="padding-top: 40px">

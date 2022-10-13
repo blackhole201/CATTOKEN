@@ -9,8 +9,8 @@
     <section id="features">
       <v-container class="features">
         <h1
-          class="display-3 text-center white--text font-weight-bold feature-title text-h3"
-          style="margin-top: 7rem"
+          class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h2 text-lg-h3 text-md-h3 text-sm-h3"
+          style="margin-bottom: 130px; word-wrap: break-word"
         >
           Tokenomics
         </h1>
@@ -88,19 +88,18 @@ export default {
     };
   },
   mounted() {
-    this.$gsap.utils.toArray("section#features").forEach((section, i) => {
-      section.style.backgroundPosition = "0% 0px";
-
-      this.$gsap.to(section, {
-        backgroundPosition: `0% ${-window.innerHeight / 1}px`,
-        scrollTrigger: {
-          trigger: "#features",
-          start: "top top",
-          scrub: true,
-        },
-        ease: "none",
-      });
-    });
+    // this.$gsap.utils.toArray("section#features").forEach((section, i) => {
+    //   section.style.backgroundPosition = "0% 0px";
+    //   this.$gsap.to(section, {
+    //     backgroundPosition: `0% ${-window.innerHeight / 1}px`,
+    //     scrollTrigger: {
+    //       trigger: "#features",
+    //       start: "top top",
+    //       scrub: true,
+    //     },
+    //     ease: "none",
+    //   });
+    // });
   },
 };
 </script>

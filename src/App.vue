@@ -49,10 +49,14 @@ body {
         rgba(17, 11, 51, 0.965232) 98.91%
     ); */
   font-family: "Saira", Helvetica, Arial;
-  background: url("./assets/img/background/feature-background.png");
+  background: url("./assets/img/background/about-us.png");
   width: 100%;
   height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
   background-blend-mode: multiply;
   backdrop-filter: blur(10px);
   background-position: 5% 130px;
@@ -144,7 +148,7 @@ export default {
   mounted() {
     this.$gsap.utils.toArray("#app").forEach((section, i) => {
       this.$gsap.to(section, {
-        backgroundPosition: `15% ${-window.innerHeight / 2.8}px`,
+        backgroundPosition: `5% ${-window.innerHeight / 8.8}px`,
         scrollTrigger: {
           trigger: section,
           start: "top top",

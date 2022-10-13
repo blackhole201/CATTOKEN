@@ -26,7 +26,7 @@
     />
     <v-container id="about-content">
       <h1
-        class="display-3 text-left white--text font-weight-bold text-h3"
+        class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h2 text-lg-h3 text-md-h3 text-sm-h3"
         style="margin-bottom: 130px; word-wrap: break-word"
       >
         <span class="primary--text">KittyCake</span> Revolutionising passive
@@ -70,8 +70,11 @@
                 outlined
                 rounded
                 block
+                link
                 style="background-color: white"
                 class="mt-5"
+                target="_blank"
+                href="https://medium.com/@kittycakecommunity"
                 >Read our story
                 <v-icon color="primary">mdi-arrow-right</v-icon>
               </v-btn>
