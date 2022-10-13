@@ -114,7 +114,7 @@ export default {
   padding: 24px;
   height: 100%;
   transition: 0.5s ease-out;
-  background: transparent;
+  background: transparent !important;
   backdrop-filter: blur(20px);
   color: white !important;
   box-shadow: 12px 4px 44px rgba(0, 0, 0, 0.85);
