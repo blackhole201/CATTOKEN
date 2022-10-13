@@ -26,13 +26,21 @@
           </Flicking> -->
           <v-sheet class="mx-auto" max-width="1200">
             <v-slide-group light multiple show-arrows>
-              <v-slide-item v-for="(partner, index) in partners" :key="index">
-                <img
+              <v-slide-item
+                v-for="(partner, index) in partners"
+                :key="index"
+                class="text-center"
+              >
+                <v-img
                   :src="partner.image"
                   :alt="partner.name"
-                  height="100"
-                  width="100%"
-                  style="margin: 0 16px; object-fit: cover"
+                  contain
+                  max-height="50"
+                  :max-width="
+                    $vuetify.breakpoint.mobileBreakpoint ? '280' : '100%'
+                  "
+                  :class="{ 'mx-10': $vuetify.breakpoint.mobileBreakpoint }"
+                  class="mx-auto"
                 />
               </v-slide-item>
             </v-slide-group>
