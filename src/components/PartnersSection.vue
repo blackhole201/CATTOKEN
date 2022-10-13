@@ -35,7 +35,9 @@
                   :src="partner.image"
                   :alt="partner.name"
                   contain
-                  max-height="50"
+                  :max-height="
+                    $vuetify.breakpoint.mobileBreakpoint ? '50' : 'auto'
+                  "
                   :max-width="
                     $vuetify.breakpoint.mobileBreakpoint ? '280' : '100%'
                   "
