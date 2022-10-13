@@ -25,16 +25,20 @@
       class="planet-4"
     />
     <v-container id="about-content">
+      <h1
+        class="display-3 text-left white--text font-weight-bold text-h3"
+        style="margin-bottom: 130px; word-wrap: break-word"
+      >
+        <span class="primary--text">KittyCake</span> Revolutionising passive
+        income models
+      </h1>
       <v-row align="center" justify="center">
-        <h2 class="heading font-weight-medium text-sm-h3 text-h3 text-xl-h2">
-          <span class="primary--text">KittyCake</span> Revolutionising passive income models
-        </h2>
-        <v-col cols="12" md="6" sm="12"> </v-col>
-        <v-col cols="12" md="6" sm="12">
+        <v-col cols="12" md="12" lg="6" sm="12" xl="6"> </v-col>
+        <v-col cols="12" md="12" lg="6" sm="12" xl="6">
           <div class="box">
             <v-card class="card-features">
               <p
-                class="content font-weight-light text-sm-h6 text-md-h5 text-subtitle-2 text-xl-h6 my-5"
+                class="content font-weight-light text-sm-h6 text-md-h5 text-subtitle-1 text-xl-h6 my-5"
               >
                 <br />
                 KittyCake garners the attention of both crypto enthusiasts and
@@ -43,27 +47,32 @@
                 gaming, NFTs and reward system in one place.
                 <br />
                 <br />
-               As the pioneer Bitcoin-powered meme coin, KittyCake doesn’t only aim to offer its
-               holders more utility than other coins conventionally do.
-               More importantly, KittyCake is going to transform how passive income is generated in the crypto ecosystem.
+                As the pioneer Bitcoin-powered meme coin, KittyCake doesn’t only
+                aim to offer its holders more utility than other coins
+                conventionally do. More importantly, KittyCake is going to
+                transform how passive income is generated in the crypto
+                ecosystem.
 
                 <br />
                 <br />
-                Rather, KittyCake will invest in equipment for mining a variety of cryptocurencies using ltest POWAN techology.
-                This will help expand the project’s income channels and consequently,
-                holders will enjoy higher revenue benefits with this eco-friendly, low-power and low-cost mining system.
+                Rather, KittyCake will invest in equipment for mining a variety
+                of cryptocurencies using ltest POWAN techology. This will help
+                expand the project’s income channels and consequently, holders
+                will enjoy higher revenue benefits with this eco-friendly,
+                low-power and low-cost mining system.
                 <br />
                 <br />
-
               </p>
+              <h1>You want to know more about old Kitty?</h1>
               <v-btn
                 color="primary"
                 x-large
                 outlined
                 rounded
+                block
                 style="background-color: white"
                 class="mt-5"
-                >You want to know more about old Kitty?.
+                >Read our story
                 <v-icon color="primary">mdi-arrow-right</v-icon>
               </v-btn>
             </v-card>
@@ -204,7 +213,8 @@ export default {
   color: white;
   width: 100%;
   padding: 5rem 0;
-  background: url("../assets/img/background/about.png");
+  background-image: linear-gradient(rgba(0, 0, 0 0.2), rgba(0, 0, 0, 0.8)),
+    url("https://picsum.photos/id/1031/500/400");
 }
 .planet-1 {
   position: absolute;
