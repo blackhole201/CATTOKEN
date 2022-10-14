@@ -67,7 +67,7 @@ export default {
         },
         {
           img: require("@/assets/img/sticker/sticker-5.png"),
-          title: "Lobster",
+          title: "Asphyx",
           text: "Contract Dev",
         },
       ],
