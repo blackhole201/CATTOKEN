@@ -56,7 +56,7 @@
                 <br />
                 <br />
                 Rather, KittyCake will invest in equipment for mining a variety
-                of cryptocurencies using ltest POWAN techology. This will help
+                of cryptocurrencies using latest POWAN technology. This will help
                 expand the project’s income channels and consequently, holders
                 will enjoy higher revenue benefits with this eco-friendly,
                 low-power and low-cost mining system.
