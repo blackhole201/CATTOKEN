@@ -60,7 +60,7 @@ export default {
         isActive: true,
       },
       {
-        title: "October 2022",
+        title: "November 2022",
         content: "New reward Dashboard launch",
         stepCssClass: "is-not-active",
       },
