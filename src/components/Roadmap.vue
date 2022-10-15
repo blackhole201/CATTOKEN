@@ -3,7 +3,7 @@
     <v-container id="roadmap-container" class="roadmap">
       <h1
         class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3"
-        style="margin-bottom: 130px; word-wrap: break-word"
+        style="margin-bottom: 2rem; word-wrap: break-word"
       >
         Roadmap
       </h1>
@@ -177,7 +177,19 @@ export default {
   .timeline {
     ol {
       li {
+        background: white !important;
+
+        &.is-active {
+          &::after {
+            width: 30px !important;
+            height: 30px !important;
+          }
+        }
         &.is-not-active {
+          &::after {
+            width: 15px !important;
+            height: 15px !important;
+          }
           .time {
             .title {
               color: gray !important;

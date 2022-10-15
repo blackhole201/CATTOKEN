@@ -3,14 +3,21 @@
     <v-container id="teams">
       <h1
         class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3"
-        style="margin-bottom: 130px; word-wrap: break-word"
+        style="margin-bottom: 2rem; word-wrap: break-word"
         data-aos="fade-up"
         data-aos-duration="500"
         data-aos-delay="200"
       >
         CORE TEAM
       </h1>
-      <v-row justify="center" class="my-8">
+      <v-row
+        justify="center"
+        align="start"
+        class="my-8"
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="200"
+      >
         <v-col
           cols="12"
           xl="2"
@@ -21,19 +28,20 @@
           v-for="(feature, i) in features"
           :key="i"
         >
-          <v-hover v-slot:default="{ hover }">
-            <v-card class="card-features">
-              <v-img
-                :src="feature.img"
-                contain
-                class="mx-auto my-auto"
-                max-height="75%"
-              ></v-img>
-            </v-card>
-          </v-hover>
+          <v-card class="card-features">
+            <v-img
+              :src="feature.img"
+              contain
+              class="mx-auto my-auto"
+              max-height="75%"
+            ></v-img>
+          </v-card>
           <h1 class="font-weight-black white--text text-center mt-8">
             {{ feature.title }}
           </h1>
+          <h2 class="font-weight-black grey--text lighten-5 text-center">
+            {{ feature.text }}
+          </h2>
         </v-col>
       </v-row>
     </v-container>
