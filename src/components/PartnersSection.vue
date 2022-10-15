@@ -2,7 +2,7 @@
   <section id="partners">
     <v-container fluid>
       <h1
-        class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h2 text-lg-h3 text-md-h3 text-sm-h3"
+        class="text-center white--text font-weight-bold text-h4 text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3"
         style="word-wrap: break-word"
       >
         Our Partners
@@ -36,7 +36,7 @@
                   :alt="partner.name"
                   contain
                   :max-height="
-                    $vuetify.breakpoint.mobileBreakpoint ? '50' : 'auto'
+                    $vuetify.breakpoint.mobileBreakpoint ? '50' : '100%'
                   "
                   :max-width="
                     $vuetify.breakpoint.mobileBreakpoint ? '280' : '100%'
@@ -52,7 +52,7 @@
     </v-container>
     <v-container class="pt-16" fluid id="connect">
       <h1
-        class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h2 text-lg-h3 text-md-h3 text-sm-h3"
+        class="text-center white--text font-weight-bold text-h4 text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3"
         style="word-wrap: break-word"
       >
         Connect With Us
@@ -108,9 +108,9 @@
 
 <style scoped lang="scss">
 #partners {
-  background-image: url("../assets/img/background/about.webp");
+  background-image: url("../assets/img/background/footer.png");
   backdrop-filter: blur(30px) !important;
-  border-radius: 40px 40px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   padding-top: 80px;
   color: white !important;
 }
@@ -132,7 +132,6 @@
 <script>
 export default {
   data: () => ({
-    list: [0, 1, 2, 3, 4],
     partners: [
       {
         name: "Gempad",

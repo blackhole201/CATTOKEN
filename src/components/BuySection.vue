@@ -17,7 +17,7 @@
     </v-snackbar>
     <v-container class="buy">
       <h1
-        class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h2 text-lg-h3 text-md-h3 text-sm-h3"
+        class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3"
         style="margin-bottom: 130px; word-wrap: break-word"
       >
         <span class="white--text"
@@ -37,7 +37,7 @@
           :key="i"
         >
           <v-hover>
-            <v-card style="cursor: pointer" class="card-features">
+            <v-card class="card-features">
               <h1 class="font-weight-bold text-h5">
                 {{ i + 1 }}. {{ feature.title }}
               </h1>

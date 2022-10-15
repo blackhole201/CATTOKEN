@@ -9,7 +9,7 @@
     <section id="features">
       <v-container class="features">
         <h1
-          class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h2 text-lg-h3 text-md-h3 text-sm-h3"
+          class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3"
           style="margin-bottom: 130px; word-wrap: break-word"
         >
           Tokenomics
@@ -26,7 +26,7 @@
             :key="i"
           >
             <v-hover v-slot:default="{ hover }">
-              <v-card style="cursor: pointer" class="card-features">
+              <v-card class="card-features">
                 <v-img
                   :src="feature.img"
                   max-width="100px"

@@ -26,15 +26,14 @@
     />
     <v-container id="about-content">
       <h1
-        class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h2 text-lg-h3 text-md-h3 text-sm-h3"
+        class="text-center white--text font-weight-bold roadmap-title text-h4 text-xl-h3 text-lg-h3 text-md-h3 text-sm-h3"
         style="margin-bottom: 130px; word-wrap: break-word"
       >
         <span class="primary--text">KittyCake</span> Revolutionising passive
         income models
       </h1>
       <v-row align="center" justify="center">
-        <v-col cols="12" md="12" lg="6" sm="12" xl="6"> </v-col>
-        <v-col cols="12" md="12" lg="6" sm="12" xl="6">
+        <v-col cols="12" md="12" lg="12" sm="12" xl="12">
           <div class="box">
             <v-card class="card-features">
               <p
@@ -56,10 +55,10 @@
                 <br />
                 <br />
                 Rather, KittyCake will invest in equipment for mining a variety
-                of cryptocurrencies using latest POWAN technology. This will help
-                expand the project’s income channels and consequently, holders
-                will enjoy higher revenue benefits with this eco-friendly,
-                low-power and low-cost mining system.
+                of cryptocurrencies using latest POWAN technology. This will
+                help expand the project’s income channels and consequently,
+                holders will enjoy higher revenue benefits with this
+                eco-friendly, low-power and low-cost mining system.
                 <br />
                 <br />
               </p>
