@@ -42,34 +42,26 @@ export default {
         {
           question: "What is KittyCake?",
           answer:
-            "KittyCake is an advanced hyper-deflationary auto-rewards token on the Binance Smart Chain. KittyCake rewards holders with his favorite food, $CAKE, every hour! We also have a dashboard to track your $CAKE rewards",
+            "KittyCake is an advanced hyper-deflationary auto-rewards token on the Binance Smart Chain. KittyCake rewards true holders with divident payments generated from mining equipment.",
         },
         {
-          question: "So, KittyCake is a MEME rewards token?",
+          question: "So, KittyCake is a rewards token?",
           answer:
             "We strive to bring it beyond the MEME token sphere and give it a solid utility. KittyCake will in time become a Bitcoin mining utility token.",
         },
+        
         {
-          question: "How does the dashboard works?",
+          question: "How much $KCAKE must I hold to get dividents?",
           answer:
-            "You just copy/paste your wallet address that holds $KCAKE into the dashboard. You will automatically see your KCAKE balance and your estimated and already paid $CAKE rewards!",
-        },
-        {
-          question: "How much $KCAKE must I hold to get $CAKE rewards?",
-          answer:
-            "You must hold at least 2 000 000 $KCAKE tokens to receive $CAKE.",
+            "You must hold at least 4 000 000 $KCAKE tokens to be eligable for rewards.",
         },
         {
           question:
-            "Do I just have to hold $KCAKE to get $CAKE rewards in my wallet?",
+            "Do I just have to hold $KCAKE to get dividents?",
           answer:
-            "Yes you just have to hold the minimum amount of $KCAKE (2 000 000 tokens) in your wallet. Also make sure you have $CAKE added to your wallet. The $CAKE token contract address is: TBC",
+            "Yes you just have to hold the minimum amount of $KCAKE (4 000 000 tokens) in your wallet.",
         },
-        {
-          question: "Why am I not receiving rewards every hour?",
-          answer:
-            "The way the contract works is it auto accumulates your $CAKE rewards and pays them out hourly - HOWEVER if volume is low or the amount of your $CAKE reward based on your KittyCake total is deemed not high enough to pay the gas fee out of your reward to send you, the contract will hold your rewards and auto pay them when it will be most effective for you specifically as to not eat up all your rewards by constantly paying gas fees against your rewards. Also, as the number of $KCAKE holders grow, you will sometimes have to wait a bit longer, because there are investors who are due their $CAKE rewards before you.",
-        },
+        
       ],
     };
   },

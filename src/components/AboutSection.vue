@@ -46,7 +46,7 @@
                 gaming, NFTs and reward system in one place.
                 <br />
                 <br />
-                As the pioneer Bitcoin-powered meme coin, KittyCake doesn’t only
+                As the pioneer Bitcoin-powered coin, KittyCake doesn’t only
                 aim to offer its holders more utility than other coins
                 conventionally do. More importantly, KittyCake is going to
                 transform how passive income is generated in the crypto

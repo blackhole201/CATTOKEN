@@ -56,18 +56,18 @@ export default {
       features: [
         {
           img: require("@/assets/img/planet1.webp"),
-          title: "4% CAKE Redistribution",
-          text: "4% of every buy/sell is taken and redistributed to all holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 2.000,000 tokens is required in order to qualify for rewards.",
+          title: "CAKE Redistribution",
+          text: "Rewards will be distributed to true holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 4.000,000 tokens is required in order to qualify for rewards.",
         },
         {
           img: require("@/assets/img/planet2.webp"),
           title: "Automatic Reward Payment",
-          text: "No need to claim your earned $CAKE, it’s automatically sent to your wallet. Just add the PancakeSwap token ($CAKE) address to your wallet and you're set.",
+          text: "No need to claim, it’s all done automatically and sent to your wallet.",
         },
         {
           img: require("@/assets/img/planet3.webp"),
           title: "Strategic Marketing",
-          text: "2% of every transaction is allocated to Marketing in $CAKE (swapped to CAKE in real-time to avoid dumps). This allows us to invest and develop the project further to expand the rewards for our community.",
+          text: "3% of every transaction is allocated to Marketing in $CAKE (swapped to CAKE in real-time to avoid dumps). This allows us to invest and develop the project further to expand the rewards for our community.",
         },
         {
           img: require("@/assets/img/planet4.png"),

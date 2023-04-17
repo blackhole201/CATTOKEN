@@ -42,7 +42,7 @@
                                 font-weight-medium
                             "
                         >
-                            The only Bitcoin powered MEME token
+                            The only Bitcoin powered token
                         </h2>
                         <p
                             class="

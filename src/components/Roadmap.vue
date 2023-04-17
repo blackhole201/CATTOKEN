@@ -53,34 +53,30 @@ export default {
   data() {
     const items = [
       {
-        title: "October 2022",
+        title: "May 2023",
         content: "V2 Presale launch",
         stepCssClass: "is-active",
         boxCssClass: "is-box-active",
         isActive: true,
       },
+
       {
-        title: "November 2022",
-        content: "New reward Dashboard launch",
-        stepCssClass: "is-not-active",
-      },
-      {
-        title: "November 2022",
+        title: "June 2023",
         stepCssClass: "is-not-active",
         content: "Coinmarket cap and Coingeko listing",
       },
       {
-        title: "November 2022",
+        title: "June 2023",
         stepCssClass: "is-not-active",
-        content: "P2E Game Launch",
+        content: "Prepare LPAWN equipment",
       },
       {
-        title: "December 2022",
+        title: "July 2023",
         stepCssClass: "is-not-active",
         content: "Setting up for sustainable passive income",
       },
       {
-        title: "January 2023",
+        title: "August 2023",
         stepCssClass: "is-not-active",
         content: "First set of NFTs limited",
       },
@@ -90,20 +86,20 @@ export default {
         content: "Utility development stage 2 ",
       },
       {
-        title: "January 2023",
+        title: "September 2023",
         stepCssClass: "is-not-active",
         content: "Online Store",
       },
 
       {
         title: "Market Cap 10M",
-        content: "Big reward to all loyal holders",
+        content: "Big dividend payment to all loyal holders",
         stepCssClass: "is-not-active",
       },
       {
         title: "Market Cap 20M",
         stepCssClass: "is-not-active",
-        content: "Charity donation and all inclusive trip for 2 lucky holders",
+        content: "Phase 2 of the project starts, creating green energy for mining",
       },
     ];
 
