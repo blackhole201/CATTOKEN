@@ -53,13 +53,13 @@ export default {
         {
           question: "How much $KCAKE must I hold to get dividents?",
           answer:
-            "You must hold at least 4 000 000 $KCAKE tokens to be eligable for rewards.",
+            "You must hold at least 4 000 000 000 $KCAKE tokens to be eligable for rewards.",
         },
         {
           question:
             "Do I just have to hold $KCAKE to get dividents?",
           answer:
-            "Yes you just have to hold the minimum amount of $KCAKE (4 000 000 tokens) in your wallet.",
+            "Yes you just have to hold the minimum amount of $KCAKE (4 000 000 000 tokens) in your wallet.",
         },
         
       ],
