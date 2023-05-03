@@ -62,7 +62,7 @@
                             color="primary"
                             rounded
                             x-large
-                            @click="$vuetify.goTo('#features')"
+                            @click="https://gempad.app/presale/0x76A9652fd3F4499E8F690343Cd6FF6903149b525?chainId=56"
                         >
                             Buy Presale
                             <v-icon color="white">mdi-plus</v-icon>
