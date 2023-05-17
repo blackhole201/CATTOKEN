@@ -62,10 +62,10 @@
                             color="primary"
                             rounded
                             x-large
-                            href="https://gempad.app/presale/0x76A9652fd3F4499E8F690343Cd6FF6903149b525?chainId=56"
+                            href="https://pancakeswap.finance/swap?outputCurrency=0xF2f662AdA49f941282Ea6F50A90D08cb51e18a96&inputCurrency=BNB"
                             target="_blank"
                         >
-                            Buy Presale
+                            Buy KCAKEv2
                             <v-icon color="white">mdi-plus</v-icon>
                         </v-btn>
                     </v-col>

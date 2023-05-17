@@ -57,7 +57,7 @@ export default {
         {
           img: require("@/assets/img/planet1.webp"),
           title: "CAKE Redistribution",
-          text: "Rewards will be distributed to true holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 4,000,000,000 tokens is required in order to qualify for rewards.",
+          text: "Rewards will be distributed to true holders. Hold $KittyCake tokens and earn $CAKE. A Minimum of 400,000,000 tokens is required in order to qualify for rewards.",
         },
         {
           img: require("@/assets/img/planet2.webp"),
